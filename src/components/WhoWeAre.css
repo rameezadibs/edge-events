@@ -1,0 +1,44 @@
+@font-face { font-family: 'Bodoni Moda'; src: url('/fonts/bodoni-moda-italic.ttf') format('truetype'); font-style: italic; font-weight: 400; font-display: swap; }
+.who-we-are { background: #f5f2eb; color: #08121d; padding: 0 0 72px; scroll-margin-top: 0; }
+.about-layout { grid-template-columns: 51.2% 48.8%; max-width: 1800px; margin: 0 auto; }
+.about-photography { min-width: 0; align-self: start; }
+.about-main-image { height: clamp(670px, 61vw, 1100px); background: #1e211c; }
+.about-main-image > img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 48%; filter: brightness(.82) saturate(.82); }
+.about-editorial-rail { width: 25.5%; padding: 54px 0 44px 22%; padding-left: 5.6%; color: #f5f2eb; background: rgba(3,12,15,.76); }
+.about-process { gap: 0; font-size: clamp(8px, .65vw, 12px); letter-spacing: .24em; line-height: 1.9; text-transform: uppercase; }
+.about-process > span:not(:last-child)::after { content: ''; display: block; height: 31px; width: 1px; background: #e2dfd399; margin: 17px 0; }
+.about-experience p { margin: 0; font-size: clamp(16px, 1.5vw, 25px); text-transform: uppercase; letter-spacing: .07em; line-height: 1.25; }
+.about-experience p > span { font: 400 clamp(40px, 3.15vw, 58px)/1.05 'Bodoni Moda', serif; display: block; letter-spacing: -.06em; }
+.about-experience > div { width: 40px; height: 1px; background: #dfd9c7a0; margin: 15px 0; }
+.about-experience > span { display: block; color: #dfceb0; font-size: clamp(8px, .68vw, 12px); text-transform: uppercase; letter-spacing: .27em; line-height: 2; }
+.about-detail { position: relative; width: 59%; margin: -21% -6.2% 0 auto; z-index: 2; }
+.about-detail img { display: block; width: 100%; aspect-ratio: 1.64; height: auto; object-fit: cover; border: 2px solid #f5f2eb; filter: saturate(.78) brightness(.85); }
+.about-detail figcaption { position: absolute; right: calc(100% + 15px); bottom: 12px; width: 125px; text-align: right; font-size: 9px; letter-spacing: .3em; line-height: 2; text-transform: uppercase; color: #62666b; }
+.about-detail figcaption::before { content: ''; width: 48px; height: 1px; background: #777d7d; display: block; margin: 0 0 13px auto; }
+.about-content { min-width: 0; padding: clamp(20px, 2.5vw, 42px) 7.5% 0 11.5%; }
+.about-eyebrow { gap: 26px; text-transform: uppercase; letter-spacing: .39em; font-size: clamp(10px, .89vw, 14px); margin: 0 0 24px; }
+.about-eyebrow > span { display: block; height: 1px; width: 64px; background: #535b60; }
+.about-content h2 { font: 400 clamp(39px, 4.7vw, 84px)/1.075 'Bodoni Moda', Georgia, serif; letter-spacing: -.062em; margin: 0; }
+.about-content h2 em { color: #006696; font-weight: 400; }
+.about-description { margin: 44px 0 0; font-size: clamp(13px, 1.23vw, 20px); line-height: 1.65; letter-spacing: -.018em; color: #303541; }
+.about-features { list-style: none; padding: 0; margin: 40px 0 0; }
+.about-features li { padding: 14px 12px 10px 24px; border-left: 1px solid #d5d4ce; }
+.about-features li:first-child { border-left: 0; padding-left: 12px; }
+.about-features svg { color: #17303d; width: 34px; height: 34px; margin-bottom: 12px; }
+.about-features p { font: 400 clamp(14px, 1.32vw, 23px)/1.23 'Bodoni Moda', Georgia, serif; margin: 0; letter-spacing: -.035em; }
+.about-quote { gap: 29px; align-items: flex-start; margin: 57px 0 0; }
+.about-quote > span { height: 1px; width: 82px; flex-shrink: 0; background: #757c7c; margin-top: 22px; }
+.about-quote p { font: italic 400 clamp(28px, 2.8vw, 48px)/1.12 'Bodoni Moda', Georgia, serif; letter-spacing: -.055em; margin: 0; }
+.about-footer { margin-top: 30px; gap: 22px; }
+.about-cta { color: #fff; background: #031923; padding: 22px 28px; gap: 24px; text-transform: uppercase; letter-spacing: .22em; font-size: clamp(9px, .8vw, 13px); border: 1px solid #123f48; min-height: 65px; white-space: nowrap; transition: background .35s, border-color .35s; }
+.about-cta svg { transition: transform .35s; }
+.about-cta:hover { background: #07565c; border-color: #006696; }.about-cta:hover svg { transform: translateX(4px); }
+.about-seal { width: clamp(90px, 10vw, 155px); flex-shrink: 0; color: #8c9290; opacity: .67; }
+@media(min-width: 1800px) { .who-we-are { padding-top: 55px; }.about-content { padding-top: 90px; } }
+@media(min-width: 768px) and (max-width: 1199px) {
+  .who-we-are { padding-top: 24px; padding-bottom: 52px; }.about-layout { grid-template-columns: 47% 53%; }.about-main-image { height: 760px; }.about-editorial-rail { width: 30%; padding-top: 36px; }.about-process { font-size: 7px; letter-spacing: .15em; }.about-experience > span { font-size: 7px; letter-spacing: .16em; }.about-detail { width: 67%; margin-top: -18%; margin-right: -5%; }.about-detail figcaption { font-size: 7px; width: 95px; }.about-photography { padding-bottom: 30px; }.about-content { padding: 42px 6% 0 12%; }.about-eyebrow { gap: 16px; margin-bottom: 32px; }.about-eyebrow > span { width: 40px; }.about-content h2 { font-size: clamp(35px, 4.65vw, 56px); }.about-heading-break { display: none; }.about-description { margin-top: 30px; font-size: 13px; }.about-features { margin-top: 28px; }.about-features li { padding-left: 12px; padding-right: 7px; }.about-features li:first-child { padding-left: 0; }.about-features p { font-size: 14px; }.about-features svg { width: 29px; }.about-quote { gap: 18px; margin-top: 38px; }.about-quote > span { width: 35px; margin-top: 16px; }.about-quote p { font-size: 29px; }.about-footer { gap: 8px; flex-wrap: wrap; margin-top: 30px; }.about-cta { font-size: 8px; padding: 18px; gap: 15px; min-height: 58px; }.about-seal { width: 82px; }
+}
+@media(max-width: 767px) {
+  .who-we-are { padding: 20px 0 48px; }.about-layout { display: block; }.about-photography { padding-bottom: 15px; margin-right: 7%; }.about-main-image { height: min(135vw, 760px); }.about-main-image > img { object-position: 58% center; }.about-editorial-rail { width: 27%; padding: 28px 10px 28px 6%; }.about-process { font-size: 7px; letter-spacing: .14em; }.about-process > span:not(:last-child)::after { height: 18px; margin: 12px 0; }.about-experience p { font-size: 17px; }.about-experience p > span { font-size: 38px; }.about-experience > span { font-size: 6px; letter-spacing: .2em; }.about-experience > div { margin: 10px 0; width: 30px; }.about-detail { width: 60%; margin-top: -17%; margin-right: -5%; }.about-detail figcaption { width: 95px; font-size: 7px; letter-spacing: .2em; bottom: 8px; right: calc(100% + 12px); }.about-detail figcaption::before { width: 30px; margin-bottom: 9px; }.about-content { padding: 43px 7% 0; }.about-eyebrow { font-size: 10px; letter-spacing: .32em; margin-bottom: 30px; gap: 22px; }.about-eyebrow > span { width: 48px; }.about-content h2 { font-size: clamp(35px, 7.8vw, 58px); line-height: 1.12; letter-spacing: -.055em; }.about-description { font-size: 13px; line-height: 1.8; margin-top: 27px; }.about-features { margin-top: 29px; }.about-features li { padding: 5px 8px 8px 13px; }.about-features li:first-child { padding-left: 0; }.about-features p { font-size: 14px; line-height: 1.35; }.about-features svg { width: 29px; height: 29px; margin-bottom: 12px; }.about-quote { gap: 21px; margin-top: 36px; }.about-quote > span { width: 40px; margin-top: 16px; }.about-quote p { font-size: 30px; }.about-footer { margin-top: 23px; gap: 6px; }.about-cta { font-size: 8px; padding: 17px 18px; gap: 18px; letter-spacing: .16em; min-height: 57px; }.about-cta svg { width: 29px; }.about-seal { width: 80px; }
+}
+@media(max-width: 359px) { .about-content { padding-left: 6%; padding-right: 6%; }.about-content h2 { font-size: 30px; }.about-features p { font-size: 12px; }.about-quote p { font-size: 26px; }.about-quote { gap: 15px; }.about-seal { width: 64px; }.about-cta { padding: 16px 13px; font-size: 7px; gap: 10px; } }

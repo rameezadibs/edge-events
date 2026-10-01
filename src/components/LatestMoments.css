@@ -1,0 +1,846 @@
+/* ==========================================================================
+   LATEST MOMENTS / INSTAGRAM — THE EDGE EVENTS
+   Dark-themed artistic film gallery documenting real experiences
+   ========================================================================== */
+
+.latest-moments-section {
+  position: relative;
+  background-color: #07131C;
+  color: #F7F4EF;
+  padding: clamp(84px, 10vw, 170px) 0 clamp(80px, 9vw, 160px);
+  overflow: hidden;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-margin-top: 20px;
+}
+
+/* Background ambient film glow */
+.moments-film-ambient {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 85% 20%, rgba(25, 191, 213, 0.08) 0%, transparent 55%),
+              radial-gradient(circle at 15% 85%, rgba(12, 28, 39, 0.8) 0%, transparent 60%);
+}
+
+.moments-grain-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.3;
+  background-image: radial-gradient(rgba(247, 244, 239, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.latest-moments-container {
+  position: relative;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 5.2vw, 96px);
+  z-index: 1;
+}
+
+/* Side margin vertical rail */
+.moments-side-rail {
+  position: absolute;
+  top: 15px;
+  right: -24px;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  pointer-events: none;
+}
+
+.rail-text {
+  writing-mode: vertical-rl;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgba(169, 178, 184, 0.45);
+  white-space: nowrap;
+}
+
+.rail-track {
+  width: 1px;
+  flex-grow: 1;
+  background: linear-gradient(180deg, rgba(25, 191, 213, 0.3) 0%, rgba(247, 244, 239, 0.04) 100%);
+}
+
+/* --------------------------------------------------------------------------
+   1. SECTION INTRO AREA
+   -------------------------------------------------------------------------- */
+.moments-intro-block {
+  max-width: 640px;
+}
+
+.moments-label-row {
+  gap: 16px;
+  margin-bottom: clamp(20px, 2.4vw, 36px);
+  flex-wrap: wrap;
+}
+
+.moments-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #19BFD5;
+}
+
+.moments-hairline {
+  display: inline-block;
+  width: clamp(36px, 4vw, 64px);
+  height: 1px;
+  background-color: rgba(25, 191, 213, 0.4);
+}
+
+.moments-edition-stamp {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #A9B2B8;
+  padding: 3px 8px;
+  border: 1px solid rgba(247, 244, 239, 0.12);
+  border-radius: 2px;
+}
+
+.moments-heading {
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(40px, 5.2vw, 86px);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+  color: #F7F4EF;
+  margin: 0 0 clamp(20px, 2.4vw, 32px) 0;
+}
+
+.moments-cyan-italic {
+  font-style: italic;
+  color: #19BFD5;
+  font-weight: 400;
+}
+
+.moments-subline {
+  font-size: clamp(14px, 1.15vw, 17px);
+  line-height: 1.7;
+  color: #A9B2B8;
+  margin: 0 0 clamp(24px, 2.8vw, 38px) 0;
+  max-width: 520px;
+}
+
+.follow-journey-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #F7F4EF;
+  text-decoration: none;
+  padding: 8px 0;
+  position: relative;
+  transition: color 0.35s ease;
+}
+
+.follow-journey-btn .btn-arrow {
+  display: inline-block;
+  font-size: 13px;
+  color: #19BFD5;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.follow-journey-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 1px;
+  background-color: #19BFD5;
+  transform: scaleX(0.7);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.3s ease;
+}
+
+.follow-journey-btn:hover {
+  color: #19BFD5;
+}
+
+.follow-journey-btn:hover .btn-arrow {
+  transform: translateX(3px) translateY(-3px);
+}
+
+.follow-journey-btn:hover::after {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   2. UPPER SPREAD (Intro on Left, Featured Reel on Right)
+   -------------------------------------------------------------------------- */
+.moments-upper-spread {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: clamp(40px, 6vw, 110px);
+  margin-bottom: clamp(60px, 7vw, 110px);
+}
+
+.spread-intro-col {
+  flex: 0 0 44%;
+  max-width: 44%;
+}
+
+.spread-reel-col {
+  flex: 0 0 52%;
+  max-width: 52%;
+}
+
+/* --------------------------------------------------------------------------
+   FEATURED REEL COMPONENT STYLING
+   -------------------------------------------------------------------------- */
+.featured-reel-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.reel-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.meta-index-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.meta-num {
+  color: #19BFD5;
+}
+
+.meta-slash {
+  color: rgba(247, 244, 239, 0.3);
+}
+
+.meta-label {
+  color: #A9B2B8;
+}
+
+.reel-duration-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #19BFD5;
+  background-color: rgba(25, 191, 213, 0.1);
+  padding: 4px 10px;
+  border-radius: 40px;
+  border: 1px solid rgba(25, 191, 213, 0.25);
+}
+
+.reel-duration-pill .pill-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #19BFD5;
+}
+
+.reel-media-wrapper {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  outline: none;
+}
+
+.reel-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3.8 / 5.2;
+  overflow: hidden;
+  background-color: #0C1C27;
+  border: 1px solid rgba(247, 244, 239, 0.09);
+  box-shadow: 0 35px 80px -25px rgba(0, 0, 0, 0.65);
+}
+
+.reel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.92) contrast(1.02);
+  transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reel-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(7, 19, 28, 0.2) 0%, rgba(7, 19, 28, 0) 35%, rgba(7, 19, 28, 0.65) 100%);
+}
+
+/* Minimal Circular Play Button */
+.reel-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(68px, 6vw, 92px);
+  height: clamp(68px, 6vw, 92px);
+  border-radius: 50%;
+  background-color: rgba(7, 19, 28, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(247, 244, 239, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F7F4EF;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 4;
+}
+
+.reel-play-btn svg {
+  margin-left: 3px;
+  color: #19BFD5;
+  transition: transform 0.3s ease;
+}
+
+.reel-play-btn.active {
+  background-color: #19BFD5;
+  border-color: #19BFD5;
+  color: #07131C;
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.reel-play-btn.active svg {
+  color: #07131C;
+  transform: scale(1.1);
+}
+
+/* Corner Instagram Badge */
+.reel-corner-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #F7F4EF;
+  background-color: rgba(7, 19, 28, 0.7);
+  backdrop-filter: blur(6px);
+  padding: 6px 12px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.35s ease;
+  z-index: 3;
+}
+
+.reel-corner-badge.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.badge-handle {
+  color: #19BFD5;
+}
+
+.reel-bottom-tag {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  right: 18px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(247, 244, 239, 0.9);
+}
+
+.tag-loc {
+  color: #19BFD5;
+  font-weight: 700;
+}
+
+.tag-sep {
+  color: rgba(247, 244, 239, 0.35);
+}
+
+.tag-scope {
+  color: #A9B2B8;
+  font-weight: 500;
+}
+
+.reel-caption-block {
+  margin-top: 16px;
+  position: relative;
+}
+
+.reel-caption-text {
+  font-size: clamp(13px, 1.05vw, 15px);
+  line-height: 1.6;
+  color: #A9B2B8;
+  margin: 0;
+}
+
+.reel-caption-rule {
+  width: 100%;
+  height: 1px;
+  background-color: #19BFD5;
+  margin-top: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reel-caption-rule.active {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   INTERMEZZO EDITORIAL BAR
+   -------------------------------------------------------------------------- */
+.moments-intermezzo-bar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: clamp(40px, 5vw, 80px) 0;
+  color: #A9B2B8;
+}
+
+.bar-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(247, 244, 239, 0.1);
+}
+
+.bar-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(169, 178, 184, 0.7);
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   3. LOWER SPREAD (Landscape Post + Follow + BTS Post)
+   -------------------------------------------------------------------------- */
+.moments-lower-spread {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: clamp(40px, 5.5vw, 96px);
+  align-items: flex-start;
+}
+
+.lower-left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.lower-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 5vw, 80px);
+}
+
+/* --------------------------------------------------------------------------
+   MOMENT IMAGE COMPONENT STYLING (POST 02 & 03)
+   -------------------------------------------------------------------------- */
+.moment-image-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.moment-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.moment-location-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #19BFD5;
+}
+
+.moment-media-wrapper {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  outline: none;
+}
+
+.moment-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #0C1C27;
+  border: 1px solid rgba(247, 244, 239, 0.08);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.55);
+}
+
+/* Formats tailored to post */
+.format-landscape-editorial .moment-frame {
+  aspect-ratio: 16 / 10.2;
+}
+
+.format-bts-square-portrait .moment-frame {
+  aspect-ratio: 4 / 4.6;
+}
+
+.moment-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.92) contrast(1.02);
+  transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.moment-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(7, 19, 28, 0.15) 0%, rgba(7, 19, 28, 0) 40%, rgba(7, 19, 28, 0.55) 100%);
+}
+
+.moment-ig-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: #F7F4EF;
+  background-color: rgba(7, 19, 28, 0.75);
+  backdrop-filter: blur(6px);
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  transform: translateY(-3px);
+  transition: all 0.35s ease;
+  z-index: 3;
+}
+
+.moment-ig-badge.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ig-text {
+  color: #19BFD5;
+}
+
+.moment-scope-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(247, 244, 239, 0.85);
+  background-color: rgba(7, 19, 28, 0.6);
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.moment-caption-block {
+  margin-top: 14px;
+  position: relative;
+}
+
+.moment-caption-text {
+  font-size: 13px;
+  line-height: 1.62;
+  color: #A9B2B8;
+  margin: 0;
+}
+
+.moment-caption-rule {
+  width: 100%;
+  height: 1px;
+  background-color: #19BFD5;
+  margin-top: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.moment-caption-rule.active {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   INSTAGRAM FOLLOW BLOCK
+   -------------------------------------------------------------------------- */
+.instagram-follow-block {
+  position: relative;
+  padding: clamp(28px, 3.2vw, 48px);
+  background-color: #0C1C27;
+  border: 1px solid rgba(25, 191, 213, 0.2);
+  border-radius: 2px;
+  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.45);
+}
+
+.follow-editorial-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.follow-heading-group {
+  margin-bottom: 20px;
+}
+
+.follow-kicker {
+  display: block;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #19BFD5;
+  margin-bottom: 12px;
+}
+
+.follow-statement {
+  font-family: 'Bodoni Moda', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(32px, 3.4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #F7F4EF;
+  margin: 0;
+}
+
+.statement-indent {
+  font-style: italic;
+  color: #19BFD5;
+  margin-left: 8px;
+}
+
+.follow-handle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid rgba(247, 244, 239, 0.1);
+}
+
+.handle-tag-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.handle-at {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #A9B2B8;
+}
+
+.handle-name {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #F7F4EF;
+}
+
+.follow-arrow-glyph {
+  font-size: 20px;
+  color: #19BFD5;
+  display: inline-block;
+}
+
+.follow-editorial-rule {
+  width: 100%;
+  height: 1px;
+  background-color: #19BFD5;
+  margin-top: 14px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.follow-editorial-rule.active {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------------------------------------
+   4. SECTION FOOTER
+   -------------------------------------------------------------------------- */
+.moments-footer-bar {
+  margin-top: clamp(60px, 7vw, 110px);
+}
+
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(247, 244, 239, 0.1);
+  margin-bottom: 24px;
+}
+
+.footer-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #A9B2B8;
+}
+
+.footer-ig-link {
+  color: #19BFD5;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.footer-ig-link:hover {
+  color: #F7F4EF;
+}
+
+/* --------------------------------------------------------------------------
+   5. RESPONSIVE DESIGN BREAKPOINTS
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 1600px) {
+  .moments-side-rail {
+    right: -42px;
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .moments-side-rail {
+    display: none;
+  }
+
+  .moments-upper-spread {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .spread-intro-col,
+  .spread-reel-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .reel-frame {
+    aspect-ratio: 16 / 11;
+  }
+
+  .moments-lower-spread {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* Mobile (< 768px): Deliberate editorial vertical stack */
+@media (max-width: 767px) {
+  .latest-moments-section {
+    padding: 60px 0 80px;
+  }
+
+  .moments-side-rail {
+    display: none;
+  }
+
+  .moments-heading {
+    font-size: clamp(34px, 9.5vw, 46px);
+    line-height: 1.08;
+  }
+
+  .moments-subline {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .moments-upper-spread {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+    margin-bottom: 40px;
+  }
+
+  .spread-intro-col,
+  .spread-reel-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .reel-frame {
+    aspect-ratio: 4 / 4.8;
+  }
+
+  .moments-intermezzo-bar {
+    display: none;
+  }
+
+  .moments-lower-spread {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .lower-left-col,
+  .lower-right-col {
+    width: 100%;
+  }
+
+  .lower-right-col {
+    gap: 40px;
+  }
+
+  .instagram-follow-block {
+    padding: 24px 20px;
+  }
+
+  .follow-statement {
+    font-size: 30px;
+  }
+
+  .footer-meta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

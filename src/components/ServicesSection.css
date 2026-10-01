@@ -1,0 +1,45 @@
+.services-section { background: #05080b; color: #fff; }
+.services-intro { min-height: 450px; height: clamp(450px, 31.2vw, 600px); isolation: isolate; overflow: hidden; }
+.services-feature-image { position: absolute; inset: 0 0 0 30%; z-index: -2; }
+.services-feature-image img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 63%; filter: brightness(.76) saturate(.8); }
+.services-intro-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #080b0e 0%, #080b0ef7 25%, #080b0eb3 37%, #080b0e12 62%, #080b0e24 77%, #080b0ed1 100%); }
+.services-intro-copy { padding: clamp(35px, 3.35vw, 65px) 0 26px 5.8%; width: 51%; }
+.services-eyebrow { margin: 0; text-transform: uppercase; font-size: 11px; letter-spacing: .33em; gap: 20px; line-height: 1.6; }
+.services-eyebrow > span { width: 68px; height: 1px; background: #ffffff60; }
+.services-intro h2 { margin: 24px 0 19px; font: 400 clamp(65px, 6.2vw, 118px)/.86 'Bodoni Moda', Georgia, serif; letter-spacing: -.057em; }
+.services-heading-line { display: block; }.services-heading-line > span { display: block; }.services-intro h2 em { font-weight: 400; color: #006696; white-space: nowrap; }
+.services-summary { font-size: clamp(12px, .91vw, 17px); letter-spacing: .08em; line-height: 1.75; color: #d5d7d8; margin: 0; max-width: 430px; }
+.services-brand { position: absolute; right: 5.4%; top: 21%; }
+.services-brand > p { border-left: 1px solid #ffffff55; padding-left: 19px; margin: 0 0 35px 60px; text-transform: uppercase; font-size: 10px; letter-spacing: .22em; line-height: 2; }
+.services-view-all { gap: 22px; font-size: 10px; text-transform: uppercase; letter-spacing: .22em; line-height: 2; }
+.service-arrow { width: 49px; height: 49px; border-radius: 50%; border: 1px solid #ffffffd0; transition: transform .6s cubic-bezier(.22,1,.36,1), border-color .4s, color .4s; flex-shrink: 0; }
+.services-view-all .service-arrow { width: 59px; height: 59px; }.services-view-all:hover .service-arrow { transform: translateX(4px); color: #006696; border-color: #006696; }
+.services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); scroll-margin-top: 0; }
+.service-panel { min-width: 0; height: clamp(545px, 38vw, 730px); isolation: isolate; background: #0b1116; }
+.service-panel-image { transition: transform 1.2s cubic-bezier(.22,1,.36,1); z-index: -2; }
+.service-panel-shade { z-index: -1; background: linear-gradient(180deg, #03080bd9 0%, #03080bb3 29%, #03080b45 52%, #03080b05 78%, #03080b55 100%); transition: opacity .8s; }
+.service-panel-link { padding: 27px clamp(23px, 3.2vw, 62px); outline-offset: -6px !important; }
+.service-number { gap: 20px; font-size: 20px; letter-spacing: .025em; margin-bottom: 17px; line-height: 1; }
+.service-number i { display: block; width: 68px; height: 1px; background: #ffffff5c; }
+.service-panel h3 { font: 400 clamp(25px, 2.12vw, 40px)/1.04 'Bodoni Moda', Georgia, serif; letter-spacing: -.035em; text-transform: uppercase; margin: 0 0 9px; transition: transform .7s cubic-bezier(.22,1,.36,1); }
+.service-panel h3 span { display: block; }
+.service-panel-link > p { font-size: clamp(11px, .86vw, 16px); letter-spacing: .055em; line-height: 1.7; margin: 0 0 17px; max-width: 275px; color: #e1e2e2; min-height: 3.4em; }
+.service-panel:hover .service-panel-image, .service-panel:focus-within .service-panel-image { transform: scale(1.03); }
+.service-panel:hover .service-panel-shade, .service-panel:focus-within .service-panel-shade { opacity: .83; }
+.service-panel:hover h3, .service-panel:focus-within h3 { transform: translateY(-4px); }
+.service-panel:hover .service-arrow, .service-panel:focus-within .service-arrow { transform: translateX(5px); border-color: #006696; color: #006696; }
+.service-dialog { margin: auto; padding: 0; border: 1px solid #ffffff2a; width: min(860px, calc(100% - 32px)); max-height: calc(100svh - 32px); color: #fff; background: #080d12; }
+.service-dialog::backdrop { background: #020609db; }
+.service-dialog-layout { grid-template-columns: 38% 62%; }.service-dialog-layout > img { height: 100%; min-height: 490px; width: 100%; object-fit: cover; }
+.service-dialog-copy { padding: 55px 38px 35px; position: relative; }
+.service-dialog-close { position: absolute; right: 18px; top: 12px; width: 40px; height: 40px; font-size: 29px; }
+.service-dialog h2 { font: 400 45px/1.04 'Bodoni Moda', Georgia, serif; letter-spacing: -.035em; margin: 25px 0; }
+.service-dialog-copy > p:not(.services-eyebrow) { font-size: 13px; color: #c7ccd1; line-height: 1.8; }
+.service-dialog ul { padding: 0; list-style: none; margin: 24px 0; }.service-dialog li { border-top: 1px solid #ffffff24; padding: 10px 0; font-size: 13px; }
+.service-dialog .service-detail-signature { font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-size: 21px !important; }
+.service-detail-back { display: flex; align-items: center; gap: 22px; border-bottom: 1px solid #006696; padding: 12px 0; text-transform: uppercase; letter-spacing: .15em; font-size: 9px; margin-top: 25px; }.service-detail-back span { font-size: 24px; }
+@media(min-width: 1900px) { .services-eyebrow { font-size: 14px; }.services-brand > p, .services-view-all { font-size: 12px; } }
+@media(min-width: 768px) and (max-width: 1100px) { .services-intro { min-height: 475px; }.services-intro-copy { width: 67%; padding-top: 43px; }.services-intro h2 { font-size: 76px; }.services-summary { font-size: 12px; }.services-brand { right: 4%; top: 23%; }.services-brand > p { margin-left: 22px; font-size: 9px; }.services-view-all { gap: 12px; font-size: 9px; }.services-view-all .service-arrow { width: 47px; height: 47px; }.services-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }.service-panel { height: 550px; }.service-panel-link { padding: 32px 10%; }.service-panel h3 { font-size: 33px; }.service-panel-link > p { font-size: 13px; max-width: 280px; }.services-feature-image { left: 23%; }.services-intro-shade { background: linear-gradient(90deg,#080b0e 0%,#080b0ee0 25%,#080b0e44 64%,#080b0ea0 100%); } }
+@media(max-width: 767px) {
+  .services-intro { display: flex; flex-direction: column; height: auto; min-height: 0; overflow: hidden; }.services-intro-copy { order: 0; padding: 44px 7% 25px; width: 100%; }.services-eyebrow { font-size: 9px; gap: 20px; }.services-eyebrow > span { width: 48px; }.services-intro h2 { font-size: clamp(62px, 14.7vw, 103px); margin: 26px 0 25px; line-height: .95; }.services-summary { font-size: 12px; line-height: 1.8; letter-spacing: .045em; max-width: 460px; }.services-copy-break { display: none; }.services-feature-image { position: relative; inset: auto; z-index: 0; order: 1; height: 300px; }.services-feature-image img { object-position: 49% 65%; filter: brightness(.9) saturate(.85); }.services-intro-shade { display: none; }.services-brand { order: 2; position: relative; inset: auto; padding: 23px 7% 26px; display: flex; align-items: center; justify-content: space-between; gap: 15px; }.services-brand > p { margin: 0; padding-left: 12px; font-size: 8px; line-height: 1.8; }.services-view-all { font-size: 8px; gap: 14px; }.services-view-all .service-arrow { width: 45px; height: 45px; }.services-grid { grid-template-columns: 1fr; }.service-panel { height: 560px; }.service-panel-link { padding: 30px 8%; }.service-panel h3 { font-size: 34px; }.service-panel-link > p { font-size: 13px; max-width: 290px; margin-bottom: 19px; }.service-number { font-size: 19px; margin-bottom: 20px; }.service-panel-shade { background: linear-gradient(180deg,#03080bdb 0%,#03080b96 35%,#03080b12 68%,#03080b55 100%); }.service-dialog-layout { grid-template-columns: 1fr; }.service-dialog-layout > img { height: 150px; min-height: 0; }.service-dialog-copy { padding: 35px 25px 25px; }.service-dialog h2 { font-size: 36px; }.service-dialog-close { background: #080d12; top: -137px; right: 10px; border: 1px solid #ffffff80; border-radius: 50%; }
+}
