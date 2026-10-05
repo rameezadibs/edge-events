@@ -3,7 +3,7 @@
 .about-layout { grid-template-columns: 51.2% 48.8%; max-width: 1800px; margin: 0 auto; }
 .about-photography { min-width: 0; align-self: start; }
 .about-main-image { height: clamp(670px, 61vw, 1100px); background: #1e211c; }
-.about-main-image > img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 48%; filter: brightness(.82) saturate(.82); }
+.about-main-image > img { width: 100%; height: 100%; object-fit: cover; object-position: 55% 38%; filter: brightness(.88) saturate(.88); }
 .about-editorial-rail { width: 25.5%; padding: 54px 0 44px 22%; padding-left: 5.6%; color: #f5f2eb; background: rgba(3,12,15,.76); }
 .about-process { gap: 0; font-size: clamp(8px, .65vw, 12px); letter-spacing: .24em; line-height: 1.9; text-transform: uppercase; }
 .about-process > span:not(:last-child)::after { content: ''; display: block; height: 31px; width: 1px; background: #e2dfd399; margin: 17px 0; }
@@ -12,7 +12,7 @@
 .about-experience > div { width: 40px; height: 1px; background: #dfd9c7a0; margin: 15px 0; }
 .about-experience > span { display: block; color: #dfceb0; font-size: clamp(8px, .68vw, 12px); text-transform: uppercase; letter-spacing: .27em; line-height: 2; }
 .about-detail { position: relative; width: 59%; margin: -21% -6.2% 0 auto; z-index: 2; }
-.about-detail img { display: block; width: 100%; aspect-ratio: 1.64; height: auto; object-fit: cover; border: 2px solid #f5f2eb; filter: saturate(.78) brightness(.85); }
+.about-detail img { display: block; width: 100%; aspect-ratio: 1.64; height: auto; object-fit: cover; border: 2px solid #f5f2eb; filter: saturate(.88) brightness(.9); }
 .about-detail figcaption { position: absolute; right: calc(100% + 15px); bottom: 12px; width: 125px; text-align: right; font-size: 9px; letter-spacing: .3em; line-height: 2; text-transform: uppercase; color: #62666b; }
 .about-detail figcaption::before { content: ''; width: 48px; height: 1px; background: #777d7d; display: block; margin: 0 0 13px auto; }
 .about-content { min-width: 0; padding: clamp(20px, 2.5vw, 42px) 7.5% 0 11.5%; }

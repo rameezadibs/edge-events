@@ -37,7 +37,7 @@ export default function WhoWeAre() {
       <div className="about-layout grid">
         <motion.div className="about-photography relative" {...reveal}>
           <div className="about-main-image relative overflow-hidden">
-            <img src="/images/about-styling.png" alt="An event stylist carefully arranging a place setting at a candlelit dinner table" loading="lazy" width="1024" height="1536" />
+            <img src="/home/who.png" alt="The Edge Events team collaborating on site" loading="lazy" width="1254" height="1254" />
             <div className="about-editorial-rail absolute inset-y-0 left-0 flex flex-col justify-between">
               <div className="about-process flex flex-col">
                 {['People', 'Planning', 'Details', 'Extraordinary moments'].map(label => <span key={label}>{label === 'Extraordinary moments' ? <>Extraordinary<br />moments</> : label}</span>)}
@@ -46,8 +46,8 @@ export default function WhoWeAre() {
             </div>
           </div>
           <figure className="about-detail">
-            <img src="/images/about-detail.png" alt="A finishing touch: aligning a chair beside candlelight, flowers and crystal glassware" loading="lazy" width="1536" height="1024" />
-            <figcaption>It’s in<br />the details</figcaption>
+            <img src="/home/who2.png" alt="The Edge Events full team gathered together" loading="lazy" width="7008" height="4672" />
+            <figcaption>Our team<br />in action</figcaption>
           </figure>
         </motion.div>
         <div className="about-content relative">

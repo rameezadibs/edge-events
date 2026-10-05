@@ -24,18 +24,18 @@ a { text-decoration: none; }
 .panel-1 { --shape: polygon(33.33% 0, 100% 0, 64.1% 100%, 0 100%); }
 .panel-2 { --shape: polygon(35% 0, 100% 0, 65% 100%, 0 100%); }
 .panel-3 { --shape: polygon(41.17% 0, 100% 0, 100% 100%, 0 100%); }
-.hero-panel::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: #020b14; opacity: 0.12; transition: opacity 0.9s; clip-path: var(--shape); }
+.hero-panel::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: #020b14; opacity: 0.28; transition: opacity 0.9s; clip-path: var(--shape); }
 .panel-image, .panel-shade { width: 100%; height: 100%; position: absolute; inset: 0; }
-.panel-image { object-fit: cover; filter: brightness(.88); transition: filter .9s cubic-bezier(.22,1,.36,1); }
+.panel-image { object-fit: cover; filter: brightness(.68); transition: filter .9s cubic-bezier(.22,1,.36,1); }
 /* The outer silhouette is independent of the animated reveal and photograph. */
 .hero-panel { clip-path: var(--shape); }
 .panel-reveal, .panel-hover { position: absolute; inset: 0; }
 .panel-hover { transition: transform 1.2s cubic-bezier(.22,1,.36,1); }
 .hero-panel:hover .panel-hover { transform: scale(1.025); }
-.hero-panel:hover .panel-image { filter: brightness(1); }
-.hero-panel:hover::after { opacity: 0; }
+.hero-panel:hover .panel-image { filter: brightness(.80); }
+.hero-panel:hover::after { opacity: 0.15; }
 .panel-0 .panel-shade { background: #004776; mix-blend-mode: color; opacity: .45; }
-.hero-shade { background: linear-gradient(180deg, rgba(2,11,20,.63) 0%, rgba(2,11,20,.13) 24%, transparent 39%, rgba(2,8,13,.26) 58%, rgba(2,8,13,.90) 100%); }
+.hero-shade { background: linear-gradient(180deg, rgba(2,11,20,.76) 0%, rgba(2,11,20,.48) 24%, rgba(2,11,20,.42) 39%, rgba(2,8,13,.58) 58%, rgba(2,8,13,.94) 100%); }
 .hero-nav { position: fixed; z-index: 9999; top: 0; left: 0; right: 0; padding: 12px 4.8%; background: #f5f2eb; border-bottom: 1px solid rgba(8, 18, 29, 0.12); box-shadow: 0 10px 30px rgba(8, 18, 29, 0.12); transition: padding 0.4s cubic-bezier(.22,1,.36,1); }
 .hero-nav.is-sticky { padding: 10px 3.8%; }
 .nav-container { width: 100%; display: flex; align-items: center; justify-content: space-between; }
@@ -113,8 +113,8 @@ a { text-decoration: none; }
 @media (max-width: 767px) {
   .hero { min-height: 640px; }
   .desktop-panels, .desktop-links, .category-labels, .editorial-statement, .scroll-indicator, .bottom-index { display: none; }
-  .mobile-panels { display: block; }.mobile-panels img { filter: brightness(.82); }
-  .hero-shade { background: linear-gradient(180deg, #020b14b0, #020b1410 31%, #020b1460 52%, #020b14f2 100%); }
+  .mobile-panels { display: block; }.mobile-panels img { filter: brightness(.65); }
+  .hero-shade { background: linear-gradient(180deg, #020b14c7, #020b1450 31%, #020b1480 52%, #020b14f8 100%); }
   .hero-nav { top: 22px; left: 6%; right: 5%; gap: 12px; }.brand-logo { width: 91px; height: 57px; }.nav-actions { gap: 9px; }.plan-button { padding: 12px 15px; gap: 15px; font-size: 9px; min-height: 41px; }.menu-button { width: 32px; }.menu-button span { width: 21px; }
   .mobile-category { display: flex; position: absolute; top: 18%; left: 7%; right: 7%; gap: 20px; align-items: center; font-size: 9px; text-transform: uppercase; letter-spacing: .17em; line-height: 1.6; border-left: 1px solid #006696; padding-left: 13px; }.mobile-category > span:first-child { color: #006696; white-space: nowrap; }
   .hero-heading { top: 39%; left: 50%; width: 100%; }.hero-heading h1 { font-size: 13.7vw; line-height: 1.03; letter-spacing: -.065em; }.headline-line { padding: 0 9px; }.hero-tagline { margin-top: 20px; font-size: 9px; letter-spacing: .38em; }

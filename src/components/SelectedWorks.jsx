@@ -286,6 +286,36 @@ export default function SelectedWorks() {
                 />
               </div>
             </div>
+
+            {/* SPREAD INTERMEZZO 2: Curated architectural bridging banner */}
+            <div className="spread-annotation" aria-hidden="true">
+              <span className="annotation-line" />
+              <span className="annotation-text">
+                INNOVATIVE DESIGN · BRAND ACTIVATION · IMMERSIVE ENVIRONMENTS
+              </span>
+              <span className="annotation-line" />
+            </div>
+
+            {/* SPREAD 03: Project 05 & Project 06 */}
+            <div className="editorial-spread spread-row">
+              <div className={`spread-col ${!isMatch(projects[4]) ? 'spread-col-dimmed' : ''}`}>
+                <ProjectItem
+                  project={projects[4]}
+                  index={4}
+                  onSelect={setActiveProject}
+                  isSpotlighted={isMatch(projects[4])}
+                />
+              </div>
+
+              <div className={`spread-col ${!isMatch(projects[5]) ? 'spread-col-dimmed' : ''}`}>
+                <ProjectItem
+                  project={projects[5]}
+                  index={5}
+                  onSelect={setActiveProject}
+                  isSpotlighted={isMatch(projects[5])}
+                />
+              </div>
+            </div>
           </div>
 
           {/* 4. SECTION FOOTNOTE / MINIMAL SIGNATURE */}
