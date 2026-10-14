@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @font-face { font-family: 'Bodoni Moda'; src: url('/fonts/bodoni-moda.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Bodoni Moda'; src: url('/fonts/bodoni-moda-italic.ttf') format('truetype'); font-style: italic; font-weight: 400 700; font-display: swap; }
 @font-face { font-family: Manrope; src: url('/fonts/manrope.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
 @theme { --color-edge: #006696; --font-sans: 'Manrope', sans-serif; }
 :root { font-family: 'Manrope', sans-serif; background: #020b14; color: #fff; font-synthesis: none; -webkit-font-smoothing: antialiased; }

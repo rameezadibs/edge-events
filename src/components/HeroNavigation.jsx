@@ -14,17 +14,16 @@ export function Logo() {
 
 const navItemDetails = {
   'Home': { sectionId: 'home', href: '#home' },
-  'About': { sectionId: 'about', href: '#about' },
-  'Services': { sectionId: 'services', href: '#services', ariaLabel: 'What We Do' },
+  'About': { sectionId: 'about', href: '/about' },
+  'Services': { sectionId: 'services', href: '/services', ariaLabel: 'What We Do' },
   'Portfolio': { sectionId: 'our-work', href: '#our-work', ariaLabel: 'Our Work' },
   'Clients': { sectionId: 'clients', href: '#clients' },
   'Blogs': { sectionId: 'latest-moments', href: '#latest-moments' },
   'Contact': { sectionId: 'latest-moments', href: '#latest-moments' },
 }
 
-export default function HeroNavigation({ onNavigate, onMenu, menuOpen }) {
+export default function HeroNavigation({ onNavigate, onMenu, menuOpen, activeItem = 'Home' }) {
   const [scrolled, setScrolled] = useState(false)
-  const activeItem = 'Home'
   const [hoveredItem, setHoveredItem] = useState(null)
 
   useEffect(() => {
@@ -36,7 +35,10 @@ export default function HeroNavigation({ onNavigate, onMenu, menuOpen }) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const isInsidePage = typeof window !== 'undefined' && window.location.pathname !== '/' && window.location.pathname !== ''
+
   const handleLinkClick = (event, item) => {
+    if (item === 'About' || item === 'Services' || isInsidePage || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
     event.preventDefault()
     onNavigate(item)
   }
@@ -51,7 +53,7 @@ export default function HeroNavigation({ onNavigate, onMenu, menuOpen }) {
       <div className="nav-container flex items-center justify-between">
         {/* Brand Logo */}
         <a
-          href="#home"
+          href="/#home"
           aria-label="The Edge Events home"
           className="logo-wrapper"
           onClick={(e) => handleLinkClick(e, 'Home')}
@@ -66,11 +68,12 @@ export default function HeroNavigation({ onNavigate, onMenu, menuOpen }) {
               const isActive = activeItem === item
               const isHovered = hoveredItem === item
               const details = navItemDetails[item] || { href: `#${item.toLowerCase()}` }
+              const resolvedHref = isInsidePage && details.href.startsWith('#') ? `/${details.href}` : details.href
 
               return (
                 <a
                   key={item}
-                  href={details.href}
+                  href={resolvedHref}
                   aria-label={details.ariaLabel || item}
                   aria-current={isActive ? 'page' : undefined}
                   className={`nav-link ${isActive ? 'active' : ''}`}

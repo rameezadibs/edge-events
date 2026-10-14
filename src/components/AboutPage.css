@@ -1,0 +1,43 @@
+.about-page { background: #f3efe8; padding-top: 83px; }
+.about-page .hero-nav { top: 0; left: 0; right: 0; }
+.about-page #our-story { scroll-margin-top: 85px; }
+.impact-hero { position: relative; isolation: isolate; width: 100%; aspect-ratio: 1983 / 793; overflow: hidden; background: #f3efe8; color: #242423; }
+.impact-photo, .impact-curve { position: absolute; inset: 0; width: 100%; height: 100%; }
+.impact-photo { object-fit: cover; }
+.impact-curve { pointer-events: none; }
+.impact-rule { position: absolute; left: 2.77%; top: 10.8%; height: 47.2%; width: 1px; background: #aaa29880; }
+.impact-copy { position: relative; margin-left: 6.1%; padding-top: 4.05%; width: 23.2%; }
+.impact-kicker { display: flex; align-items: center; gap: 1.05vw; margin: 0 0 2.05vw; font-size: .71vw; line-height: 1.4; text-transform: uppercase; letter-spacing: .3em; }
+.impact-kicker span { width: 4.55vw; height: 1px; background: linear-gradient(90deg, #777, #c8c3bc); }
+.impact-copy h1 { margin: 0; font: 400 5.15vw/.835 'Bodoni Moda', Georgia, serif; letter-spacing: -.055em; }
+.impact-copy h1 span { display: block; white-space: nowrap; }
+.impact-copy h1 em { font-weight: 400; color: #007d9e; }
+.impact-intro { margin: 1.85vw 0 0; font-size: .86vw; line-height: 1.53; letter-spacing: .075em; color: #4b4a48; }
+.impact-story { display: flex; align-items: center; gap: 1.05vw; margin: 1.6vw 0 0 .2vw; text-transform: uppercase; font-size: .7vw; letter-spacing: .22em; min-height: 44px; width: fit-content; }
+.impact-circle { display: grid; place-items: center; width: 3.2vw; height: 3.2vw; border: 1px solid #77736f; border-radius: 50%; transition: background .25s, color .25s; }
+.impact-circle svg { width: 1.6vw; stroke: currentColor; stroke-width: .8; transition: transform .25s; }
+.impact-story-rule { width: 4.6vw; height: 1px; background: linear-gradient(90deg, #777, #c8c3bc); }
+.impact-story:hover .impact-circle { background: #007d9e; color: white; border-color: #007d9e; }
+.impact-story:hover svg { transform: translateX(3px); }
+.impact-values { position: absolute; left: 88%; top: 12.8%; bottom: 10.8%; margin: 0; padding: 0 0 0 1.55%; list-style: none; border-left: 1px solid #d7d1c075; color: #eee9e2; font-size: .7vw; text-transform: uppercase; letter-spacing: .25em; line-height: 1; }
+.impact-values li { margin: 0 0 1vw; }
+@media (min-width: 1600px) { .about-page { padding-top: 109px; } }
+@media (max-width: 1190px) { .about-page { padding-top: 88px; } }
+@media (max-width: 767px) {
+  .about-page { padding-top: 82px; }
+  .impact-hero { aspect-ratio: auto; min-height: 780px; }
+  .impact-photo { object-position: 68% center; }
+  .impact-curve { width: 230%; }
+  .impact-rule { left: 5%; top: 7%; height: 51%; }
+  .impact-copy { margin-left: 10%; padding-top: 48px; width: 58%; }
+  .impact-kicker { font-size: 9px; gap: 16px; margin-bottom: 36px; }
+  .impact-kicker span { width: 45px; }
+  .impact-copy h1 { font-size: clamp(48px, 9.8vw, 75px); line-height: .94; }
+  .impact-intro { margin-top: 28px; max-width: 280px; font-size: 12px; line-height: 1.75; letter-spacing: .025em; }
+  .impact-story { margin-top: 24px; gap: 13px; font-size: 9px; }
+  .impact-circle { width: 44px; height: 44px; }
+  .impact-circle svg { width: 23px; }
+  .impact-story-rule { width: 30px; }
+  .impact-values { left: auto; right: 4%; top: auto; bottom: 32px; padding: 12px 10px 0 14px; background: #0f0f0da6; font-size: 8px; line-height: 1.4; }
+  .impact-values li { margin-bottom: 12px; }
+}

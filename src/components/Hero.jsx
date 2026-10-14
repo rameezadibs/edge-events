@@ -16,6 +16,8 @@ export default function Hero() {
   const fadeIn = delay => ({ initial: reduced ? false : { opacity: 0, y: 12 }, animate: { opacity: 1, y: 0 }, transition: { duration: 1, delay: reduced ? 0 : delay, ease } })
 
   const navigate = destination => {
+    if (destination === 'About') { window.location.assign('/about'); return }
+    if (destination === 'Services') { window.location.assign('/services'); return }
     const targetMap = {
       'Home': 'home',
       'About': 'about',

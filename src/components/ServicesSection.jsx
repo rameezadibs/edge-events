@@ -31,6 +31,14 @@ function ServiceDetail({ service, onClose }) {
 
 export default function ServicesSection() {
   const [selected, setSelected] = useState(null)
+  useEffect(() => {
+    if (window.location.hash !== '#service-panels') return
+    let cancelled = false
+    document.fonts.ready.then(() => {
+      if (!cancelled) document.getElementById('service-panels')?.scrollIntoView({ behavior: 'instant' })
+    })
+    return () => { cancelled = true }
+  }, [])
   return <>
     <section id="services" className="services-section" aria-labelledby="services-heading">
       <ServicesIntro />

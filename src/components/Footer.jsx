@@ -46,12 +46,12 @@ export default function Footer() {
           <div className="footer-nav-col">
             <span className="grid-heading">NAVIGATION</span>
             <ul className="footer-links-list">
-              <li><a href="#hero">Overview</a></li>
-              <li><a href="#who-we-are">Who We Are</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#selected-works">Selected Works</a></li>
-              <li><a href="#trusted-by">Trusted By</a></li>
-              <li><a href="#testimonials">Client Stories</a></li>
+              <li><a href="/#home">Overview</a></li>
+              <li><a href="/about">Who We Are</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/#our-work">Selected Works</a></li>
+              <li><a href="/#clients">Trusted By</a></li>
+              <li><a href="/#testimonials">Client Stories</a></li>
             </ul>
           </div>
 
