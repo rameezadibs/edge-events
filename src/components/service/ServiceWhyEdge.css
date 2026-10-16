@@ -1,0 +1,310 @@
+/* ==========================================================================
+   THE EDGE DISTINCTION — ARCHITECTURAL EDITORIAL MATRIX (ZERO CARDS)
+   Background color strictly preserved: #FAF7F2
+   Pure typographic discipline · Architectural hairlines · No cards
+   ========================================================================== */
+
+.service-why-section {
+  padding: clamp(48px, 6vw, 96px) clamp(20px, 5vw, 80px) !important;
+  background-color: #FAF7F2 !important;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.08) !important;
+  position: relative;
+}
+
+.why-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Authentic Header matching The Edge Events standards */
+.why-header {
+  margin-bottom: clamp(40px, 5.5vw, 72px);
+}
+
+.why-header .service-section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.why-header .kicker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #006696;
+  flex-shrink: 0;
+}
+
+.why-header .kicker-text {
+  color: #006696;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.why-header-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.why-header-split .service-section-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(36px, 4.4vw, 58px);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  color: #111315;
+  margin: 0;
+}
+
+.why-intro-text {
+  max-width: 520px;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(15px, 1.1vw, 16.5px);
+  line-height: 1.7;
+  color: #5D6368;
+  margin: 0;
+}
+
+/* ==========================================================================
+   ARCHITECTURAL EDITORIAL MATRIX (ZERO CARDS · PURE EDITORIAL GRID)
+   ========================================================================== */
+.distinction-editorial-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(17, 19, 21, 0.14);
+  border-left: 1px solid rgba(17, 19, 21, 0.14);
+  margin-bottom: clamp(36px, 4.5vw, 56px);
+  background: transparent !important;
+}
+
+.distinction-matrix-cell {
+  background: transparent !important;
+  border: none !important;
+  border-right: 1px solid rgba(17, 19, 21, 0.14) !important;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.14) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: clamp(32px, 3.8vw, 48px) clamp(24px, 2.8vw, 38px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  outline: none;
+}
+
+.distinction-matrix-cell:hover {
+  background-color: rgba(0, 102, 150, 0.035) !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.distinction-matrix-cell::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.distinction-matrix-cell:hover::after {
+  background: #006696;
+}
+
+.distinction-cell-top {
+  margin-bottom: 24px;
+}
+
+.distinction-cell-num {
+  font-family: 'Manrope', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #006696;
+}
+
+.distinction-cell-tag {
+  font-family: 'Manrope', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7B8389;
+  transition: color 0.3s ease;
+}
+
+.distinction-matrix-cell:hover .distinction-cell-tag {
+  color: #111315;
+}
+
+.distinction-cell-body {
+  flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.distinction-cell-title {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(21px, 1.8vw, 26px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #111315;
+  margin: 0 0 12px 0;
+  transition: color 0.3s ease;
+}
+
+.distinction-matrix-cell:hover .distinction-cell-title {
+  color: #006696;
+}
+
+.distinction-cell-desc {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: #555A5F;
+  margin: 0;
+}
+
+.distinction-cell-footer {
+  padding-top: 16px;
+  border-top: 1px dashed rgba(17, 19, 21, 0.12);
+}
+
+.distinction-cell-metric {
+  font-family: 'Manrope', monospace;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7B8389;
+}
+
+.distinction-cell-arrow {
+  font-size: 13px;
+  color: #7B8389;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.distinction-matrix-cell:hover .distinction-cell-arrow {
+  transform: translateX(4px);
+  color: #006696;
+}
+
+/* ==========================================================================
+   ETHOS HORIZON RIBBON (CARD-FREE EDITORIAL FOOTNOTE)
+   ========================================================================== */
+.distinction-ethos-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.5fr;
+  border: 1px solid rgba(17, 19, 21, 0.14);
+  background: transparent;
+}
+
+.ethos-stat-col {
+  padding: clamp(24px, 3vw, 36px) clamp(20px, 2.5vw, 32px);
+  border-right: 1px solid rgba(17, 19, 21, 0.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ethos-stat-val {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(30px, 3.2vw, 42px);
+  font-weight: 400;
+  color: #111315;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.ethos-stat-lbl {
+  font-family: 'Manrope', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #006696;
+}
+
+.ethos-stat-col--quote {
+  border-right: none;
+  background: rgba(17, 19, 21, 0.02);
+}
+
+.ethos-quote-text {
+  font-family: 'Bodoni Moda', serif;
+  font-size: clamp(14px, 1.1vw, 16px);
+  font-style: italic;
+  line-height: 1.55;
+  color: #2B2F33;
+  margin: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .distinction-editorial-matrix {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .distinction-ethos-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ethos-stat-col:nth-child(2) {
+    border-right: none;
+  }
+
+  .ethos-stat-col:nth-child(3) {
+    border-top: 1px solid rgba(17, 19, 21, 0.14);
+  }
+
+  .ethos-stat-col--quote {
+    border-top: 1px solid rgba(17, 19, 21, 0.14);
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 680px) {
+  .service-why-section {
+    padding: 40px 16px !important;
+  }
+
+  .why-header-split {
+    gap: 20px;
+  }
+
+  .distinction-editorial-matrix {
+    grid-template-columns: 1fr;
+    border-left: 1px solid rgba(17, 19, 21, 0.14);
+  }
+
+  .distinction-matrix-cell {
+    min-height: auto;
+    padding: 24px 20px;
+  }
+
+  .distinction-ethos-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .ethos-stat-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(17, 19, 21, 0.14);
+  }
+
+  .ethos-stat-col--quote {
+    grid-column: 1;
+    border-bottom: none;
+  }
+}

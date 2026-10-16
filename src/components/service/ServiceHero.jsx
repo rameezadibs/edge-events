@@ -12,7 +12,18 @@ export default function ServiceHero({ hero, pageTitle, path, theme, onAction }) 
   })
 
   return (
-    <section className={`service-hero service-hero--${theme}`} aria-labelledby="service-hero-heading">
+    <section
+      className={`service-hero service-hero--${theme}`}
+      aria-labelledby="service-hero-heading"
+      itemScope
+      itemType="https://schema.org/Service"
+    >
+      {/* Schema.org Service Microdata matching the active discipline */}
+      <meta itemProp="serviceType" content={`${pageTitle} Planning & Management Dubai`} />
+      <meta itemProp="name" content={`${pageTitle} Dubai | The Edge Events`} />
+      <meta itemProp="areaServed" content="Dubai, Abu Dhabi, United Arab Emirates" />
+      <meta itemProp="provider" content="The Edge Events" />
+
       {/* Subtle architectural atmosphere layer */}
       <div className="hero-atmosphere-backdrop" aria-hidden="true" />
 
@@ -38,7 +49,7 @@ export default function ServiceHero({ hero, pageTitle, path, theme, onAction }) 
               </span>
             </motion.h1>
 
-            <motion.p className="service-hero-description" {...reveal(0.32)}>
+            <motion.p className="service-hero-description" itemProp="description" {...reveal(0.32)}>
               {hero.description}
             </motion.p>
 
@@ -55,6 +66,7 @@ export default function ServiceHero({ hero, pageTitle, path, theme, onAction }) 
                     }
                   }}
                   id={`hero-primary-cta-${theme}`}
+                  title="Inquire about corporate event management services in Dubai"
                 >
                   <span>{hero.primaryCta.text}</span>
                   <span className="btn-arrow" aria-hidden="true">→</span>
@@ -64,17 +76,44 @@ export default function ServiceHero({ hero, pageTitle, path, theme, onAction }) 
               {hero.secondaryCta && (
                 <a
                   href={hero.secondaryCta.href}
-                  className="service-link-secondary flex items-center"
+                  className="service-btn-secondary"
+                  title="View full spectrum of corporate event services"
                 >
                   <span>{hero.secondaryCta.text}</span>
-                  <span className="link-arrow" aria-hidden="true">→</span>
+                  <span className="btn-arrow" aria-hidden="true">↓</span>
                 </a>
               )}
             </motion.div>
 
+            {/* Key Service Highlights / Trust Badges */}
+            {hero.trustBadges && hero.trustBadges.length > 0 && (
+              <motion.div className="service-hero-tags flex items-center flex-wrap" {...reveal(0.46)}>
+                <span className="hero-tags-label text-xs uppercase tracking-wider font-semibold">Specialisms:</span>
+                <div className="hero-tags-list flex items-center flex-wrap">
+                  {hero.trustBadges.map((badge, idx) => (
+                    <span key={idx} className="hero-tag-item">
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
+            {/* Metrics and Proof Points */}
+            {hero.metrics && hero.metrics.length > 0 && (
+              <motion.div className="service-hero-metrics-strip" {...reveal(0.5)}>
+                {hero.metrics.map((metric, i) => (
+                  <div key={i} className="hero-metric-item">
+                    <span className="hero-metric-val font-serif">{metric.value}</span>
+                    <span className="hero-metric-lbl">{metric.label}</span>
+                  </div>
+                ))}
+              </motion.div>
+            )}
+
             {/* Subtle verification pill */}
             {hero.statsPill && (
-              <motion.div className="service-hero-meta" {...reveal(0.5)}>
+              <motion.div className="service-hero-meta" {...reveal(0.54)}>
                 <span className="meta-bullet" aria-hidden="true">●</span>
                 <span className="meta-text">{hero.statsPill}</span>
               </motion.div>
@@ -97,11 +136,12 @@ export default function ServiceHero({ hero, pageTitle, path, theme, onAction }) 
                 fetchPriority="high"
                 loading="eager"
                 className="hero-image-img"
+                itemProp="image"
               />
               <div className="hero-image-overlay" aria-hidden="true" />
               <div className="hero-image-tag font-mono text-xs uppercase" aria-hidden="true">
                 <span>{hero.eyebrow}</span>
-                <span>ARCHITECTURAL DIRECTION</span>
+                <span>ARCHITECTURAL PRODUCTION</span>
               </div>
             </div>
           </motion.div>

@@ -1,0 +1,575 @@
+/* ==========================================================================
+   SOCIAL CELEBRATIONS: YOUR JOURNEY WITH US
+   Haute Couture Editorial Atelier Design
+   Background color strictly preserved: #FAF7F2
+   Zero corporate cues · Handcrafted luxury stationery & exhibition salon
+   ========================================================================== */
+
+.service-process--social {
+  background: #FAF7F2 !important;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.08) !important;
+  padding: clamp(48px, 6vw, 84px) clamp(20px, 5vw, 80px) clamp(48px, 6vw, 80px) !important;
+}
+
+/* Authentic Kicker matching The Edge Events standards */
+.service-process--social .service-section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.service-process--social .kicker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #006696;
+  flex-shrink: 0;
+}
+
+.service-process--social .kicker-text {
+  color: #006696;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   HAUTE COUTURE CHAPTER NAVIGATION RIBBON
+   ========================================================================== */
+.social-atelier-ribbon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.12);
+  padding-bottom: 2px;
+}
+
+.social-chapter-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 16px 14px 18px 4px;
+  position: relative;
+  transition: all 0.28s ease;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-chapter-btn-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.social-chapter-roman {
+  font-size: 22px;
+  font-style: italic;
+  color: #9C826B;
+  transition: color 0.25s ease;
+  line-height: 1;
+}
+
+.social-chapter-numeral {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: #8C887B;
+}
+
+.social-chapter-tag {
+  font-size: 9.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C887B;
+  margin-bottom: 6px;
+  transition: color 0.25s ease;
+}
+
+.social-chapter-name {
+  font-size: 16px;
+  color: #4A4D4A;
+  font-weight: 400;
+  line-height: 1.25;
+  transition: color 0.25s ease;
+}
+
+.social-chapter-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.social-chapter-btn:hover .social-chapter-name {
+  color: #111315;
+}
+
+.social-chapter-btn:hover .social-chapter-line {
+  background: rgba(0, 102, 150, 0.4);
+}
+
+.social-chapter-btn.is-active .social-chapter-roman {
+  color: #006696;
+}
+
+.social-chapter-btn.is-active .social-chapter-tag {
+  color: #006696;
+  font-weight: 700;
+}
+
+.social-chapter-btn.is-active .social-chapter-name {
+  color: #111315;
+  font-weight: 600;
+}
+
+.social-chapter-btn.is-active .social-chapter-line {
+  background: #006696;
+}
+
+/* ==========================================================================
+   HAUTE ATELIER SHOWCASE STAGE
+   ========================================================================== */
+.social-atelier-stage {
+  margin: 16px 0 44px 0;
+  position: relative;
+}
+
+.social-atelier-grid {
+  display: grid;
+  grid-template-columns: 1.22fr 0.98fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: stretch;
+}
+
+/* LEFT WING: THE NARRATIVE SALON */
+.social-narrative-wing {
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 19, 21, 0.08);
+  border-radius: 4px;
+  padding: clamp(32px, 4.5vw, 52px);
+  box-shadow: 0 10px 30px -15px rgba(17, 19, 21, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.social-roman-watermark {
+  position: absolute;
+  top: -20px;
+  right: 24px;
+  font-size: clamp(120px, 14vw, 200px);
+  font-style: italic;
+  font-weight: 300;
+  color: #006696;
+  opacity: 0.04;
+  pointer-events: none;
+  user-select: none;
+  line-height: 0.85;
+}
+
+.social-chapter-kicker {
+  gap: 8px;
+  margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.social-kicker-numeral {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: #006696;
+  font-weight: 700;
+}
+
+.social-kicker-sep {
+  color: #8C887B;
+  font-size: 11px;
+}
+
+.social-kicker-phase {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #6D7276;
+}
+
+.social-atelier-title {
+  font-size: clamp(32px, 3.8vw, 48px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: #111315;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.social-atelier-subtitle {
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7B8389;
+  margin: 0 0 24px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.social-poetic-quote {
+  position: relative;
+  padding: 18px 24px 18px 28px;
+  background: #FAF7F2;
+  border-left: 2px solid #006696;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 24px;
+  z-index: 1;
+}
+
+.social-quote-ornament {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  font-size: 28px;
+  color: #006696;
+  opacity: 0.4;
+  line-height: 1;
+}
+
+.social-quote-text {
+  font-size: clamp(15px, 1.2vw, 17.5px);
+  font-style: italic;
+  line-height: 1.6;
+  color: #2B2F33;
+  margin: 0;
+}
+
+.social-narrative-desc {
+  font-size: clamp(14px, 1.05vw, 15.5px);
+  line-height: 1.8;
+  color: #5D6368;
+  margin: 0 0 28px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.social-host-guarantee {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #F4EFE6;
+  border: 1px solid rgba(17, 19, 21, 0.08);
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.social-guarantee-seal {
+  color: #006696;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.social-guarantee-badge {
+  font-size: 9.5px;
+  letter-spacing: 0.22em;
+  color: #006696;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.social-guarantee-copy {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #2B2F33;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* RIGHT WING: CURATED ATELIER TOUCHPOINTS */
+.social-touchpoints-wing {
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 19, 21, 0.08);
+  border-radius: 4px;
+  padding: clamp(28px, 3.8vw, 44px);
+  box-shadow: 0 10px 30px -15px rgba(17, 19, 21, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-wing-header {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.08);
+  margin-bottom: 20px;
+}
+
+.social-wing-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: #8C887B;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.social-wing-title {
+  font-size: 22px;
+  color: #111315;
+  margin: 0;
+  font-weight: 400;
+}
+
+.social-wing-badge {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #006696;
+  background: rgba(0, 102, 150, 0.08);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+.social-milestones-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.social-milestone-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 16px 18px;
+  background: #FAF7F2;
+  border: 1px solid rgba(17, 19, 21, 0.06);
+  border-radius: 4px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.social-milestone-card:hover {
+  transform: translateX(4px);
+  border-color: rgba(0, 102, 150, 0.3);
+}
+
+.social-milestone-marker {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 102, 150, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.social-milestone-num {
+  font-size: 13px;
+  color: #006696;
+  font-weight: 600;
+}
+
+.social-milestone-title {
+  font-size: 16px;
+  color: #111315;
+  margin: 0 0 4px 0;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.social-milestone-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #6D7276;
+  margin: 0;
+}
+
+.social-wing-discretion-note {
+  margin-top: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(17, 19, 21, 0.12);
+}
+
+.social-discretion-bullet {
+  color: #006696;
+  font-size: 11px;
+}
+
+.social-discretion-copy {
+  font-size: 11.5px;
+  color: #7B8389;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ==========================================================================
+   HAUTE STORY STRIP: 4 INTERACTIVE CHAPTERS
+   ========================================================================== */
+.social-story-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.social-story-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(17, 19, 21, 0.08);
+  border-radius: 4px;
+  padding: clamp(20px, 2.2vw, 28px);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 190px;
+  transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  outline: none;
+}
+
+.social-story-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 102, 150, 0.35);
+  box-shadow: 0 10px 24px -12px rgba(17, 19, 21, 0.08);
+}
+
+.social-story-card.is-selected {
+  border-color: #006696;
+  background: #FAF7F2;
+  box-shadow: 0 8px 24px -10px rgba(0, 102, 150, 0.15), inset 0 3px 0 #006696;
+}
+
+.social-story-roman {
+  font-size: 20px;
+  font-style: italic;
+  color: #9C826B;
+}
+
+.social-story-card.is-selected .social-story-roman {
+  color: #006696;
+}
+
+.social-story-numeral {
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  color: #8C887B;
+}
+
+.social-story-tag {
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C887B;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.social-story-card.is-selected .social-story-tag {
+  color: #006696;
+  font-weight: 700;
+}
+
+.social-story-title {
+  font-size: 17px;
+  color: #111315;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.social-story-subtitle {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #6D7276;
+  margin: 0;
+}
+
+.social-story-card-footer {
+  padding-top: 14px;
+  border-top: 1px solid rgba(17, 19, 21, 0.08);
+  margin-top: 14px;
+}
+
+.social-story-status {
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8C887B;
+  font-weight: 600;
+}
+
+.social-story-card.is-selected .social-story-status {
+  color: #006696;
+  font-weight: 700;
+}
+
+.social-story-arrow {
+  font-size: 14px;
+  color: #8C887B;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-story-card:hover .social-story-arrow {
+  color: #006696;
+  transform: translateX(3px);
+}
+
+.social-story-card.is-selected .social-story-arrow {
+  color: #006696;
+}
+
+/* ==========================================================================
+   RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .social-atelier-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-atelier-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .social-story-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .service-process--social {
+    padding: 36px 16px 44px !important;
+  }
+
+  .social-atelier-ribbon {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .social-story-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .social-story-card {
+    min-height: auto;
+  }
+}

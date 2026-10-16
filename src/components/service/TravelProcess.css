@@ -1,0 +1,608 @@
+/* ==========================================================================
+   TRAVEL EXPEDITIONS: OUR EXPEDITION METHOD (LIGHT LUXURY AESTHETIC)
+   Background color: #FAF7F2 (warm ivory editorial canvas)
+   Authentic expeditionary precision, clear cartographic typography & human craftsmanship
+   ========================================================================== */
+
+.service-process--travel {
+  background: #FAF7F2 !important;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.08) !important;
+  padding: clamp(40px, 5vw, 72px) clamp(20px, 5vw, 80px) clamp(40px, 5vw, 68px) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle warm ambient illumination */
+.service-process--travel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 360px;
+  background: radial-gradient(ellipse 60% 80% at 50% 0%, rgba(0, 102, 150, 0.05) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.travel-process-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Authentic Kicker matching The Edge Events standards */
+.service-process--travel .service-section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.service-process--travel .kicker-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #006696;
+  flex-shrink: 0;
+}
+
+.service-process--travel .kicker-text {
+  color: #006696;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.service-process--travel .service-section-title {
+  color: #111315 !important;
+}
+
+.service-process--travel .process-intro-text {
+  color: #5D6368 !important;
+}
+
+/* ==========================================================================
+   EXPEDITION HORIZON STEPPER TRACK
+   ========================================================================== */
+.travel-stepper-bar {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.travel-stepper-track-line {
+  height: 1px;
+  background: rgba(17, 19, 21, 0.12);
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.travel-stepper-track-fill {
+  height: 2px;
+  background: #006696;
+  position: absolute;
+  top: -0.5px;
+  left: 0;
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.travel-stepper-stages-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.travel-stepper-node-btn {
+  background: transparent;
+  border: none;
+  padding: 10px 12px 14px 0;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.travel-stepper-node-btn:hover {
+  border-bottom-color: rgba(0, 102, 150, 0.4);
+}
+
+.travel-stepper-node-btn.is-active {
+  border-bottom-color: #006696;
+}
+
+.travel-stepper-node-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(17, 19, 21, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.travel-stepper-node-btn.is-active .travel-stepper-node-dot {
+  border-color: #006696;
+  background: rgba(0, 102, 150, 0.08);
+}
+
+.travel-stepper-node-dot-inner {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.25s ease;
+}
+
+.travel-stepper-node-btn.is-active .travel-stepper-node-dot-inner {
+  background: #006696;
+}
+
+.travel-stepper-node-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.travel-stepper-node-index {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #7B8389;
+}
+
+.travel-stepper-node-btn.is-active .travel-stepper-node-index {
+  color: #006696;
+  font-weight: 700;
+}
+
+.travel-stepper-node-title {
+  font-size: 15px;
+  color: #5D6368;
+  letter-spacing: -0.01em;
+  transition: color 0.25s ease;
+}
+
+.travel-stepper-node-btn.is-active .travel-stepper-node-title {
+  color: #111315;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   MASTER EXPEDITION TABLEAU (Light Architectural Split)
+   ========================================================================== */
+.travel-showcase-stage {
+  margin: 32px 0 48px 0;
+  padding: clamp(34px, 4.5vw, 60px) 0;
+  border-top: 1px solid rgba(17, 19, 21, 0.12);
+  border-bottom: 1px solid rgba(17, 19, 21, 0.12);
+  position: relative;
+}
+
+.travel-showcase-grid {
+  display: grid;
+  grid-template-columns: 1.22fr 0.98fr;
+  gap: clamp(40px, 6vw, 84px);
+  align-items: start;
+}
+
+.travel-narrative-col {
+  position: relative;
+  padding-right: clamp(10px, 2vw, 24px);
+}
+
+.travel-ghost-numeral {
+  position: absolute;
+  top: -24px;
+  right: 0;
+  font-size: clamp(100px, 11vw, 160px);
+  font-weight: 300;
+  line-height: 0.8;
+  color: #006696;
+  opacity: 0.055;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+.travel-stage-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-waypoint-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #006696;
+  background: rgba(0, 102, 150, 0.08);
+  padding: 5px 12px;
+  border-radius: 9999px;
+}
+
+.travel-coordinate-pill {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #7B8389;
+  font-family: monospace;
+}
+
+.travel-stage-heading {
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: #111315;
+  margin: 0 0 10px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-stage-step-num {
+  color: #006696;
+  font-weight: 400;
+  font-size: 0.72em;
+}
+
+.travel-stage-subtitle {
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7B8389;
+  margin: 0 0 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-field-quote {
+  padding: 14px 18px;
+  background: rgba(17, 19, 21, 0.025);
+  border-left: 2px solid #006696;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-quote-body {
+  font-size: clamp(15px, 1.15vw, 17px);
+  line-height: 1.6;
+  color: #2B2F33;
+  font-style: italic;
+  margin: 0;
+}
+
+.travel-stage-detail-text {
+  font-size: clamp(14px, 1.05vw, 15.5px);
+  line-height: 1.75;
+  color: #5D6368;
+  margin: 0 0 28px 0;
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+}
+
+.travel-protocol-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 18px;
+  background: rgba(0, 102, 150, 0.04);
+  border: 1px solid rgba(0, 102, 150, 0.12);
+  position: relative;
+  z-index: 1;
+}
+
+.travel-protocol-indicator {
+  width: 3px;
+  height: 24px;
+  background: #006696;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.travel-protocol-content {
+  flex: 1;
+}
+
+.travel-protocol-label {
+  font-size: 9.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #006696;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.travel-protocol-text {
+  font-size: 13px;
+  color: #2B2F33;
+  line-height: 1.55;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ==========================================================================
+   RIGHT COLUMN: FIELD SPECIFICATIONS & OPERATIONAL CLEARANCES
+   ========================================================================== */
+.travel-specs-col {
+  background: rgba(17, 19, 21, 0.025);
+  border: 1px solid rgba(17, 19, 21, 0.08);
+  padding: clamp(26px, 3.2vw, 38px);
+}
+
+.travel-specs-header {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.08);
+}
+
+.travel-specs-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: #7B8389;
+  font-weight: 700;
+}
+
+.travel-specs-count {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: #006696;
+  font-weight: 700;
+}
+
+.travel-specs-title {
+  font-size: 20px;
+  color: #111315;
+  margin: 0 0 18px 0;
+  font-weight: 400;
+}
+
+.travel-specs-wrap {
+  margin-bottom: 22px;
+}
+
+.travel-specs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.travel-spec-row {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(17, 19, 21, 0.06);
+  gap: 16px;
+  align-items: flex-start;
+  transition: transform 0.2s ease;
+}
+
+.travel-spec-row:hover {
+  transform: translateX(3px);
+}
+
+.travel-spec-idx {
+  font-size: 11px;
+  color: #006696;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 22px;
+  margin-top: 2px;
+}
+
+.travel-spec-info {
+  flex: 1;
+}
+
+.travel-spec-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #2B2F33;
+  line-height: 1.45;
+  margin: 0 0 4px 0;
+}
+
+.travel-spec-desc {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #6D7276;
+  margin: 0;
+}
+
+.travel-specs-footnote {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(17, 19, 21, 0.12);
+}
+
+.travel-footnote-bullet {
+  font-size: 8px;
+  color: #006696;
+}
+
+.travel-footnote-text {
+  font-size: 11px;
+  color: #6D7276;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   CONNECTED 4-PHASE EXPEDITION GRID
+   ========================================================================== */
+.travel-pipeline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid rgba(17, 19, 21, 0.12);
+  border-left: none;
+}
+
+.travel-pipeline-col {
+  border-left: 1px solid rgba(17, 19, 21, 0.12);
+  padding: clamp(22px, 2.4vw, 32px) clamp(16px, 1.8vw, 24px);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  outline: none;
+}
+
+.travel-pipeline-col:hover {
+  background: rgba(0, 102, 150, 0.035);
+}
+
+.travel-pipeline-col--active {
+  background: rgba(0, 102, 150, 0.06);
+  box-shadow: inset 0 3px 0 #006696;
+}
+
+.travel-pipeline-col-top {
+  margin-bottom: 14px;
+}
+
+.travel-pipeline-step-idx {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: #7B8389;
+}
+
+.travel-pipeline-col--active .travel-pipeline-step-idx {
+  color: #006696;
+  font-weight: 700;
+}
+
+.travel-pipeline-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(17, 19, 21, 0.2);
+  transition: background 0.2s ease;
+}
+
+.travel-pipeline-col--active .travel-pipeline-dot {
+  background: #006696;
+}
+
+.travel-pipeline-body {
+  margin-bottom: 18px;
+}
+
+.travel-pipeline-tag {
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7B8389;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.travel-pipeline-col--active .travel-pipeline-tag {
+  color: #006696;
+}
+
+.travel-pipeline-title {
+  font-size: 17px;
+  font-weight: 400;
+  color: #111315;
+  margin: 0 0 6px 0;
+  line-height: 1.25;
+}
+
+.travel-pipeline-summary {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #5D6368;
+  margin: 0;
+}
+
+.travel-pipeline-col-footer {
+  padding-top: 12px;
+  border-top: 1px solid rgba(17, 19, 21, 0.08);
+}
+
+.travel-pipeline-explore {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7B8389;
+  font-weight: 600;
+}
+
+.travel-pipeline-col--active .travel-pipeline-explore {
+  color: #006696;
+}
+
+.travel-pipeline-arrow {
+  font-size: 12px;
+  color: #7B8389;
+  transition: transform 0.2s ease;
+}
+
+.travel-pipeline-col:hover .travel-pipeline-arrow {
+  transform: translateX(3px);
+  color: #006696;
+}
+
+/* ==========================================================================
+   RESPONSIVENESS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .travel-stepper-stages-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .travel-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .travel-narrative-col {
+    padding-right: 0;
+  }
+
+  .travel-pipeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .service-process--travel {
+    padding: 36px 16px 44px !important;
+  }
+
+  .travel-stepper-stages-nav {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .travel-pipeline-grid {
+    grid-template-columns: 1fr;
+    border-left: 1px solid rgba(17, 19, 21, 0.12);
+  }
+
+  .travel-pipeline-col {
+    border-left: none;
+    border-bottom: 1px solid rgba(17, 19, 21, 0.12);
+    min-height: auto;
+  }
+}

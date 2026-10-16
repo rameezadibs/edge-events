@@ -32,7 +32,6 @@ export default function AboutPage() {
           <p className="impact-intro">We are The Edge Events — a team of creators, planners and experience makers, driven by a simple belief: every moment has the power to bring people closer, inspire change and create a lasting impact.</p>
           <a className="impact-story" href="#our-story"><span className="impact-circle" aria-hidden="true"><svg viewBox="0 0 32 24" fill="none"><path d="M3 12h25m-7-7 7 7-7 7" /></svg></span><span>Our story</span><span className="impact-story-rule" aria-hidden="true" /></a>
         </div>
-        <ul className="impact-values" aria-label="What brings us together">{['People', 'Ideas', 'Places', 'Experiences'].map(value => <li key={value}>{value}</li>)}</ul>
       </section>
       <div id="our-story"><MissionVision onNavigate={setView} /></div>
       <OurApproach onNavigate={setView} />

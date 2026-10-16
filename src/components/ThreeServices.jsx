@@ -3,13 +3,21 @@ import { motion, useReducedMotion } from 'framer-motion'
 import './ThreeServices.css'
 
 const services = [
-  { number: '01', title: 'Corporate Events', path: '/services/corporate-events', crop: '66 326 487 325', alt: 'An elegant conference stage with warm lighting and carefully arranged banquet seating', description: 'Strategic, polished and professionally delivered experiences for brands, teams and organisations.', offerings: ['Conferences', 'Product launches', 'Gala dinners'] },
-  { number: '02', title: 'Social Celebrations', path: '/services/social-celebrations', crop: '602 326 468 325', alt: 'A candlelit celebration table with white flowers and refined place settings', description: 'Beautifully considered celebrations designed around people, emotion and unforgettable moments.', offerings: ['Weddings', 'Milestone celebrations', 'Bespoke private events'] },
-  { number: '03', title: 'Travel & Expeditions', path: '/services/travel-expeditions', crop: '1119 326 491 325', alt: 'A lantern-lit desert lounge overlooking sandstone mountains at sunset', description: 'Curated journeys and destination-led experiences crafted with comfort, discovery and atmosphere in mind.', offerings: ['Curated travel', 'Destination events', 'Unique UAE experiences'] },
+  { number: '01', title: 'Corporate Events', path: '/services/corporate-events', image: '/services/1.png', alt: 'An elegant corporate conference and event production in Dubai', description: 'Strategic, polished and professionally delivered experiences for brands, teams and organisations.', offerings: ['Conferences', 'Product launches', 'Gala dinners'] },
+  { number: '02', title: 'Social Celebrations', path: '/services/social-celebrations', image: '/services/2.png', alt: 'A candlelit luxury private celebration and bespoke social event in Dubai', description: 'Beautifully considered celebrations designed around people, emotion and unforgettable moments.', offerings: ['Weddings', 'Milestone celebrations', 'Bespoke private events'] },
+  { number: '03', title: 'Travel & Expeditions', path: '/services/travel-expeditions', image: '/services/3.png', alt: 'A lantern-lit desert expedition and luxury retreat in the UAE', description: 'Curated journeys and destination experiences crafted with comfort, discovery and atmosphere in mind.', offerings: ['Curated travel', 'Destination events', 'Unique UAE experiences'] },
 ]
 
 function ServiceImage({ service }) {
-  return <svg viewBox={service.crop} preserveAspectRatio="xMidYMid slice" role="img" aria-label={service.alt} className="three-service-photo"><image href="/images/three-services-reference.png" width="1672" height="941" /></svg>
+  return (
+    <img
+      src={service.image}
+      alt={service.alt}
+      className="three-service-photo"
+      loading="lazy"
+      style={{ objectFit: 'cover' }}
+    />
+  )
 }
 
 export default function ThreeServices() {

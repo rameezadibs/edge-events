@@ -4,16 +4,11 @@ import HeroDialog from './HeroDialog'
 import Footer from './Footer'
 import SEOHead from './service/SEOHead'
 import ServiceHero from './service/ServiceHero'
-import ServiceIntro from './service/ServiceIntro'
 import ServiceOfferings from './service/ServiceOfferings'
 import ServiceCapabilities from './service/ServiceCapabilities'
 import ServiceProcess from './service/ServiceProcess'
-import ServiceDestinations from './service/ServiceDestinations'
-import ServiceProjects from './service/ServiceProjects'
-import ServiceWhyEdge from './service/ServiceWhyEdge'
 import ServiceFAQ from './service/ServiceFAQ'
 import RelatedServices from './service/RelatedServices'
-import ServiceCTA from './service/ServiceCTA'
 import { servicePagesData } from '../data/servicePagesData'
 import './service/ServicePage.css'
 
@@ -40,65 +35,34 @@ export default function TravelExpeditionsPage() {
           onAction={setDialogView}
         />
 
-        {/* Section 02: Introduction (Journeys with a sense of purpose) */}
-        <ServiceIntro
-          intro={data.intro}
-          theme={data.theme}
-        />
-
-        {/* Section 03: Experience Types (Experiences beyond the expected) */}
+        {/* Section 02: Experience Types (Experiences beyond the expected) */}
         <ServiceOfferings
           offerings={data.offerings}
           theme={data.theme}
         />
 
-        {/* Section 04: Planning Capabilities (We handle the journey, not just the destination) */}
+        {/* Section 03: Planning Capabilities (We handle the journey, not just the destination) */}
         <ServiceCapabilities
           capabilities={data.capabilities}
           theme={data.theme}
         />
 
-        {/* Section 05: Process (From possibility to itinerary) */}
+        {/* Section 04: Process (From possibility to itinerary) */}
         <ServiceProcess
           process={data.process}
           theme={data.theme}
         />
 
-        {/* Section 06: Destinations (Explore experiences across the UAE and beyond) */}
-        <ServiceDestinations
-          destinations={data.destinations}
-        />
-
-        {/* Section 07: Selected Experiences (Journeys We’ve Created) */}
-        <ServiceProjects
-          projects={data.projects}
-          theme={data.theme}
-          onSelectProject={setDialogView}
-        />
-
-        {/* Section 08: Why The Edge (Travel differently) */}
-        <ServiceWhyEdge
-          whyEdge={data.whyEdge}
-          theme={data.theme}
-        />
-
-        {/* Section 09: Frequently Asked Questions with JSON-LD Schema */}
+        {/* Section 05: Frequently Asked Questions with JSON-LD Schema */}
         <ServiceFAQ
           faq={data.faq}
           theme={data.theme}
         />
 
-        {/* Section 10: Internal Linking & Architecture */}
+        {/* Section 07: Internal Linking & Architecture */}
         <RelatedServices
           currentServiceId={data.id}
           theme={data.theme}
-        />
-
-        {/* Section 11: High-Conversion Final CTA */}
-        <ServiceCTA
-          finalCta={data.finalCta}
-          theme={data.theme}
-          onAction={setDialogView}
         />
       </main>
 

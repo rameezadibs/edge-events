@@ -1,5 +1,5 @@
 @font-face { font-family: 'Bodoni Moda'; src: url('/fonts/bodoni-moda-italic.ttf') format('truetype'); font-style: italic; font-weight: 400; font-display: swap; }
-.who-we-are { background: #f5f2eb; color: #08121d; padding: 0 0 72px; scroll-margin-top: 0; }
+.who-we-are { background: #f5f2eb; color: #08121d; padding: 0 0 clamp(24px, 2.5vw, 40px); scroll-margin-top: 0; }
 .about-layout { grid-template-columns: 51.2% 48.8%; max-width: 1800px; margin: 0 auto; }
 .about-photography { min-width: 0; align-self: start; }
 .about-main-image { height: clamp(670px, 61vw, 1100px); background: #1e211c; }

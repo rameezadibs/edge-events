@@ -12,41 +12,47 @@ export const servicePagesData = {
     theme: 'corporate',
     badge: 'EDGE ENGAGEMENTS',
     
-    // SEO METADATA
+    // SEO METADATA — Engineered for Top SERP Ranking
     seo: {
-      title: 'Corporate Events Dubai | The Edge Events',
-      description: 'Corporate event planning, conferences, launches, gala dinners and business experiences delivered by The Edge Events across Dubai and the UAE.',
+      title: 'Corporate Events Dubai & UAE | Premier Corporate Event Management Agency',
+      description: 'Award-winning corporate event management company in Dubai & Abu Dhabi. Full-service corporate event planning: conferences, executive summits, product launches & corporate galas.',
       canonical: 'https://theedgeevents.com/services/corporate-events',
-      ogTitle: 'Corporate Events Dubai | The Edge Events',
-      ogDescription: 'Strategic corporate event management, conferences, executive summits and product launches across Dubai and the UAE.',
+      ogTitle: 'Corporate Events Dubai & UAE | The Edge Events Management Company',
+      ogDescription: 'Leading corporate event planning agency in Dubai & Abu Dhabi. Keynote conferences, brand launches, executive summits, and corporate gala experiences.',
       ogImage: 'https://theedgeevents.com/images/corporate.jpg',
       ogType: 'website',
       twitterCard: 'summary_large_image',
-      keywords: 'corporate events company Dubai, corporate event management Dubai, corporate event planner UAE, conference event management Dubai, corporate gala events Dubai, product launch event company Dubai, corporate team building UAE',
+      keywords: 'corporate events Dubai, corporate event management Dubai, corporate events company Dubai, corporate event planner UAE, conference management Dubai, corporate gala events Dubai, corporate product launches Dubai, luxury corporate events UAE, corporate event production Dubai, event management agency Dubai',
     },
 
     // HERO SECTION
     hero: {
-      eyebrow: 'EDGE ENGAGEMENTS',
+      eyebrow: 'PREMIER CORPORATE EVENT MANAGEMENT · DUBAI & UAE',
       titleLine1: 'Corporate Events',
-      titleLine2Prefix: 'Designed to ',
-      titleHighlight: 'Make an Impact.',
-      description: 'From conferences and product launches to gala dinners and team experiences, we create corporate events designed around your brand, audience and objectives.',
+      titleLine2Prefix: 'Engineered for ',
+      titleHighlight: 'Executive Impact.',
+      description: 'As Dubai and Abu Dhabi’s leading corporate event management agency, we architect world-class conferences, high-profile product launches, executive summits, and prestigious corporate galas tailored for industry leaders.',
       primaryCta: {
-        text: 'PLAN A CORPORATE EVENT',
+        text: 'PLAN YOUR CORPORATE EVENT',
         href: 'mailto:contact@theedgeevents.com?subject=Corporate%20Event%20Inquiry%20%E2%80%94%20The%20Edge%20Events',
       },
       secondaryCta: {
-        text: 'EXPLORE OUR WORK',
-        href: '#selected-work',
+        text: 'VIEW SERVICES',
+        href: '#services-offerings',
       },
       image: {
-        src: '/images/corporate.jpg',
-        alt: 'Keynote presentation stage with sophisticated audiovisual lighting and executive audience at a corporate summit in Dubai',
+        src: '/services/1.png',
+        alt: 'Corporate event management Dubai - Keynote presentation stage with broadcast audiovisual production and executive audience at a Dubai corporate conference',
         width: 1920,
         height: 1280,
       },
       statsPill: 'DUBAI · ABU DHABI · UAE WIDE',
+      metrics: [
+        { value: '100+', label: 'Corporate Events Delivered' },
+        { value: 'Tier-1', label: 'Global Brands & UAE Leaders' },
+        { value: 'End-to-End', label: 'Production & AV Mastery' },
+      ],
+      trustBadges: ['Conferences & Summits', 'Product Launches', 'Gala Dinners', 'Brand Activations'],
     },
 
     // SECTION 02: INTRODUCTION
@@ -65,102 +71,149 @@ export const servicePagesData = {
       ]
     },
 
-    // SECTION 03: WHAT WE DELIVER
+    // SECTION 03: WHAT WE DELIVER / OUR EXPERIENCES
     offerings: {
-      eyebrow: 'OUR EXPERIENCES',
-      heading: 'Corporate experiences, from concept to execution.',
-      description: 'We conceive, architect, and manage complete corporate event environments tailored to global enterprises and regional leaders.',
+      eyebrow: 'OUR EXPERIENCES · CORPORATE EVENT PORTFOLIO',
+      heading: 'Corporate experiences, from concept to flawless execution.',
+      description: 'We conceive, architect, and deliver full-scale corporate events tailored for multinational enterprises, government entities, and regional leaders across Dubai and the UAE.',
       items: [
         {
           number: '01',
-          title: 'Conferences & Seminars',
-          description: 'High-level multi-day industry conferences, keynote stages, breakout sessions, and thought leadership forums engineered for flawless information delivery.'
+          title: 'Conferences & Executive Summits',
+          description: 'High-level multi-day international conferences, keynote stages, panel halls, and thought-leadership summits with broadcast AV and synchronized delegate technology.',
+          tags: ['Keynote Production', 'Hybrid Conferencing', 'Simultaneous Translation', 'Delegate Management']
         },
         {
           number: '02',
-          title: 'Product Launches',
-          description: 'Dramatic brand and product reveals that blend theatrical staging, projection mapping, precision lighting, and press-ready experiential environments.'
+          title: 'Corporate Product Launches',
+          description: 'High-impact product reveal experiences that integrate theatrical spatial design, 3D projection mapping, synchronized lighting cues, and press-ready media environments.',
+          tags: ['Reveal Stagecraft', 'Projection Mapping', 'VIP Media Lounges', 'Influencer Previews']
         },
         {
           number: '03',
-          title: 'Corporate Gala Dinners',
-          description: 'Distinguished evening banquets and anniversary galas featuring exquisite bespoke scenography, fine dining coordination, and curated cultural entertainment.'
+          title: 'Corporate Gala Dinners & Banquets',
+          description: 'Distinguished evening galas, VIP anniversary banquets, and annual corporate celebrations featuring bespoke scenography, Michelin-grade catering alignment, and curated cultural entertainment.',
+          tags: ['Bespoke Scenography', 'VIP Protocol Seating', 'Fine Dining Coordination', 'Live Performances']
         },
         {
           number: '04',
-          title: 'Award Ceremonies',
-          description: 'High-energy recognition evenings structured with television-calibre stage pacing, live broadcast feeds, elegant statuette reveals, and musical cues.'
+          title: 'Corporate Award Ceremonies',
+          description: 'Television-calibre recognition nights engineered with high-energy broadcast pacing, dynamic stage graphics, custom trophy presentation cues, and master-of-ceremonies choreography.',
+          tags: ['Award Staging', 'Broadcast Feeds', 'Nominee Production', 'Stage Pacing']
         },
         {
           number: '05',
-          title: 'Team Building Experiences',
-          description: 'Thoughtfully structured corporate team challenges and outdoor experiential retreats designed to cultivate genuine collaboration and high morale.'
+          title: 'Brand Activations & Pop-Up Showcases',
+          description: 'Experiential brand pavilions, interactive activations, and immersive retail experiences that translate corporate identities into tangible physical environments.',
+          tags: ['Spatial Storytelling', 'Interactive Tech', 'Custom Fabrication', 'Experiential Marketing']
         },
         {
           number: '06',
-          title: 'Employee Engagement Events',
-          description: 'Town halls, internal cultural celebrations, and all-hands gatherings designed to communicate executive vision and foster deep organizational belonging.'
+          title: 'Executive Retreats & Boardroom Gatherings',
+          description: 'Confidential C-suite retreats, strategic off-sites, and private advisory assemblies managed with white-glove hospitality, discreet privacy, and personalized logistics.',
+          tags: ['C-Suite Hospitality', 'Discreet Protocol', 'Luxury Venues', 'Bespoke Itineraries']
         },
         {
           number: '07',
-          title: 'Networking Events',
-          description: 'Curated business salons and cocktail receptions orchestrated with calculated spatial flow to stimulate strategic conversations and deal-making.'
+          title: 'Employee Engagement & Town Halls',
+          description: 'Company-wide town halls, cultural milestone celebrations, and internal summits engineered to communicate leadership vision, motivate teams, and strengthen company culture.',
+          tags: ['Global Broadcasts', 'Interactive Q&A Systems', 'Internal Branding', 'Team Connection']
         },
         {
           number: '08',
-          title: 'Executive Gatherings',
-          description: 'Intimate board meetings, C-suite advisory councils, and private dinners requiring discreet security, white-glove service, and confidential handling.'
+          title: 'Corporate Anniversaries & Milestones',
+          description: 'Landmark corporate anniversary galas, IPO bell celebrations, and merger milestones crafted to commemorate institutional legacy and future corporate trajectory.',
+          tags: ['Milestone Storytelling', 'Heritage Exhibits', 'VIP Protocol', 'Celebratory Scenography']
         },
         {
           number: '09',
-          title: 'Company Milestones',
-          description: 'Commemorative celebrations marking corporate anniversaries, IPO listings, and strategic acquisitions with enduring emotional resonance.'
+          title: 'Strategic Networking Salons',
+          description: 'Exclusive business cocktail receptions and structured networking salons designed with intentional spatial layouts that facilitate high-value deal making.',
+          tags: ['Spatial Flow Design', 'Bespoke Bar Craft', 'Ambient Lighting', 'Executive Networking']
         },
         {
           number: '10',
-          title: 'Brand Experiences',
-          description: 'Multi-sensory brand installations, pop-up showcases, and interactive environments that translate corporate identities into living physical worlds.'
+          title: 'Corporate Team Building Experiences',
+          description: 'Carefully curated outdoor and indoor corporate team-building expeditions designed to build leadership synergy, cross-functional trust, and high-performance collaboration.',
+          tags: ['Leadership Synergy', 'Experiential Challenges', 'Custom Formats', 'UAE-Wide Locations']
         }
       ]
     },
 
-    // SECTION 04: PROCESS
+    // SECTION 04: PROCESS / METHODOLOGY
     process: {
-      eyebrow: 'METHODOLOGY',
+      eyebrow: 'METHODOLOGY · OPERATIONAL EXCELLENCE',
       heading: 'How we bring corporate events to life.',
-      description: 'A disciplined four-stage operational framework engineered to deliver absolute reliability and creative excellence.',
+      description: 'A disciplined four-stage operational framework engineered to deliver absolute reliability, creative excellence, and measurable commercial impact.',
       stages: [
         {
           step: '01',
           name: 'Understand',
-          summary: 'Goals, audience, brand requirements and outcomes.',
-          detail: 'We initiate every partnership by dissecting your commercial goals, audience demographics, stakeholder expectations, and technical mandates to construct an unshakeable project brief.'
+          phase: 'Phase 01 · Strategic Discovery',
+          summary: 'Commercial objectives, stakeholder dynamics, brand requirements and measurable outcomes.',
+          detail: 'We dissect your commercial imperatives, audience demographics, VIP protocol requirements, and technical mandates before drafting a single spatial diagram. Every operational decision is calibrated to serve your high-level business goals.',
+          deliverables: [
+            'Commercial Objective & KPI Alignment',
+            'Audience Demographics & VIP Protocol Mapping',
+            'Venue Feasibility & Acoustic Assessment',
+            'Master Production Scope & Budget Blueprint'
+          ],
+          milestone: 'Approved Strategic Brief & Project Blueprint',
+          tag: 'FOUNDATION'
         },
         {
           step: '02',
           name: 'Create',
-          summary: 'Concept, environment, programme and guest journey.',
-          detail: 'Our design atelier drafts spatial scenography, keynote staging, 3D spatial renders, thematic narratives, and dynamic run-of-show schedules calibrated to captivate executive delegates.'
+          phase: 'Phase 02 · Spatial & Experience Design',
+          summary: 'Scenography, 3D architectural renders, keynote staging and guest journey choreography.',
+          detail: 'Our design atelier crafts bespoke spatial architecture, precision lighting schemes, 3D stage renders, and dynamic presentation pacing calibrated to inspire executive attendees and amplify your brand gravitas.',
+          deliverables: [
+            '3D Photorealistic Spatial Renderings',
+            'Architectural Keynote Stage & Lectern Design',
+            'Lighting & Acoustic Spatial Schematics',
+            'Delegate Journey & Program Run-of-Show'
+          ],
+          milestone: 'Immersive Spatial Concept & Program Approval',
+          tag: 'ARCHITECTURE'
         },
         {
           step: '03',
           name: 'Coordinate',
-          summary: 'Venue, production, suppliers, entertainment, logistics and details.',
-          detail: 'We synchronize all moving elements: five-star venue negotiations, technical AV contractors, broadcast teams, protocol permissions, catering tastings, and delegate logistics.'
+          phase: 'Phase 03 · Technical Production & Synchronisation',
+          summary: 'Five-star venue negotiations, broadcast-grade AV, government permits and supplier alignment.',
+          detail: 'We synchronize all moving operational pieces: luxury venue contracts, technical audiovisual contractors, local government approvals, live translation systems, and bespoke catering tastings with single-point accountability.',
+          deliverables: [
+            'Five-Star Venue & Municipality Permitting',
+            'Broadcast AV & Redundant Power Architecture',
+            'VIP Catering Tastings & Protocol Clearances',
+            'Minute-by-Minute Technical Cue Master'
+          ],
+          milestone: 'Complete Production Rig Schedule & Safety Clearance',
+          tag: 'SYNCHRONISATION'
         },
         {
           step: '04',
           name: 'Deliver',
-          summary: 'On-site execution and seamless event management.',
-          detail: 'Our seasoned event directors take command on the ground, directing backstage calls, technical cues, VIP escorts, and live floor management with military-grade precision.'
+          phase: 'Phase 04 · Live Direction & Show Execution',
+          summary: 'Military-grade showcalling, live technical direction, VIP escorts and effortless guest experience.',
+          detail: 'Our senior event directors command the ground with military precision—calling every cue, managing backstage protocol, orchestrating keynote transitions, and maintaining frictionless floor operations from opening remarks to final departure.',
+          deliverables: [
+            'Senior Showcaller & Stage Director Command',
+            'Live Broadcast Audio/Visual Operations',
+            'White-Glove VIP Handling & Escorts',
+            'Executive Post-Event Analytics & Debrief'
+          ],
+          milestone: 'Zero Operational Friction & Executive Accolades',
+          tag: 'EXECUTION'
         }
       ]
     },
 
     // SECTION 05: CAPABILITIES
     capabilities: {
-      eyebrow: 'FULL-SPECTRUM MASTERY',
+      eyebrow: 'END-TO-END EVENT PRODUCTION',
       heading: 'Everything behind the experience.',
+      backgroundImage: '/services/corporate.png',
       description: 'From initial strategic roadmaps to microscopic technical details, our integrated infrastructure handles every facet of event production.',
       list: [
         { title: 'Event Strategy', description: 'Translating business objectives into actionable experiential frameworks and measurable audience touchpoints.' },
@@ -313,41 +366,52 @@ export const servicePagesData = {
     theme: 'social',
     badge: 'EDGE EXCLUSIVES',
 
-    // SEO METADATA
+    // SEO METADATA — Engineered for Top SERP Ranking
     seo: {
-      title: 'Social Celebrations Dubai | The Edge Events',
-      description: 'Bespoke private celebrations, milestone birthdays, luxury dining experiences and intimate social gatherings planned across Dubai and the UAE by The Edge Events.',
+      title: 'Luxury Social & Private Event Planner Dubai | The Edge Events UAE',
+      description: 'Premier private party planner and luxury social event management company in Dubai & Abu Dhabi. Bespoke milestone celebrations, VIP birthdays, anniversaries & private dining.',
       canonical: 'https://theedgeevents.com/services/social-celebrations',
-      ogTitle: 'Social Celebrations Dubai | The Edge Events',
-      ogDescription: 'Bespoke private party planning, milestone celebrations, luxury dining experiences and intimate social gatherings across Dubai and the UAE.',
+      ogTitle: 'Luxury Social Celebrations & Private Event Planner Dubai | The Edge Events',
+      ogDescription: 'Dubai’s premier private event planner for bespoke milestone birthdays, private anniversary galas, luxury dining experiences & VIP social gatherings across the UAE.',
       ogImage: 'https://theedgeevents.com/images/social.jpg',
       ogType: 'website',
       twitterCard: 'summary_large_image',
-      keywords: 'private event planner Dubai, social event planner Dubai, celebration planner Dubai, private party planning Dubai, luxury event planner Dubai, private celebrations UAE, birthday event planner Dubai',
+      keywords: 'private event planner Dubai, social event planner Dubai, luxury private party planner Dubai, celebration planner Dubai, private party planning Dubai, luxury event planner Dubai, private celebrations UAE, birthday event planner Dubai, anniversary celebration Dubai, bespoke party organizers Dubai, VIP event management Dubai',
     },
 
-    // HERO SECTION
+    // HERO SECTION — High-Rank Search Engine Structured
     hero: {
-      eyebrow: 'EDGE EXCLUSIVES',
-      titleLine1: 'Celebrations Created',
-      titleLine2Prefix: 'Around ',
-      titleHighlight: 'Your Story.',
-      description: 'From intimate gatherings to milestone celebrations, we create personal events shaped around the people, emotions and moments that matter most.',
+      eyebrow: 'PREMIER LUXURY SOCIAL & PRIVATE EVENT PLANNER · DUBAI & UAE',
+      titleLine1: 'Social Celebrations &',
+      titleLine2Prefix: 'Private Events ',
+      titleHighlight: 'Bespoke by Design.',
+      description: 'As Dubai and Abu Dhabi’s premier luxury social event planner, we design, style, and produce unforgettable private milestone celebrations, VIP birthdays, anniversaries, and exclusive dining experiences crafted around your story.',
       primaryCta: {
         text: 'PLAN YOUR CELEBRATION',
         href: 'mailto:contact@theedgeevents.com?subject=Social%20Celebration%20Inquiry%20%E2%80%94%20The%20Edge%20Events',
       },
       secondaryCta: {
-        text: 'DISCOVER OUR WORK',
-        href: '#selected-work',
+        text: 'EXPLORE SERVICES',
+        href: '#services-offerings',
       },
       image: {
-        src: '/images/social.jpg',
-        alt: 'Refined candlelit banquet tablescape with bespoke floral arrangements, fine glassware, and warm ambient lighting in Dubai',
+        src: '/services/2.png',
+        alt: 'Luxury private event planner Dubai - Candlelit banquet tablescape with bespoke floral arrangements, fine glassware, and warm ambient lighting for a private celebration in Dubai',
         width: 1200,
         height: 798,
       },
-      statsPill: 'CURATED FOR LIFE’S GREATEST CHAPTERS',
+      statsPill: 'DUBAI · ABU DHABI · PRIVATE RESIDENCES & ISLANDS',
+      metrics: [
+        { value: '100%', label: 'Bespoke Private Concepts' },
+        { value: 'Discreet', label: 'VIP & High-Profile Protocol' },
+        { value: 'Full-Spectrum', label: 'Styling, Floral & AV Artistry' },
+      ],
+      trustBadges: [
+        'Milestone Celebrations',
+        'Private Dinners & Galas',
+        'Bespoke Birthdays',
+        'Anniversaries & Engagements',
+      ],
     },
 
     // SECTION 02: INTRODUCTION
@@ -366,76 +430,116 @@ export const servicePagesData = {
       ]
     },
 
-    // SECTION 03: SERVICES
+    // SECTION 02: SERVICES / BESPOKE CELEBRATIONS — Highly Structured for SEO
     offerings: {
-      eyebrow: 'BESPOKE CELEBRATIONS',
-      heading: 'Celebrations worth remembering.',
-      description: 'From grand milestone galas to candlelit dining rooms, we shape each private occasion with uncompromised artistry.',
+      eyebrow: 'BESPOKE CELEBRATIONS · LUXURY SOCIAL EVENT PORTFOLIO',
+      heading: 'Bespoke social gatherings, crafted for enduring memory.',
+      description: 'We conceive, style, and orchestrate high-calibre private celebrations and milestone occasions across Dubai, Abu Dhabi, and private UAE estates with uncompromising artistry.',
       items: [
         {
           number: '01',
-          title: 'Milestone Celebrations',
-          description: 'Honouring landmark birthdays, professional achievements, and legacy moments with bespoke thematic design, tailored entertainment, and transcendent dining.'
+          title: 'Milestone Celebrations & Landmark Galas',
+          description: 'Honouring landmark birthdays, generational milestones, and lifetime achievements with bespoke thematic scenography, world-class entertainment, and Michelin-grade dining.',
+          tags: ['Thematic Scenography', 'VIP Protocol', 'Fine Dining Alignment', 'Private Estates']
         },
         {
           number: '02',
-          title: 'Private Dinners',
-          description: 'Intimate banquet tables arranged in architectural residences, private clifftops, or exclusive private rooms, featuring custom tablescapes and sommelier pairings.'
+          title: 'Luxury Private Dining & Banquets',
+          description: 'Intimate banquet tables arranged in architectural residences, private clifftops, and exclusive dining rooms with custom tablescapes, bespoke florals, and sommelier curation.',
+          tags: ['Tablescape Artistry', 'Private Celebrity Chefs', 'Sommelier Pairings', 'Bespoke Florals']
         },
         {
           number: '03',
-          title: 'Birthday Celebrations',
-          description: 'Vibrant, bespoke celebrations crafted to celebrate another year of life with bespoke styling, tailored cocktails, and unforgettable live performances.'
+          title: 'VIP Birthday Celebrations',
+          description: 'Vibrant, high-concept celebrations crafted to celebrate personal milestones with bespoke styling, custom cocktail mixology, ambient lighting architecture, and international live acts.',
+          tags: ['Custom Lounge Builds', 'Cocktail Mixology', 'Dynamic Lighting', 'Headline Performers']
         },
         {
           number: '04',
-          title: 'Anniversaries',
-          description: 'Romantic, deeply considered gatherings celebrating years of devotion, set against breathtaking Dubai skylines or tranquil desert retreats.'
+          title: 'Romantic Anniversaries & Vow Renewals',
+          description: 'Deeply considered, poetic gatherings celebrating enduring devotion, set against panoramic Dubai skylines, tranquil desert oases, or beachfront private pavilions.',
+          tags: ['Scenic Destinations', 'Acoustic Serenades', 'Ambient Candlelight', 'Intimate Hospitality']
         },
         {
           number: '05',
-          title: 'Engagement Celebrations',
-          description: 'Luminous celebrations uniting families and friends to toast new commitments, curated with ethereal floral canopies, champagne towers, and acoustic melodies.'
+          title: 'Engagement Parties & Proposal Showcases',
+          description: 'Luminous celebrations uniting families and friends to toast new commitments, curated with sculptural floral canopies, champagne towers, live string quartets, and cinematic photography.',
+          tags: ['Floral Canopies', 'Champagne Displays', 'Classical Quartets', 'Cinematic Capture']
         },
         {
           number: '06',
-          title: 'Family Gatherings',
-          description: 'Multi-generational celebrations planned with thoughtfulness for every age, ensuring effortless comfort, warmth, and enduring photographic memories.'
+          title: 'Multi-Generational Family Gatherings',
+          description: 'Private family reunions and festive salons planned with thoughtfulness for every generation, ensuring seamless comfort, warm hospitality, and timeless memories.',
+          tags: ['Family Hospitality', 'Comfort Amenities', 'Tailored Menus', 'Private Estates']
         },
         {
           number: '07',
-          title: 'Private Parties',
-          description: 'High-concept private events featuring custom lounge builds, bespoke cocktail bars, immersive lighting design, and international guest DJs.'
+          title: 'Exclusive Private Parties & After-Hours Soirées',
+          description: 'High-concept private events featuring architectural lounge structures, state-of-the-art sound systems, bespoke bar installations, and international guest DJs.',
+          tags: ['Nightlife Production', 'Acoustic Engineering', 'Custom Bars', 'International DJs']
         },
         {
           number: '08',
-          title: 'Luxury Dining Experiences',
-          description: 'Collaborations with world-renowned guest chefs, private culinary pop-ups, and interactive tasting menus curated for discerning palates.'
+          title: 'Bespoke Culinary & Chef Tasting Experiences',
+          description: 'Collaborations with world-renowned guest chefs, private culinary pop-ups, and interactive multi-course gastronomic journeys designed for discerning epicurean palates.',
+          tags: ['Guest Chef Pop-Ups', 'Multi-Course Menus', 'Gastronomy Craft', 'Sommelier Selection']
         },
         {
           number: '09',
-          title: 'Bespoke Social Events',
-          description: 'Unique gatherings that defy standard categorization — from seasonal garden soirees and art salon evenings to themed private galas.'
+          title: 'Themed Private Salons & Garden Soirées',
+          description: 'Unique gatherings that defy standard formats — from seasonal garden soirees, art salon evenings, and masquerade galas to high-fashion private showcases.',
+          tags: ['Concept Styling', 'Botanical Installations', 'Art & Fashion Direction', 'Atmospheric Scenting']
         }
       ]
     },
 
-    // SECTION 04: EXPERIENCE
+    // SECTION 03: EXPERIENCE / THE ART OF CURATION — Structured for SEO & Search Intent
     capabilities: {
-      eyebrow: 'THE ART OF CURATION',
-      heading: 'Every detail, considered.',
-      description: 'We orchestrate every sensory dimension to transform spaces into emotionally evocative environments.',
+      eyebrow: 'THE ART OF CURATION · BESPOKE PRODUCTION CAPABILITIES',
+      heading: 'Full-spectrum event curation, considered down to the sensory detail.',
+      backgroundImage: '/services/social-celebrations.png',
+      description: 'From exclusive private estate acquisitions to bespoke scent design and white-glove guest protocol, our multidisciplinary production atelier orchestrates every dimension across Dubai and the UAE.',
       list: [
-        { title: 'Creative Direction', description: 'Developing an individual aesthetic storyline that guides all decorative, floral, and atmospheric choices.' },
-        { title: 'Theme & Styling', description: 'Custom colour harmonies, linen selections, bespoke textural drapery, and spatial compositions.' },
-        { title: 'Venue Selection', description: 'Unlocking private luxury villas, rooftop terraces, historic heritage courtyards, and secluded beachside sanctuaries.' },
-        { title: 'Décor & Floral', description: 'Artisanal floral installations, custom structural arches, sculptural tablescapes, and ambient candle choreography.' },
-        { title: 'Entertainment', description: 'Curating acoustic harpists, jazz trios, soulful vocalists, specialty illusionists, and bespoke DJ sets.' },
-        { title: 'Food & Beverage', description: 'Partnering with private culinary ateliers for customized multi-course tasting menus, mixology bars, and dessert displays.' },
-        { title: 'Guest Experience', description: 'Seamless valet arrival, warm personal hospitality, ambient temperature management, and thoughtful guest comfort amenities.' },
-        { title: 'Invitations & RSVP', description: 'Bespoke letterpress stationery, digital private invitation portals, dietary preference tracking, and personalized guest messaging.' },
-        { title: 'Personalised Details', description: 'Monogrammed linen napkins, calligraphy place cards, tailored menus, and bespoke scent diffusions.' },
-        { title: 'On-Site Coordination', description: 'Discreet, seamless orchestration of all moving suppliers, leaving the host entirely unburdened.' }
+        {
+          title: 'Creative Direction & Narrative Design',
+          description: 'Developing an individual aesthetic storyline and mood palette that cohesively guides spatial design, floral architecture, and atmospheric choices.'
+        },
+        {
+          title: 'Bespoke Theme & Event Styling',
+          description: 'Curating custom colour harmonies, imported Belgian linens, bespoke textural drapery, architectural lighting, and immersive spatial compositions.'
+        },
+        {
+          title: 'Exclusive Venue Acquisition & Private Villas',
+          description: 'Securing private luxury villas, rooftop penthouses, historic desert reserves, and secluded island sanctuaries across Dubai and Abu Dhabi.'
+        },
+        {
+          title: 'Artisanal Floral Sculptures & Scenography',
+          description: 'Custom botanical installations, suspended floral canopies, sculptural tablescapes, and choreographed ambient candlelight scenography.'
+        },
+        {
+          title: 'Curated Entertainment & World-Class Talent',
+          description: 'Directing acoustic harpists, European jazz trios, soulful vocalists, theatrical illusionists, and bespoke vinyl DJ sets.'
+        },
+        {
+          title: 'Private Gastronomy & Mixology Direction',
+          description: 'Partnering with acclaimed private culinary ateliers for customized multi-course tasting menus, bespoke cocktail bars, and artisanal dessert salons.'
+        },
+        {
+          title: 'VIP Guest Experience & Protocol Hospitality',
+          description: 'White-glove valet arrival, discreet security protocol, ambient climate management, and personalized guest comfort amenities.'
+        },
+        {
+          title: 'Bespoke Stationery, Calligraphy & Digital RSVP',
+          description: 'Custom letterpress invitation suites, private encrypted RSVP tracking portals, dietary preference management, and personalized guest messaging.'
+        },
+        {
+          title: 'Personalised Milestones & Scent Architecture',
+          description: 'Monogrammed linen napkins, hand-lettered gold calligraphy place cards, tailored keepsake menus, and custom ambient spatial scent diffusions.'
+        },
+        {
+          title: 'Discreet On-Site Production & Director Sign-Off',
+          description: 'Silent, meticulous logistical orchestration of all master suppliers and technical vendors, allowing the host to remain completely present with guests.'
+        }
       ]
     },
 
@@ -607,41 +711,52 @@ export const servicePagesData = {
     theme: 'travel',
     badge: 'EDGE EXPLORATIONS',
 
-    // SEO METADATA
+    // SEO METADATA — Engineered for Top SERP Ranking
     seo: {
-      title: 'Travel & Expeditions UAE | The Edge Events',
-      description: 'Curated journeys, executive retreats, desert expeditions and bespoke destination experiences crafted across the UAE by The Edge Events.',
+      title: 'Luxury Corporate Retreats & Desert Expeditions Dubai | The Edge Events UAE',
+      description: 'Premier destination management and executive retreat planner in Dubai & UAE. Curated desert expeditions, luxury team offsites, mountain retreats & bespoke group journeys.',
       canonical: 'https://theedgeevents.com/services/travel-expeditions',
-      ogTitle: 'Travel & Expeditions UAE | The Edge Events',
-      ogDescription: 'Curated journeys, corporate retreats, desert expeditions and bespoke destination experiences across Dubai and the UAE.',
+      ogTitle: 'Luxury Corporate Retreats & Desert Expeditions UAE | The Edge Events',
+      ogDescription: 'Bespoke corporate retreats, luxury desert expeditions, VIP team offsites, and curated destination journeys across Dubai, Abu Dhabi, Hatta & Liwa.',
       ogImage: 'https://theedgeevents.com/images/desert.jpg',
       ogType: 'website',
       twitterCard: 'summary_large_image',
-      keywords: 'corporate retreats UAE, group experiences UAE, Dubai curated experiences, UAE corporate travel experiences, destination event planning UAE, team retreats Dubai, bespoke travel experiences UAE',
+      keywords: 'corporate retreats UAE, executive retreats Dubai, desert expeditions Dubai, luxury team retreats UAE, corporate offsite planning Dubai, destination management UAE, bespoke group travel Dubai, Liwa desert retreats, Hatta mountain expeditions, VIP group experiences Dubai',
     },
 
-    // HERO SECTION
+    // HERO SECTION — High-Rank Search Engine Structured
     hero: {
-      eyebrow: 'EDGE EXPLORATIONS',
-      titleLine1: 'Go Beyond.',
-      titleLine2Prefix: '',
-      titleHighlight: 'Experience More.',
-      description: 'Curated journeys, retreats and destination experiences designed to bring people closer to extraordinary places, cultures and moments.',
+      eyebrow: 'PREMIER DESTINATION MANAGEMENT & LUXURY EXPEDITIONS · DUBAI & UAE',
+      titleLine1: 'Luxury Retreats &',
+      titleLine2Prefix: 'Desert Expeditions ',
+      titleHighlight: 'Beyond Boundaries.',
+      description: 'As Dubai and the UAE’s leading destination experience curators, we architect transformative corporate retreats, bespoke desert expeditions, and high-altitude mountain offsites tailored for global leadership teams and discerning groups.',
       primaryCta: {
-        text: 'EXPLORE WITH US',
+        text: 'PLAN YOUR EXPEDITION',
         href: 'mailto:contact@theedgeevents.com?subject=Travel%20Expedition%20Inquiry%20%E2%80%94%20The%20Edge%20Events',
       },
       secondaryCta: {
-        text: 'VIEW EXPERIENCES',
-        href: '#destinations',
+        text: 'EXPLORE EXPEDITIONS',
+        href: '#services-offerings',
       },
       image: {
-        src: '/images/desert.jpg',
-        alt: 'Curated desert camp at sunset surrounded by sandstone dunes and mountains in the United Arab Emirates',
+        src: '/services/3.png',
+        alt: 'Luxury corporate retreats and desert expeditions Dubai - Private luxury desert camp at sunset surrounded by sandstone dunes and warm lantern light in the Dubai Desert Conservation Reserve',
         width: 1800,
         height: 1200,
       },
-      statsPill: 'DUBAI · ABU DHABI · HAJAR MOUNTAINS · LIWA OASIS',
+      statsPill: 'DUBAI DESERT RESERVE · LIWA OASIS · HAJAR MOUNTAINS · SAADIYAT',
+      metrics: [
+        { value: 'Private', label: 'Conservation & Reserve Access' },
+        { value: 'Turnkey', label: 'VIP Logistics & Aviation' },
+        { value: 'Exclusive', label: 'Bespoke Tented Scenography' },
+      ],
+      trustBadges: [
+        'Executive Retreats',
+        'Desert Conservation Expeditions',
+        'Mountain Leadership Treks',
+        'Private Island Buyouts',
+      ],
     },
 
     // SECTION 02: INTRODUCTION
@@ -660,82 +775,126 @@ export const servicePagesData = {
       ]
     },
 
-    // SECTION 03: EXPERIENCE TYPES
+    // SECTION 02: EXPERIENCE TYPES / CURATED DISCIPLINES — Highly Structured for SEO
     offerings: {
-      eyebrow: 'CURATED DISCIPLINES',
-      heading: 'Experiences beyond the expected.',
-      description: 'Tailored journeys engineered for leadership reflection, team synergy, cultural discovery, or pure exploration.',
+      eyebrow: 'CURATED DISCIPLINES · DESTINATION EXPERIENCES PORTFOLIO',
+      heading: 'Transformative expeditions and retreats, engineered beyond the ordinary.',
+      description: 'We conceive, architect, and manage bespoke executive retreats, high-impact team expeditions, and luxury destination experiences across Dubai, Abu Dhabi, and remote UAE landscapes.',
       items: [
         {
           number: '01',
-          title: 'Corporate Retreats',
-          description: 'Multi-day executive retreats combining inspiring natural backdrops with secluded meeting pavilions, fireside strategic salons, and wellness programming.'
+          title: 'Executive Corporate Retreats & Wellness Sanctuaries',
+          description: 'Multi-day leadership retreats integrating secluded desert pavilions, fireside strategic salons, holistic wellness rituals, and executive strategy workshops.',
+          tags: ['Strategic Salons', 'Secluded Pavilions', 'Executive Wellness', 'Private Chefs']
         },
         {
           number: '02',
-          title: 'Leadership Offsites',
-          description: 'High-focus gatherings for C-suite executives and board directors in remote, distraction-free architectural sanctuaries with private security.'
+          title: 'C-Suite & Boardroom Leadership Offsites',
+          description: 'High-focus assemblies for board directors and C-level executives hosted in confidential architectural sanctuaries with private security protocols and encrypted AV feeds.',
+          tags: ['Confidential Offsites', 'Board Protocol', 'Secure Sanctuaries', 'Private Hospitality']
         },
         {
           number: '03',
-          title: 'Team Experiences',
-          description: 'Engaging, shared group challenges — from mountain orienteering in Hatta to collaborative desert survival exercises — built to build lasting bonds.'
+          title: 'High-Performance Team Building Expeditions',
+          description: 'Experiential team challenges — from navigation trials in the Hajar Mountains to collaborative desert navigation quests — designed to forge unbreakable leadership trust.',
+          tags: ['Mountain Navigation', 'Team Synergy', 'Outdoor Leadership', 'Hatta Terraces']
         },
         {
           number: '04',
-          title: 'UAE Explorations',
-          description: 'In-depth cultural journeys uncovering the Emirates’ architectural heritage, contemporary art movements, and timeless Bedouin traditions.'
+          title: 'Curated Desert Conservation Expeditions',
+          description: 'Exclusive private camps erected in pristine red sand dunes featuring luxury canvas suites, open-fire artisan gastronomy, private falconry encounters, and astronomer-led stargazing.',
+          tags: ['Luxury Glamping', 'Astronomy Sessions', 'Artisan Open-Fire', 'Conservation Reserves']
         },
         {
           number: '05',
-          title: 'Desert Experiences',
-          description: 'Exclusive private camps erected in remote dunes, featuring luxury canvas pavilions, open-fire artisan dining, private falconry, and stargazing with astronomers.'
+          title: 'Heritage & Architectural UAE Cultural Journeys',
+          description: 'Curated access to UNESCO heritage sites, private museum tours with resident curators, architectural walking seminars in historical quarters, and pearl-diving heritage expeditions.',
+          tags: ['Curator Walkthroughs', 'Heritage Reserves', 'Architectural Tours', 'Private Access']
         },
         {
           number: '06',
-          title: 'Cultural Experiences',
-          description: 'Curated access to heritage sites, private museum tours with resident curators, architectural walking seminars, and pearl diving heritage dives.'
+          title: 'High-Altitude Mountain & Canyon Expeditions',
+          description: 'Guided wilderness hikes, mountain canyoning, and clifftop sunset receptions across Jebel Jais and the Hajar mountain range with luxury support camps.',
+          tags: ['Jebel Jais Peaks', 'Canyon Expeditions', 'Clifftop Banquets', 'Wilderness Guides']
         },
         {
           number: '07',
-          title: 'Destination Events',
-          description: 'Celebrations and symposia hosted in dramatic natural amphitheaters, historic mountain fortresses, or private Arabian Gulf islands.'
+          title: 'Private Island & Marine Coastal Expeditions',
+          description: 'Chartered yacht journeys, secluded beach pavilions, mangroves kayaking, and private Arabian Gulf island takeovers designed for intimate group celebrations and executive summits.',
+          tags: ['Private Island Buyouts', 'Yacht Charters', 'Mangroves Exploration', 'Coastal Banquets']
         },
         {
           number: '08',
-          title: 'Curated Group Travel',
-          description: 'End-to-end management for international visiting delegations, alumni networks, and patron circles seeking an insider perspective on the UAE.'
+          title: 'International Delegation & Patron Group Travel',
+          description: 'End-to-end destination management for international visiting delegations, global alumni networks, and patron societies seeking privileged insider access to the UAE.',
+          tags: ['VIP Protocol Escort', 'Airport Clearances', 'Multi-Lingual Guides', 'Diplomatic Service']
         },
         {
           number: '09',
-          title: 'Private Journeys',
-          description: 'Discreet, bespoke travel itineraries crafted for discerning families and private groups demanding uncompromised privacy and bespoke luxury.'
+          title: 'Bespoke Private Family & Clan Expeditions',
+          description: 'Discreet, deeply considered itineraries crafted for discerning family groups demanding total seclusion, child-friendly exploration, and white-glove logistical support.',
+          tags: ['Private Convoys', 'Multi-Gen Itineraries', 'Total Seclusion', 'Family Hospitality']
         },
         {
           number: '10',
-          title: 'Adventure Experiences',
-          description: 'Guided dune expeditions, mountain canyoning, coastal kayaking, and helicopter flyovers across the UAE’s most breathtaking geological terrains.'
+          title: 'Extreme Terrain & Aerial Adventure Expeditions',
+          description: 'Private helicopter transfers, performance dune buggy treks across monumental Liwa dunes, and bespoke aviation excursions showcasing dramatic Arabian geography.',
+          tags: ['Helicopter Transfers', 'Liwa Monster Dunes', 'Performance Buggies', 'Aerial Surveys']
         }
       ]
     },
 
-    // SECTION 04: PLANNING CAPABILITIES
+    // SECTION 03: PLANNING CAPABILITIES — Structured for SEO & Search Intent
     capabilities: {
-      eyebrow: 'EXPEDITION RIGOR',
-      heading: 'We handle the journey, not just the destination.',
-      description: 'From remote camp infrastructure to seamless VIP transit, we govern every logistical checkpoint with complete mastery.',
+      eyebrow: 'EXPEDITION PLANNING & DESTINATION MANAGEMENT',
+      heading: 'Full-spectrum expedition production, engineered for flawless on-ground delivery.',
+      backgroundImage: '/services/travel.png',
+      description: 'From off-grid luxury desert camp infrastructure to private helicopter aviation and bilingual wilderness protocol, our destination management atelier handles every checkpoint across Dubai and the UAE.',
       list: [
-        { title: 'Experience Concept', description: 'Formulating thematic narrative arcs, educational touchpoints, and restorative journeys tailored to your group.' },
-        { title: 'Destination Planning', description: 'Scouting secret landscapes, obtaining environmental reserve permits, and assessing safety and connectivity.' },
-        { title: 'Accommodation Coordination', description: 'Reserving boutique desert resorts, luxury mountain lodges, private villas, or erecting bespoke mobile tented camps.' },
-        { title: 'Transport & Transfers', description: 'Coordinating luxury 4WD desert convoys, private helicopter charters, luxury coach travel, and airport tarmac arrivals.' },
-        { title: 'Activities & Excursions', description: 'Curating private desert drives, wildlife tracking, night-sky astronomy, cultural workshops, and guided mountain hikes.' },
-        { title: 'Dining Experiences', description: 'Bespoke culinary pop-ups, barefoot sand dune banquets, open-flame fire cooking, and organic farm-to-table feasts.' },
-        { title: 'Entertainment', description: 'Intimate acoustic performances around the fire, traditional oud virtuosos, poetry recitals, and cultural storytelling.' },
-        { title: 'Destination Event Coordination', description: 'Constructing audio, lighting, and power infrastructure in remote terrains without disturbing environmental beauty.' },
-        { title: 'Guest Logistics', description: 'Individual delegate itineraries, luggage handling, emergency medical support, and custom packing guides.' },
-        { title: 'Itinerary Planning', description: 'Balanced hourly pacing designed to avoid fatigue, maximize golden-hour moments, and allow restorative downtime.' },
-        { title: 'On-Ground Support', description: 'Dedicated bilingual tour leaders, experienced safety guides, and logistics directors accompanying your party at all times.' }
+        {
+          title: 'Expedition Concept & Narrative Experience Design',
+          description: 'Formulating thematic narrative arcs, educational touchpoints, executive alignment workshops, and restorative wellness journeys tailored to your group.'
+        },
+        {
+          title: 'Off-Grid Destination Planning & Reserve Permits',
+          description: 'Scouting pristine secret landscapes, obtaining exclusive Dubai Desert Conservation Reserve permits, and auditing telecommunication and medical safety grids.'
+        },
+        {
+          title: 'Luxury Lodge, Resort & Mobile Glamping Logistics',
+          description: 'Reserving boutique desert resorts, luxury mountain chalets, private island villas, or fabricating bespoke off-grid mobile luxury tented camps.'
+        },
+        {
+          title: 'Private Aviation, Helicopter Charters & 4x4 Convoys',
+          description: 'Coordinating airside tarmac jet clearances, VIP helicopter charters, luxury 4WD dune convoys, and executive air-conditioned fleet transfers.'
+        },
+        {
+          title: 'Guided Wilderness Expeditions & Wildlife Tracking',
+          description: 'Curating private desert drives with master conservationists, indigenous oryx tracking, dark-sky astronomy salons, and guided mountain canyoning.'
+        },
+        {
+          title: 'Remote Artisan Dining & Pop-Up Dune Banquets',
+          description: 'White-glove culinary pop-ups, barefoot candlelit sand dune banquets, open-flame artisan live cooking, and curated sommelier wine pairings in the wild.'
+        },
+        {
+          title: 'Acoustic Heritage Entertainment & Firelight Salons',
+          description: 'Intimate acoustic performances around the open fire, master Emirati oud virtuosos, Bedouin stargazing storytelling, and fireside keynote salons.'
+        },
+        {
+          title: 'Off-Grid Production, Sound & Solar Power Infrastructure',
+          description: 'Deploying broadcast AV, architectural ambient lighting, high-speed satellite Wi-Fi, and silent solar power grids in extreme wilderness terrains.'
+        },
+        {
+          title: 'White-Glove VIP Delegate Care & Medical Protocol',
+          description: 'Personalized delegate digital travel portals, seamless luggage transfers, on-site wilderness emergency medical technicians, and tailored packing kits.'
+        },
+        {
+          title: 'Golden-Hour Itinerary Pacing & Restorative Flow',
+          description: 'Mathematically balanced hourly pacing designed to avoid travel fatigue, optimize golden-hour photography, and preserve restorative downtime.'
+        },
+        {
+          title: 'Dedicated Bilingual Expedition Leaders & Directors',
+          description: 'Senior on-ground expedition masters, certified desert survival specialists, and multi-lingual liaisons accompanying your delegation 24/7.'
+        }
       ]
     },
 

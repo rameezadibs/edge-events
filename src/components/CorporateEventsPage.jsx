@@ -4,15 +4,11 @@ import HeroDialog from './HeroDialog'
 import Footer from './Footer'
 import SEOHead from './service/SEOHead'
 import ServiceHero from './service/ServiceHero'
-import ServiceIntro from './service/ServiceIntro'
 import ServiceOfferings from './service/ServiceOfferings'
 import ServiceProcess from './service/ServiceProcess'
 import ServiceCapabilities from './service/ServiceCapabilities'
-import ServiceProjects from './service/ServiceProjects'
-import ServiceWhyEdge from './service/ServiceWhyEdge'
 import ServiceFAQ from './service/ServiceFAQ'
 import RelatedServices from './service/RelatedServices'
-import ServiceCTA from './service/ServiceCTA'
 import { servicePagesData } from '../data/servicePagesData'
 import './service/ServicePage.css'
 
@@ -39,44 +35,25 @@ export default function CorporateEventsPage() {
           onAction={setDialogView}
         />
 
-        {/* Section 02: Introduction (Where strategy meets experience) */}
-        <ServiceIntro
-          intro={data.intro}
-          theme={data.theme}
-        />
-
-        {/* Section 03: What We Deliver (Conferences, launches, galas...) */}
+        {/* Section 02: What We Deliver (Conferences, launches, galas...) */}
         <ServiceOfferings
           offerings={data.offerings}
           theme={data.theme}
         />
 
-        {/* Section 04: Process (Understand, Create, Coordinate, Deliver) */}
+        {/* Section 03: Process (Understand, Create, Coordinate, Deliver) */}
         <ServiceProcess
           process={data.process}
           theme={data.theme}
         />
 
-        {/* Section 05: Capabilities (Everything behind the experience) */}
+        {/* Section 04: Capabilities (Everything behind the experience) */}
         <ServiceCapabilities
           capabilities={data.capabilities}
           theme={data.theme}
         />
 
-        {/* Section 06: Selected Work (Real projects only: DP World, Merex Jump) */}
-        <ServiceProjects
-          projects={data.projects}
-          theme={data.theme}
-          onSelectProject={setDialogView}
-        />
-
-        {/* Section 07: Why The Edge (Why brands choose The Edge Events) */}
-        <ServiceWhyEdge
-          whyEdge={data.whyEdge}
-          theme={data.theme}
-        />
-
-        {/* Section 08: Frequently Asked Questions with JSON-LD Schema */}
+        {/* Section 05: Frequently Asked Questions with JSON-LD Schema */}
         <ServiceFAQ
           faq={data.faq}
           theme={data.theme}
@@ -86,13 +63,6 @@ export default function CorporateEventsPage() {
         <RelatedServices
           currentServiceId={data.id}
           theme={data.theme}
-        />
-
-        {/* Section 10: High-Conversion Final CTA */}
-        <ServiceCTA
-          finalCta={data.finalCta}
-          theme={data.theme}
-          onAction={setDialogView}
         />
       </main>
 
