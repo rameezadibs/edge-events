@@ -16,7 +16,7 @@ const navItemDetails = {
   'Home': { sectionId: 'home', href: '#home' },
   'About': { sectionId: 'about', href: '/about' },
   'Services': { sectionId: 'services', href: '/services', ariaLabel: 'What We Do' },
-  'Portfolio': { sectionId: 'our-work', href: '#our-work', ariaLabel: 'Our Work' },
+  'Portfolio': { sectionId: 'portfolio', href: '/portfolio', ariaLabel: 'Our Work Portfolio' },
   'Clients': { sectionId: 'clients', href: '#clients' },
   'Blogs': { sectionId: 'latest-moments', href: '#latest-moments' },
   'Contact': { sectionId: 'latest-moments', href: '#latest-moments' },
@@ -38,7 +38,7 @@ export default function HeroNavigation({ onNavigate, onMenu, menuOpen, activeIte
   const isInsidePage = typeof window !== 'undefined' && window.location.pathname !== '/' && window.location.pathname !== ''
 
   const handleLinkClick = (event, item) => {
-    if (item === 'About' || item === 'Services' || isInsidePage || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    if (item === 'About' || item === 'Services' || item === 'Portfolio' || isInsidePage || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
     event.preventDefault()
     onNavigate(item)
   }

@@ -49,7 +49,7 @@ export default function Footer() {
               <li><a href="/#home">Overview</a></li>
               <li><a href="/about">Who We Are</a></li>
               <li><a href="/services">Services</a></li>
-              <li><a href="/#our-work">Selected Works</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="/#clients">Trusted By</a></li>
               <li><a href="/#testimonials">Client Stories</a></li>
             </ul>

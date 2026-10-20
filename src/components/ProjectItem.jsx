@@ -46,11 +46,6 @@ export default function ProjectItem({ project, index, onSelect, isSpotlighted = 
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Oversized faded editorial watermark number behind the media frame */}
-      <span className="project-faded-number" aria-hidden="true">
-        {number}
-      </span>
-
       {/* Visual media frame */}
       <div 
         className="project-media-wrapper" 
@@ -61,12 +56,6 @@ export default function ProjectItem({ project, index, onSelect, isSpotlighted = 
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleAction(e) }}
       >
         <div className="project-media-frame">
-          {/* Top image metadata bar */}
-          <div className="media-top-strip" aria-hidden="true">
-            <span className="media-coord-pill">{coordinates ? coordinates.split(',')[0] : location}</span>
-            <span className="media-year-pill">{year || '2024'} / ARCHIVE</span>
-          </div>
-
           <motion.img
             src={image}
             alt={alt || title}
@@ -84,14 +73,6 @@ export default function ProjectItem({ project, index, onSelect, isSpotlighted = 
             <span className="hover-arrow">⟶</span>
           </div>
         </div>
-
-        {/* Subtle editorial figure caption bar */}
-        {caption && (
-          <div className="project-caption" aria-hidden="true">
-            <span className="caption-dash" />
-            <span className="caption-text">{caption}</span>
-          </div>
-        )}
       </div>
 
       {/* Project content & metadata */}

@@ -253,7 +253,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: clamp(64px, 8vw, 130px);
+  gap: clamp(40px, 5vw, 72px);
 }
 
 /* Vertical architectural metadata rail */
@@ -285,21 +285,24 @@
   background: linear-gradient(180deg, rgba(10, 13, 16, 0.15) 0%, rgba(10, 13, 16, 0.02) 100%);
 }
 
-/* Magazine Spreads - Uniform 2x2 Layout */
+/* Magazine Spreads - Uniform, Balanced, Aligned 2-Column Grid Layout */
 .editorial-spread {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: clamp(28px, 4vw, 64px);
-  align-items: start;
+  gap: clamp(32px, 4.5vw, 64px);
+  align-items: stretch;
 }
 
 .spread-col {
   width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
   transition: opacity 0.5s ease;
 }
 
 .offset-down, .offset-up {
   margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* Dimmed state when filtered */
@@ -386,31 +389,15 @@
   box-shadow: 0 20px 45px -15px rgba(10, 13, 16, 0.08);
 }
 
-/* Media Top Archival Strip */
-.media-top-strip {
-  position: absolute;
-  top: 12px;
-  left: 14px;
-  right: 14px;
-  z-index: 3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  pointer-events: none;
+.project-faded-number,
+.media-top-strip,
+.project-caption {
+  display: none !important;
 }
 
 .media-coord-pill,
 .media-year-pill {
-  font-size: 8px;
-  font-weight: 600;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(10, 13, 16, 0.6);
-  backdrop-filter: blur(4px);
-  padding: 4px 8px;
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: none !important;
 }
 
 /* Uniform 16:10 aspect ratio for clean, symmetrical portfolio layout */
@@ -988,11 +975,11 @@
   }
 
   .offset-down {
-    margin-top: 50px;
+    margin-top: 0 !important;
   }
 
   .offset-up {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
   .monograph-grid {
@@ -1074,20 +1061,11 @@
     display: none;
   }
 
-  .layout-landscape-hero .project-media-frame {
-    aspect-ratio: 16 / 11;
-  }
-
-  .layout-tall-portrait .project-media-frame {
-    aspect-ratio: 4 / 4.8;
-  }
-
-  .layout-medium-horizontal .project-media-frame {
-    aspect-ratio: 16 / 11;
-  }
-
+  .layout-landscape-hero .project-media-frame,
+  .layout-tall-portrait .project-media-frame,
+  .layout-medium-horizontal .project-media-frame,
   .layout-narrow-vertical .project-media-frame {
-    aspect-ratio: 4 / 4.8;
+    aspect-ratio: 16 / 10.2 !important;
   }
 
   .project-faded-number {

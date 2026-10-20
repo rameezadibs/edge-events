@@ -14,6 +14,7 @@ const ServicesPage = lazy(() => import('./components/ServicesPage'))
 const CorporateEventsPage = lazy(() => import('./components/CorporateEventsPage'))
 const SocialCelebrationsPage = lazy(() => import('./components/SocialCelebrationsPage'))
 const TravelExpeditionsPage = lazy(() => import('./components/TravelExpeditionsPage'))
+const PortfolioPage = lazy(() => import('./components/PortfolioPage'))
 
 function normalizePath(pathname) {
   const cleaned = pathname.replace(/\/+$/, '')
@@ -111,6 +112,8 @@ export default function App() {
     PageComponent = <TravelExpeditionsPage />
   } else if (currentPath === '/services') {
     PageComponent = <ServicesPage />
+  } else if (currentPath === '/portfolio' || currentPath.startsWith('/portfolio/')) {
+    PageComponent = <PortfolioPage />
   } else if (currentPath === '/about') {
     PageComponent = <AboutPage />
   } else {
