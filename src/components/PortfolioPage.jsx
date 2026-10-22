@@ -3,13 +3,10 @@ import HeroNavigation from './HeroNavigation'
 import HeroDialog from './HeroDialog'
 import Footer from './Footer'
 import PortfolioHero from './PortfolioHero'
-import PortfolioFilters from './PortfolioFilters'
 import ProjectGrid from './ProjectGrid'
 import PortfolioHighlights from './PortfolioHighlights'
-import FinalCTA from './FinalCTA'
 import ProjectDetailModal from './ProjectDetailModal'
 import {
-  filterCategories,
   portfolioProjects
 } from '../data/portfolioData'
 import './PortfolioPage.css'
@@ -73,13 +70,6 @@ export default function PortfolioPage() {
         {/* Section 01: Portfolio Hero */}
         <PortfolioHero />
 
-        {/* Section 02: Clean Text Filter Navigation */}
-        <PortfolioFilters
-          categories={filterCategories}
-          activeFilter={activeFilter}
-          onSelectFilter={setActiveFilter}
-        />
-
         {/* Section 03: Main Portfolio Grid with Controlled Editorial Rhythm */}
         <ProjectGrid
           projects={filteredProjects}
@@ -89,11 +79,6 @@ export default function PortfolioPage() {
 
         {/* Section 04: Typography-Led Brand Disciplines & Highlights Strip */}
         <PortfolioHighlights />
-
-        {/* Section 05: Strong Closing Contact CTA */}
-        <FinalCTA
-          onStartConversation={() => setDialogView('Plan an event')}
-        />
       </main>
 
       {/* Global Footer */}

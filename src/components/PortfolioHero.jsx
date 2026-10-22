@@ -31,8 +31,8 @@ export default function PortfolioHero() {
           </div>
         </motion.div>
 
-        {/* Hero Editorial Grid: Left Copy & Right/Lower Horizontal Real Event Photograph */}
-        <div className="portfolio-hero-grid">
+        {/* Hero Editorial Copy */}
+        <div className="portfolio-hero-content">
           <div className="portfolio-hero-copy">
             <div className="hero-headline" aria-hidden="true">
               <motion.span
@@ -71,33 +71,6 @@ export default function PortfolioHero() {
               we’ve created across the UAE and beyond.
             </motion.p>
           </div>
-
-          {/* Right Horizontal Documentary Event Photo */}
-          <motion.div
-            className="portfolio-hero-media"
-            initial={{ opacity: 0, y: 28, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 1.1, delay: 0.35, ease }}
-          >
-            <figure className="hero-image-figure">
-              <div className="hero-image-frame">
-                <img
-                  src="/images/services-production.jpg"
-                  alt="Documentary event photograph of full-scale production stage and lighting architecture in Dubai"
-                  className="hero-documentary-img"
-                  width="1920"
-                  height="1080"
-                  loading="eager"
-                  fetchPriority="high"
-                />
-                <div className="hero-image-overlay" aria-hidden="true" />
-              </div>
-              <figcaption className="hero-image-caption">
-                <span className="caption-tag">LIVE STAGE ARCHITECTURE</span>
-                <span className="caption-loc">DUBAI, UAE</span>
-              </figcaption>
-            </figure>
-          </motion.div>
         </div>
       </div>
     </section>

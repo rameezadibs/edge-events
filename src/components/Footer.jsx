@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
             <a
               id="footer-initiate-commission-btn"
-              href="mailto:contact@theedgeevents.com?subject=Private%20Event%20Commission%20Inquiry"
+              href="mailto:collin@theedgeevents.co?subject=Private%20Event%20Commission%20Inquiry"
               aria-label="Initiate an event commission with The Edge Events"
               title="Send an inquiry to initiate your private event commission"
               className="footer-primary-btn"
@@ -57,17 +57,11 @@ export default function Footer() {
 
           {/* Global Locations Column */}
           <div className="footer-nav-col">
-            <span className="grid-heading">GLOBAL HEADQUARTERS</span>
+            <span className="grid-heading">LOCATION</span>
             <ul className="footer-info-list">
               <li>
                 <strong>DUBAI</strong>
-                <span>Alserkal Avenue, Building 42</span>
-                <span>Al Quoz Industrial 1, Dubai, UAE</span>
-              </li>
-              <li>
-                <strong>ABU DHABI</strong>
-                <span>Etihad Towers, Tower 3</span>
-                <span>Corniche West, Abu Dhabi, UAE</span>
+                <span>Dubai, UAE</span>
               </li>
             </ul>
           </div>
@@ -78,11 +72,11 @@ export default function Footer() {
             <ul className="footer-info-list">
               <li>
                 <span className="info-label">General Commissions</span>
-                <a href="mailto:contact@theedgeevents.com">contact@theedgeevents.com</a>
+                <a href="mailto:collin@theedgeevents.co">collin@theedgeevents.co</a>
               </li>
               <li>
                 <span className="info-label">Private Desk</span>
-                <a href="tel:+97140000000">+971 (0) 4 000 0000</a>
+                <a href="tel:+971505035848">+971 5050 35848</a>
               </li>
             </ul>
           </div>
