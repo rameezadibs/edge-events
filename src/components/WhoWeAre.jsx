@@ -42,7 +42,7 @@ export default function WhoWeAre() {
               <div className="about-process flex flex-col">
                 {['People', 'Planning', 'Details', 'Extraordinary moments'].map(label => <span key={label}>{label === 'Extraordinary moments' ? <>Extraordinary<br />moments</> : label}</span>)}
               </div>
-              <div className="about-experience"><p><span>10+</span>Years</p><div /><span>Creating<br />extraordinary<br />experiences</span></div>
+              <div className="about-experience"><p><span>15+</span>Years</p><div /><span>Creating<br />extraordinary<br />experiences</span></div>
             </div>
           </div>
           <figure className="about-detail">
@@ -61,7 +61,17 @@ export default function WhoWeAre() {
           </motion.ul>
           <motion.blockquote className="about-quote flex" {...reveal}><span aria-hidden="true" /><p>Built on experience.<br />Driven by emotion.</p></motion.blockquote>
           <motion.div className="about-footer flex items-center justify-between" {...reveal}>
-            <button className="about-cta inline-flex items-center justify-between" onClick={() => setView('story')}>Discover our story <svg viewBox="0 0 40 20" width="38" height="20" fill="none" stroke="currentColor" strokeWidth=".9" aria-hidden="true"><path d="M1 10h36m-8-8 8 8-8 8" /></svg></button>
+            <button
+              type="button"
+              className="about-cta inline-flex items-center justify-between"
+              onClick={() => {
+                const el = document.getElementById('our-work')
+                if (el) el.scrollIntoView({ behavior: 'smooth' })
+                else window.location.assign('/#our-work')
+              }}
+            >
+              Discover our work <svg viewBox="0 0 40 20" width="38" height="20" fill="none" stroke="currentColor" strokeWidth=".9" aria-hidden="true"><path d="M1 10h36m-8-8 8 8-8 8" /></svg>
+            </button>
             <BrandSeal />
           </motion.div>
         </div>

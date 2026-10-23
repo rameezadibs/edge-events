@@ -1,0 +1,246 @@
+/* ==========================================================================
+   HERO DIALOG & MODAL FORMS — THE EDGE EVENTS
+   Editorial luxury modals for Event Planning consultation & Careers application
+   ========================================================================== */
+
+.dialog-form-wrapper {
+  margin-top: 15px;
+}
+
+.dialog-modal-header {
+  margin-bottom: 22px;
+}
+
+.dialog-modal-header .eyebrow {
+  color: #006696;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.dialog-modal-header h2 {
+  font: 400 clamp(26px, 3.8vw, 38px)/1.1 'Bodoni Moda', Georgia, serif;
+  margin: 0 0 8px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.dialog-modal-header p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #a6b0b9;
+  margin: 0;
+}
+
+/* Form Structure */
+.edge-dialog-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 600px) {
+  .form-row-2col {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8C9CA9;
+}
+
+.form-label .req {
+  color: #006696;
+  margin-left: 3px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  padding: 10px 14px;
+  font-family: 'Manrope', -apple-system, sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #006696;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 0 0 1px rgba(0, 102, 150, 0.5);
+}
+
+.form-textarea {
+  min-height: 95px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-field-meta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: #8C9CA9;
+  margin-top: 2px;
+}
+
+.form-field-meta.is-valid {
+  color: #2ed573;
+}
+
+/* File Upload styling */
+.file-upload-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.file-input-hidden {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.file-upload-dummy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 2px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.25s ease;
+}
+
+.file-input-hidden:hover + .file-upload-dummy,
+.file-input-hidden:focus + .file-upload-dummy {
+  border-color: #006696;
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+}
+
+.upload-icon {
+  font-size: 14px;
+  color: #006696;
+}
+
+/* Submit row */
+.form-submit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.form-disclaimer {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.btn-form-submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 26px;
+  background-color: #006696;
+  color: #ffffff;
+  font-family: 'Manrope', -apple-system, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-form-submit:hover:not(:disabled) {
+  background-color: #0077b3;
+  box-shadow: 0 8px 20px rgba(0, 102, 150, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Success Confirmation State */
+.dialog-success-state {
+  padding: 24px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 102, 150, 0.15);
+  border: 1px solid #006696;
+  color: #006696;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.dialog-success-state h3 {
+  font: 400 clamp(24px, 3.5vw, 34px)/1.15 'Bodoni Moda', Georgia, serif;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.dialog-success-state p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #d3dae0;
+  max-width: 440px;
+  margin: 0 0 20px;
+}

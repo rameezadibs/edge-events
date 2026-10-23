@@ -25,16 +25,17 @@ export default function Footer() {
 
           <div className="footer-cta-col">
             <p className="cta-description">
-              Planning a high-profile corporate summit, VIP product launch, or exclusive private celebration? Partner with the premier luxury event management agency in Dubai and Abu Dhabi.
+              Beyond the Brief. Beyond the Ordinary.<br />
+              At Edge Events, we bring fresh ideas, creative thinking, and over a decade of event expertise to deliver exceptional experiences across Dubai, Abu Dhabi, and the UAE.
             </p>
             <a
               id="footer-initiate-commission-btn"
-              href="mailto:collin@theedgeevents.co?subject=Private%20Event%20Commission%20Inquiry"
-              aria-label="Initiate an event commission with The Edge Events"
-              title="Send an inquiry to initiate your private event commission"
+              href="mailto:collin@theedgeevents.co?subject=Event%20Inquiry%20%E2%80%94%20The%20Edge%20Events"
+              aria-label="Start an event inquiry with The Edge Events"
+              title="Send an inquiry to start planning your event"
               className="footer-primary-btn"
             >
-              <span>INITIATE COMMISSION</span>
+              <span>START PLANNING</span>
               <span className="btn-arrow" aria-hidden="true">→</span>
             </a>
           </div>
@@ -42,18 +43,7 @@ export default function Footer() {
 
         {/* MIDDLE NAVIGATION & INFO GRID */}
         <div className="footer-grid">
-          {/* Navigation Column */}
-          <div className="footer-nav-col">
-            <span className="grid-heading">NAVIGATION</span>
-            <ul className="footer-links-list">
-              <li><a href="/#home">Overview</a></li>
-              <li><a href="/about">Who We Are</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/#clients">Trusted By</a></li>
-              <li><a href="/#testimonials">Client Stories</a></li>
-            </ul>
-          </div>
+
 
           {/* Global Locations Column */}
           <div className="footer-nav-col">
@@ -71,7 +61,7 @@ export default function Footer() {
             <span className="grid-heading">INQUIRIES</span>
             <ul className="footer-info-list">
               <li>
-                <span className="info-label">General Commissions</span>
+                <span className="info-label">General Enquiries</span>
                 <a href="mailto:collin@theedgeevents.co">collin@theedgeevents.co</a>
               </li>
               <li>
@@ -86,18 +76,13 @@ export default function Footer() {
             <span className="grid-heading">CONNECT</span>
             <ul className="footer-links-list">
               <li>
-                <a href="https://www.instagram.com/theedgeevents/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/the.edge.events/" target="_blank" rel="noopener noreferrer">
                   Instagram ↗
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/theedgeevents/home/" target="_blank" rel="noopener noreferrer">
                   LinkedIn ↗
-                </a>
-              </li>
-              <li>
-                <a href="https://vimeo.com/" target="_blank" rel="noopener noreferrer">
-                  Vimeo ↗
                 </a>
               </li>
             </ul>

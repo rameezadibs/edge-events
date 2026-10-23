@@ -136,7 +136,7 @@ export const clientQuote = {
   quote: '“The team brought clarity, energy and attention to every detail.”',
   clientName: 'EXECUTIVE COMMITTEE MEMBER',
   organisation: 'GLOBAL LEADERSHIP FORUM · DUBAI',
-  metric: '10+',
+  metric: '15+',
   metricSub: 'YEARS OF\nCREATING EXPERIENCES',
   statNarrative: 'Trusted by world leaders, sovereign entities, and Fortune 500 enterprises across the GCC.',
 }

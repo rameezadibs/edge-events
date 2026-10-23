@@ -95,7 +95,7 @@ function ProjectMonographModal({ project, onClose }) {
             )}
 
             <div className="monograph-scope-block">
-              <p className="scope-heading">SCOPE OF COMMISSION</p>
+              <p className="scope-heading">SCOPE OF WORK</p>
               <p className="scope-body">{project.scope}</p>
             </div>
 
@@ -231,7 +231,7 @@ export default function SelectedWorks() {
             {/* Vertical side typography rail */}
             <aside className="works-editorial-rail" aria-hidden="true">
               <span className="rail-vertical-text">
-                THE EDGE ARCHIVE · COMMISSIONS VOL. 04 · DUBAI / ABU DHABI
+                THE EDGE ARCHIVE · OUR PAST WORK · DUBAI / ABU DHABI
               </span>
               <div className="rail-line" />
             </aside>
@@ -323,10 +323,10 @@ export default function SelectedWorks() {
             <div className="footer-rule" aria-hidden="true" />
             <div className="footer-content">
               <span className="footer-left">
-                THE EDGE EVENTS © {new Date().getFullYear()} — BESPOKE ARCHIVE
+                THE EDGE EVENTS © {new Date().getFullYear()}
               </span>
               <span className="footer-center">
-                DUBAI · ABU DHABI · GLOBAL DESTINATIONS
+                UAE
               </span>
               <a
                 href="#plan"
@@ -337,7 +337,7 @@ export default function SelectedWorks() {
                   if (planBtn) planBtn.click()
                 }}
               >
-                START A COMMISSION <span aria-hidden="true">⟶</span>
+                SHARE A BRIEF <span aria-hidden="true">⟶</span>
               </a>
             </div>
           </footer>

@@ -76,17 +76,7 @@ export default function TestimonialSlide({
                   </p>
                 </div>
 
-                {/* Read full story action button */}
-                <div className="full-story-wrap">
-                  <button
-                    type="button"
-                    className="read-story-btn"
-                    onClick={() => onOpenStory(testimonial)}
-                  >
-                    <span className="btn-label">READ FULL STORY</span>
-                    <span className="btn-arrow" aria-hidden="true">→</span>
-                  </button>
-                </div>
+
               </div>
             </motion.div>
           </AnimatePresence>

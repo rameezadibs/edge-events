@@ -77,15 +77,15 @@ test.describe('The Edge Events — Portfolio Page', () => {
 
     // Verify grid cards updated
     const countTag = page.locator('.portfolio-count-tag')
-    await expect(countTag).toContainText('4 COMMISSIONS')
+    await expect(countTag).toContainText('4 PROJECTS')
 
     // Switch to SOCIAL CELEBRATIONS
     await socialBtn.click()
-    await expect(countTag).toContainText('3 COMMISSIONS')
+    await expect(countTag).toContainText('3 PROJECTS')
 
     // Back to ALL
     await allBtn.click()
-    await expect(countTag).toContainText('12 COMMISSIONS')
+    await expect(countTag).toContainText('12 PROJECTS')
   })
 
   test('renders Section 03: Main Project Grid with uniform clean pictures without names', async ({ page }) => {

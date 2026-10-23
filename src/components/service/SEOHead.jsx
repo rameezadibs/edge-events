@@ -124,8 +124,8 @@ export default function SEOHead({ pageData }) {
         'availableLanguage': ['English', 'Arabic']
       },
       'sameAs': [
-        'https://www.instagram.com/theedgeevents/',
-        'https://www.linkedin.com/'
+        'https://www.instagram.com/the.edge.events/',
+        'https://www.linkedin.com/company/theedgeevents/home/'
       ]
     }
 

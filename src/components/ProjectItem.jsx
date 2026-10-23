@@ -52,7 +52,7 @@ export default function ProjectItem({ project, index, onSelect, isSpotlighted = 
         onClick={handleAction}
         role="button"
         tabIndex={0}
-        aria-label={`View commission details for ${title}`}
+        aria-label={`View project details for ${title}`}
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleAction(e) }}
       >
         <div className="project-media-frame">
@@ -69,7 +69,7 @@ export default function ProjectItem({ project, index, onSelect, isSpotlighted = 
 
           {/* Interactive hover badge */}
           <div className={`media-hover-indicator ${isHovered ? 'visible' : ''}`} aria-hidden="true">
-            <span>VIEW COMMISSION</span>
+            <span>VIEW PROJECT</span>
             <span className="hover-arrow">⟶</span>
           </div>
         </div>

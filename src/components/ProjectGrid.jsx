@@ -18,7 +18,7 @@ export default function ProjectGrid({
             Selected Works
           </h2>
           <span className="portfolio-count-tag" aria-live="polite">
-            {projects.length} {projects.length === 1 ? 'COMMISSION' : 'COMMISSIONS'}
+            {projects.length} {projects.length === 1 ? 'PROJECT' : 'PROJECTS'}
           </span>
         </div>
 
@@ -40,7 +40,7 @@ export default function ProjectGrid({
 
         {projects.length === 0 && (
           <div className="portfolio-empty-state">
-            <p>No commissions found in this category.</p>
+            <p>No projects found in this category.</p>
           </div>
         )}
       </div>

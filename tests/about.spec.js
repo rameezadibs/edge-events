@@ -14,10 +14,7 @@ test('Who We Are composition, responsive flow and story control', async ({ page 
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
     await page.locator('#about').screenshot({ path: `artifacts/about-${name}.png`, animations: 'disabled' })
   }
-  await page.getByRole('button', { name: 'Discover our story' }).click()
-  await expect(page.getByRole('dialog', { includeHidden: false })).toBeVisible()
-  await expect(page.getByRole('heading', { name: 'Our story.' })).toBeVisible()
-  await page.keyboard.press('Escape')
-  await expect(page.getByRole('button', { name: 'Discover our story' })).toBeFocused()
+  await page.getByRole('button', { name: 'Discover our work' }).click()
+  await expect(page.locator('#our-work')).toBeVisible()
   expect(errors).toEqual([])
 })

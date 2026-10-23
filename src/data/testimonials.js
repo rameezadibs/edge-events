@@ -18,7 +18,7 @@ export const testimonials = [
     id: 'banquet-hashimi',
     number: '02',
     name: 'TARIQ & LAYLA HASHIMI',
-    role: 'PRIVATE COMMISSION',
+    role: 'PRIVATE CLIENT',
     organisation: 'FAMILY OFFICE CELEBRATION',
     location: 'ABU DHABI, UAE',
     eventType: 'BESPOKE EVENING BANQUET',
@@ -57,7 +57,7 @@ export const testimonials = [
     image: '/images/brand-launch.jpg',
     imageAlt: 'Monolithic stone arches framing illuminated pedestal against twilight skyline',
     caption: 'ARCHITECTURAL REVEAL · DOWNTOWN',
-    badge: 'BRAND COMMISSIONS'
+    badge: 'BRAND EVENTS'
   },
   {
     id: 'protocol-khalifa',
@@ -72,6 +72,6 @@ export const testimonials = [
     image: '/images/about-styling.png',
     imageAlt: 'Event designer refining placement of fine stemware and candlelight table setting',
     caption: 'BESPOKE FINISHING · STATE PROTOCOL',
-    badge: 'INSTITUTIONAL COMMISSIONS'
+    badge: 'INSTITUTIONAL EVENTS'
   }
 ]

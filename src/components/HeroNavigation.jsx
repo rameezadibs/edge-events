@@ -17,9 +17,10 @@ const navItemDetails = {
   'About': { sectionId: 'about', href: '/about' },
   'Services': { sectionId: 'services', href: '/services', ariaLabel: 'What We Do' },
   'Portfolio': { sectionId: 'portfolio', href: '/portfolio', ariaLabel: 'Our Work Portfolio' },
-  'Clients': { sectionId: 'clients', href: '#clients' },
+  'Clients': { sectionId: 'client-logos', href: '#client-logos', ariaLabel: 'Client Logos' },
   'Blogs': { sectionId: 'latest-moments', href: '#latest-moments' },
   'Contact': { sectionId: 'latest-moments', href: '#latest-moments' },
+  'Careers': { sectionId: 'careers', href: '#careers', ariaLabel: 'Careers at The Edge Events' },
 }
 
 export default function HeroNavigation({ onNavigate, onMenu, menuOpen, activeItem = 'Home' }) {

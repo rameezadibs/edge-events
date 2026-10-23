@@ -5,9 +5,9 @@
  */
 
 export const instagramProfile = {
-  handle: '@theedgeevents',
-  username: 'theedgeevents',
-  profileUrl: 'https://www.instagram.com/theedgeevents/',
+  handle: '@the.edge.events',
+  username: 'the.edge.events',
+  profileUrl: 'https://www.instagram.com/the.edge.events/',
   followerHighlight: 'CURATED MOMENTS & ARCHIVAL PRODUCTIONS',
   tagline: 'FOLLOW THE MOMENTS.'
 }
@@ -24,7 +24,7 @@ export const fallbackMoments = [
     duration: '00:42',
     mediaUrl: '/images/brand-launch.jpg',
     thumbnailUrl: '/images/brand-launch.jpg',
-    permalink: 'https://www.instagram.com/theedgeevents/',
+    permalink: 'https://www.instagram.com/the.edge.events/',
     alt: 'Cinematic preview of monumental architectural arches framing private reveal in Downtown Dubai',
     scope: 'Spatial Staging · Keynote Reveal',
     location: 'Downtown Dubai',
@@ -41,7 +41,7 @@ export const fallbackMoments = [
     duration: null,
     mediaUrl: '/images/social.jpg',
     thumbnailUrl: '/images/social.jpg',
-    permalink: 'https://www.instagram.com/theedgeevents/',
+    permalink: 'https://www.instagram.com/the.edge.events/',
     alt: 'Reflective lacquer banquet table with crystal candelabras and flickering candlelight',
     scope: 'Bespoke Tableaux · Sensory Scenography',
     location: 'Abu Dhabi, UAE',
@@ -58,7 +58,7 @@ export const fallbackMoments = [
     duration: null,
     mediaUrl: '/images/services-production-warm.jpg',
     thumbnailUrl: '/images/services-production-warm.jpg',
-    permalink: 'https://www.instagram.com/theedgeevents/',
+    permalink: 'https://www.instagram.com/the.edge.events/',
     alt: 'Behind the scenes stage production crew testing warm lighting and architectural rigging before showtime',
     scope: 'Technical Rigging · Production Coordination',
     location: 'Dubai Opera District',

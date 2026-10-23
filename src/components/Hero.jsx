@@ -23,7 +23,7 @@ export default function Hero() {
       'About': 'about',
       'Services': 'services',
       'Portfolio': 'our-work',
-      'Clients': 'clients',
+      'Clients': 'client-logos',
       'Blogs': 'latest-moments',
       'Contact': 'latest-moments'
     }
@@ -59,7 +59,7 @@ export default function Hero() {
       </div>
       <motion.p {...fadeIn(1.45)} className="editorial-statement">Real<br />people.<br />Extraordinary<br />moments.</motion.p>
       <motion.div {...fadeIn(1.6)} className="story-strip flex items-center justify-center">
-        <p className="hero-description text-center">From corporate milestones to private celebrations and<br />unforgettable experiences — we create moments that matter.</p>
+        <p className="hero-description text-center">From corporate milestones to private celebrations and unforgettable experiences</p>
       </motion.div>
       <motion.div {...fadeIn(1.75)} className="bottom-index"><div className="index-track"><motion.span animate={{ x: `${scene * 100}%` }} transition={{ duration: 0.7, ease }} /></div><div className="index-numbers flex justify-between">{[0, 1, 2].map(index => <button aria-label={`Photography framing ${index + 1}`} aria-pressed={scene === index} className={scene === index ? 'active' : ''} key={index} onClick={() => setScene(index)}>0{index + 1}</button>)}</div></motion.div>
       <motion.div {...fadeIn(1.75)} className="thumbnail-position"><HeroThumbnails active={active} onSelect={setActive} onStep={step} /></motion.div>

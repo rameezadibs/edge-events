@@ -66,7 +66,7 @@ export default function ProjectDetailModal({ project, onClose, onStartConversati
               height="1000"
             />
             <div className="modal-image-caption">
-              <span className="caption-tag">COMMISSION ARCHIVE</span>
+              <span className="caption-tag">OUR PAST WORK</span>
               <span className="caption-loc">{project.location}</span>
             </div>
           </div>
@@ -99,10 +99,10 @@ export default function ProjectDetailModal({ project, onClose, onStartConversati
               </p>
             </div>
 
-            {/* Scope of Commission */}
+            {/* Scope of Work */}
             {project.scope && (
               <div className="modal-scope-section">
-                <span className="scope-kicker">SCOPE OF COMMISSION</span>
+                <span className="scope-kicker">SCOPE OF WORK</span>
                 <p className="scope-details-text">{project.scope}</p>
               </div>
             )}
@@ -117,7 +117,7 @@ export default function ProjectDetailModal({ project, onClose, onStartConversati
                   onStartConversation?.()
                 }}
               >
-                <span>COMMISSION A SIMILAR EVENT</span>
+                <span>PLAN A SIMILAR EVENT</span>
                 <span className="arrow" aria-hidden="true">→</span>
               </button>
 

@@ -62,7 +62,7 @@ a { text-decoration: none; }
 .menu-button:hover span:last-child { width: 14px; }
 .category-label { position: absolute; top: 16%; z-index: 2; text-align: left; border-left: 1px solid rgba(255,255,255,.65); padding: 0 0 34px 12px; font-size: 10px; letter-spacing: .21em; text-transform: uppercase; line-height: 1.6; background: transparent; text-shadow: 0 1px 10px #0008; }
 .category-name { display: block; transition: transform .6s cubic-bezier(.22,1,.36,1); }
-.category-name span { display: block; }
+.category-name span { display: block; white-space: nowrap; }
 .category-label:hover .category-name { transform: translateY(-4px); }
 .category-number { display: block; margin-top: 10px; font-size: 11px; letter-spacing: .12em; }
 .category-0 { left: 3.2%; }.category-1 { left: 27.4%; }.category-2 { left: 53%; }.category-3 { left: 80.6%; }

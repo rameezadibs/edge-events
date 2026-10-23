@@ -42,7 +42,7 @@ export default function CaseStudyCTA({ onExploreCaseStudies }) {
 
               <p className="case-study-copy">
                 Explore selected projects in more detail — from the original brief and creative concept
-                to technical production and final delivery. Every commission is documented from spatial sketches
+                to technical production and final delivery. Every project is documented from spatial sketches
                 to acoustic execution.
               </p>
 

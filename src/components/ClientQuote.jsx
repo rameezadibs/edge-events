@@ -14,7 +14,7 @@ export default function ClientQuote() {
 
   return (
     <motion.div className="featured-trust-moment" {...revealVariants}>
-      {/* Background oversized typographic watermark: 10+ */}
+      {/* Background oversized typographic watermark: 15+ */}
       <div className="watermark-container" aria-hidden="true">
         <span className="watermark-number">{clientQuote.metric}</span>
         <span className="watermark-text">{clientQuote.metricSub}</span>
@@ -50,7 +50,7 @@ export default function ClientQuote() {
               <div className="attribution-meta">
                 <cite className="attribution-name">{clientQuote.clientName}</cite>
                 <span className="attribution-org">{clientQuote.organisation}</span>
-                <span className="attribution-disclaimer">CONFIDENTIAL CLIENT COMMISSION</span>
+                <span className="attribution-disclaimer">CONFIDENTIAL CLIENT PROJECT</span>
               </div>
             </footer>
           </blockquote>

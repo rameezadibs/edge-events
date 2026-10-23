@@ -136,7 +136,7 @@ export default function TrustedBy() {
               <div className="label-row flex items-center">
                 <span className="trusted-eyebrow">TRUSTED BY</span>
                 <span className="trusted-rule" aria-hidden="true" />
-                <span className="trusted-edition-mark">EST. 2014</span>
+                <span className="trusted-edition-mark">EST. 2022</span>
               </div>
 
               <motion.h2
@@ -186,7 +186,7 @@ export default function TrustedBy() {
           </header>
 
           {/* 3. LARGE CLIENT STATEMENT */}
-          <div className="client-strip-header">
+          <div id="client-logos" className="client-strip-header" style={{ scrollMarginTop: '100px' }}>
             <span className="strip-hairline" aria-hidden="true" />
             <h3 className="strip-title">
               PROUD TO HAVE CREATED EXPERIENCES FOR

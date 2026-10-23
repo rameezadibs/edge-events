@@ -1,5 +1,5 @@
 export const categoriesFilter = [
-  { id: 'all', label: 'All Commissions', count: '06' },
+  { id: 'all', label: 'Our Past Work', count: '06' },
   { id: 'corporate', label: 'Corporate', count: '02', categoryKey: 'CORPORATE EVENT' },
   { id: 'social', label: 'Social', count: '02', categoryKey: 'SOCIAL CELEBRATION' },
   { id: 'destination', label: 'Destination', count: '00', categoryKey: 'DESTINATION EXPERIENCE' },

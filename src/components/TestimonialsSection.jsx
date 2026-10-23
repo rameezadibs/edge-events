@@ -69,7 +69,7 @@ function TestimonialModal({ story, onClose }) {
             <div className="modal-divider" aria-hidden="true" />
 
             <div className="modal-case-body">
-              <h4 className="case-heading">COMMISSION REFLECTION</h4>
+              <h4 className="case-heading">CLIENT REFLECTION</h4>
               <p className="case-narrative">{story.fullStory}</p>
             </div>
 
