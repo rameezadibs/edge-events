@@ -55,31 +55,36 @@ function ClientStoriesModal({ isOpen, onClose }) {
           <div className="roster-col">
             <h4 className="roster-category">GOVERNMENT &amp; INFRASTRUCTURE</h4>
             <ul>
-              <li>DP World · Global Trade Port Forums</li>
-              <li>Dubai Airports · Executive Protocol Launches</li>
-              <li>Emirates Nuclear Energy Corporation · Milestones</li>
-              <li>Nawah Energy Company · Strategic Operations</li>
-              <li>Dubai World Trade Centre · Special Conventions</li>
+              <li>Department of Culture &amp; Tourism · Abu Dhabi Events</li>
+              <li>DP World · Global Trade &amp; Port Forums</li>
+              <li>Emsteel · Industrial Milestone Galas</li>
+              <li>Jacobs · Infrastructure Symposiums</li>
+              <li>Hapag-Lloyd · Global Maritime Assemblies</li>
+              <li>JCB · Industrial Equipment Launches</li>
             </ul>
           </div>
           <div className="roster-col">
             <h4 className="roster-category">TECHNOLOGY &amp; ENTERPRISE</h4>
             <ul>
-              <li>Amazon Web Services · Regional Summits</li>
-              <li>Strategy&amp; (PwC Network) · Thought Leadership</li>
-              <li>Kearney · Executive Symposiums</li>
+              <li>Microsoft · Enterprise AI Conferences</li>
+              <li>Amazon · Regional Cloud &amp; Partner Summits</li>
+              <li>Capgemini · Digital Transformation Forums</li>
               <li>Schlumberger (SLB) · Energy Tech Keynotes</li>
-              <li>Siemens · Regional Innovation Days</li>
+              <li>STC · Telecommunications Conventions</li>
+              <li>Bosch · Mobility &amp; Engineering Days</li>
+              <li>ViewSonic · Visual Display Experiences</li>
             </ul>
           </div>
           <div className="roster-col">
-            <h4 className="roster-category">LUXURY, FINANCE &amp; CULTURE</h4>
+            <h4 className="roster-category">HEALTHCARE, RETAIL &amp; ADVISORY</h4>
             <ul>
-              <li>Cartier · Private High-Jewelry Salons</li>
-              <li>Bloomberg · Future Forum Engagements</li>
-              <li>Chalhoub Group · Heritage Milestone Galas</li>
-              <li>Standard Chartered · Private Banking Evenings</li>
-              <li>DIFC · Financial Governance Dinners</li>
+              <li>Al Tayer Motors · Luxury Automotive Showcases</li>
+              <li>Fakeeh University Hospital · Medical Congresses</li>
+              <li>GMG · Global Retail Brand Experiences</li>
+              <li>FTI Consulting · Executive Leadership Summits</li>
+              <li>Galadari · Corporate Strategic Gatherings</li>
+              <li>Zahrawi Group · Healthcare Assemblies</li>
+              <li>Emerson · Technology &amp; Engineering Forums</li>
             </ul>
           </div>
         </div>

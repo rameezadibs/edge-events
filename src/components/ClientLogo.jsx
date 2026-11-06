@@ -125,23 +125,36 @@ export function ClientWordmark({ client, isMajor }) {
 
 export default function ClientLogo({ client, isMajor = false }) {
   const [isHovered, setIsHovered] = useState(false)
+  const [imgFailed, setImgFailed] = useState(false)
 
   return (
     <motion.div
       className={`client-logo-item ${isMajor ? 'major-client' : 'supporting-client'}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      whileHover={{ y: -2, scale: 1.025 }}
-      transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+      whileHover={{ y: -3, scale: 1.03 }}
+      transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
       role="listitem"
       aria-label={`${client.name} — ${client.category}`}
     >
-      <div className="client-wordmark-wrapper">
-        <ClientWordmark client={client} isMajor={isMajor} />
-        <span className="client-category-tooltip" aria-hidden="true">
-          {client.category}
-        </span>
+      <div className="client-logo-card">
+        {!imgFailed && client.logo ? (
+          <img
+            src={client.logo}
+            alt={`${client.name} official logo`}
+            className="client-logo-img"
+            loading="lazy"
+            decoding="async"
+            onError={() => setImgFailed(true)}
+          />
+        ) : (
+          <ClientWordmark client={client} isMajor={isMajor} />
+        )}
       </div>
+
+      <span className="client-category-tooltip" aria-hidden="true">
+        {client.name} · {client.category}
+      </span>
       <div className={`client-hover-line ${isHovered ? 'active' : ''}`} aria-hidden="true" />
     </motion.div>
   )

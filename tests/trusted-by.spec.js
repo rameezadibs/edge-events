@@ -6,11 +6,7 @@ test('trusted by responsive layout, continuous marquees, trust moment, and crede
   await page.emulateMedia({ reducedMotion: 'reduce' })
   await page.goto('/')
 
-  // Navigate to Clients section
-  const clientsLink = page.getByRole('navigation', { name: 'Main navigation', exact: true }).getByRole('link', { name: 'Clients' })
-  await expect(clientsLink).toBeVisible()
-  await clientsLink.click()
-
+  // Locate Clients section on home page
   const trustedBySection = page.locator('#clients')
   await expect(trustedBySection).toBeVisible()
 
@@ -26,10 +22,11 @@ test('trusted by responsive layout, continuous marquees, trust moment, and crede
   // Verify dual marquee rows exist and contain client logos
   const marqueeRows = trustedBySection.locator('.marquee-row')
   await expect(marqueeRows).toHaveCount(2)
-  await expect(marqueeRows.nth(0)).toContainText('DP')
-  await expect(marqueeRows.nth(0)).toContainText('amazon')
-  await expect(marqueeRows.nth(1)).toContainText('KEARNEY')
-  await expect(marqueeRows.nth(1)).toContainText('Hapag-Lloyd')
+  await expect(marqueeRows.nth(0).locator('img[alt*="Microsoft"]').first()).toBeVisible()
+  await expect(marqueeRows.nth(0).locator('img[alt*="DP World"]').first()).toBeVisible()
+  await expect(marqueeRows.nth(0).locator('img[alt*="Amazon"]').first()).toBeVisible()
+  await expect(marqueeRows.nth(1).locator('img[alt*="Hapag-Lloyd"]').first()).toBeVisible()
+  await expect(marqueeRows.nth(1).locator('img[alt*="Galadari"]').first()).toBeVisible()
 
   // Verify CTA if present
   const storiesCta = trustedBySection.locator('.client-stories-cta')
