@@ -1,0 +1,65 @@
+/* Cloudflare Turnstile Luxury Container Styling */
+.edge-turnstile-wrapper {
+  margin: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.edge-turnstile-container {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: opacity 0.3s ease;
+}
+
+.edge-turnstile-compact {
+  min-height: 50px;
+}
+
+.edge-turnstile-theme-dark .edge-turnstile-container {
+  background: transparent;
+}
+
+.edge-turnstile-theme-light .edge-turnstile-container {
+  background: transparent;
+}
+
+/* Subtle Security Badge indicator */
+.edge-turnstile-status {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.3s ease;
+}
+
+.edge-turnstile-theme-dark .edge-turnstile-status {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.edge-turnstile-theme-light .edge-turnstile-status {
+  color: #6D7276;
+}
+
+.edge-turnstile-status.is-verified {
+  color: #10B981;
+}
+
+.edge-turnstile-status.is-error {
+  color: #EF4444;
+}
+
+.edge-turnstile-icon {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}

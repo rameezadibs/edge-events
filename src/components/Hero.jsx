@@ -18,6 +18,9 @@ export default function Hero() {
   const navigate = destination => {
     if (destination === 'About') { window.location.assign('/about'); return }
     if (destination === 'Services') { window.location.assign('/services'); return }
+    if (destination === 'Portfolio') { window.location.assign('/portfolio'); return }
+    if (destination === 'Contact') { window.location.assign('/contact'); return }
+    if (destination === 'Blogs') { window.location.assign('/blogs'); return }
     const targetMap = {
       'Home': 'home',
       'About': 'about',

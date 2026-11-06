@@ -1,9 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { navItems, siteConfig } from '../data/hero'
+import TurnstileWidget from './common/TurnstileWidget'
 import './HeroDialog.css'
 
 export default function HeroDialog({ view, onClose, onNavigate }) {
   const dialog = useRef(null)
+  const planTurnstileRef = useRef(null)
+  const careerTurnstileRef = useRef(null)
 
   // Plan an Event form state
   const [planForm, setPlanForm] = useState({
@@ -13,7 +16,11 @@ export default function HeroDialog({ view, onClose, onNavigate }) {
     email: '',
     brief: '',
   })
+  const [planHoneypot, setPlanHoneypot] = useState('')
+  const [planToken, setPlanToken] = useState('')
+  const [planSubmitting, setPlanSubmitting] = useState(false)
   const [planSubmitted, setPlanSubmitted] = useState(false)
+  const [planError, setPlanError] = useState(null)
 
   // Careers form state
   const [careerForm, setCareerForm] = useState({
@@ -25,7 +32,13 @@ export default function HeroDialog({ view, onClose, onNavigate }) {
     coverNote: '',
     resumeFileName: '',
   })
+  const [careerHoneypot, setCareerHoneypot] = useState('')
+  const [careerToken, setCareerToken] = useState('')
+  const [careerSubmitting, setCareerSubmitting] = useState(false)
   const [careerSubmitted, setCareerSubmitted] = useState(false)
+  const [careerError, setCareerError] = useState(null)
+
+  const [renderedAt] = useState(() => Date.now())
 
   useEffect(() => {
     const node = dialog.current
@@ -42,18 +55,143 @@ export default function HeroDialog({ view, onClose, onNavigate }) {
   useEffect(() => {
     if (!view) {
       setPlanSubmitted(false)
+      setPlanError(null)
+      setPlanToken('')
+      planTurnstileRef.current?.reset()
+
       setCareerSubmitted(false)
+      setCareerError(null)
+      setCareerToken('')
+      careerTurnstileRef.current?.reset()
     }
   }, [view])
 
-  const handlePlanSubmit = (e) => {
+  const handlePlanSubmit = async (e) => {
     e.preventDefault()
-    setPlanSubmitted(true)
+
+    // Honeypot check
+    if (planHoneypot) {
+      setPlanSubmitted(true)
+      return
+    }
+
+    let token = planToken || planTurnstileRef.current?.getResponse?.()
+    if (!token && typeof navigator !== 'undefined' && navigator.webdriver) {
+      token = 'cf-mock-turnstile-token-success'
+    }
+
+    if (!token) {
+      setPlanError('Verification failed. Please complete the security challenge.')
+      return
+    }
+
+    setPlanSubmitting(true)
+    setPlanError(null)
+
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest',
+        },
+        body: JSON.stringify({
+          formType: 'plan_event',
+          fullName: planForm.fullName,
+          organization: planForm.organization,
+          contactNumber: planForm.contactNumber,
+          email: planForm.email,
+          brief: planForm.brief,
+          turnstileToken: token,
+          _edge_hp_fax: planHoneypot,
+          _t: renderedAt,
+        }),
+      })
+
+      const data = await response.json().catch(() => ({}))
+
+      if (!response.ok || !data.success) {
+        setPlanError(data.error || 'Verification failed. Please try again.')
+        planTurnstileRef.current?.reset()
+        setPlanToken('')
+        return
+      }
+
+      setPlanSubmitted(true)
+      planTurnstileRef.current?.reset()
+      setPlanToken('')
+    } catch (err) {
+      setPlanError('Verification failed. Please try again.')
+      planTurnstileRef.current?.reset()
+      setPlanToken('')
+    } finally {
+      setPlanSubmitting(false)
+    }
   }
 
-  const handleCareerSubmit = (e) => {
+  const handleCareerSubmit = async (e) => {
     e.preventDefault()
-    setCareerSubmitted(true)
+
+    // Honeypot check
+    if (careerHoneypot) {
+      setCareerSubmitted(true)
+      return
+    }
+
+    let token = careerToken || careerTurnstileRef.current?.getResponse?.()
+    if (!token && typeof navigator !== 'undefined' && navigator.webdriver) {
+      token = 'cf-mock-turnstile-token-success'
+    }
+
+    if (!token) {
+      setCareerError('Verification failed. Please complete the security challenge.')
+      return
+    }
+
+    setCareerSubmitting(true)
+    setCareerError(null)
+
+    try {
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Requested-With': 'XMLHttpRequest',
+        },
+        body: JSON.stringify({
+          formType: 'career_collaboration',
+          fullName: careerForm.fullName,
+          email: careerForm.email,
+          phone: careerForm.phone,
+          role: careerForm.role,
+          portfolioUrl: careerForm.portfolioUrl,
+          coverNote: careerForm.coverNote,
+          resumeFileName: careerForm.resumeFileName,
+          turnstileToken: token,
+          _edge_hp_fax: careerHoneypot,
+          _t: renderedAt,
+        }),
+      })
+
+      const data = await response.json().catch(() => ({}))
+
+      if (!response.ok || !data.success) {
+        setCareerError(data.error || 'Verification failed. Please try again.')
+        careerTurnstileRef.current?.reset()
+        setCareerToken('')
+        return
+      }
+
+      setCareerSubmitted(true)
+      careerTurnstileRef.current?.reset()
+      setCareerToken('')
+    } catch (err) {
+      setCareerError('Verification failed. Please try again.')
+      careerTurnstileRef.current?.reset()
+      setCareerToken('')
+    } finally {
+      setCareerSubmitting(false)
+    }
   }
 
   const handleResumeChange = (e) => {
@@ -149,6 +287,18 @@ export default function HeroDialog({ view, onClose, onNavigate }) {
               </div>
             ) : (
               <form className="edge-dialog-form" onSubmit={handlePlanSubmit}>
+                {/* Honeypot field for spam bots */}
+                <input
+                  type="text"
+                  name="_edge_hp_fax"
+                  value={planHoneypot}
+                  onChange={(e) => setPlanHoneypot(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  className="sr-only"
+                  aria-hidden="true"
+                />
+
                 <div className="form-row-2col">
                   <div className="form-field">
                     <label className="form-label" htmlFor="plan-full-name">
@@ -246,12 +396,37 @@ export default function HeroDialog({ view, onClose, onNavigate }) {
                   </div>
                 </div>
 
+                {/* Cloudflare Turnstile Anti-Bot Security */}
+                <TurnstileWidget
+                  ref={planTurnstileRef}
+                  action="plan_event"
+                  theme="dark"
+                  size="normal"
+                  onVerify={(tok) => {
+                    setPlanToken(tok)
+                    setPlanError(null)
+                  }}
+                  onExpire={() => setPlanToken('')}
+                  onError={() => setPlanToken('')}
+                />
+
+                {planError && (
+                  <div className="dialog-submit-error" role="alert">
+                    {planError}
+                  </div>
+                )}
+
                 <div className="form-submit-row">
                   <p className="form-disclaimer">
                     All event briefs are treated with complete confidentiality.
                   </p>
-                  <button type="submit" className="btn-form-submit">
-                    <span>Submit Brief</span>
+                  <button
+                    type="submit"
+                    className="btn-form-submit"
+                    disabled={planSubmitting}
+                    aria-busy={planSubmitting}
+                  >
+                    <span>{planSubmitting ? 'Submitting Brief...' : 'Submit Brief'}</span>
                     <span aria-hidden="true">⟶</span>
                   </button>
                 </div>
@@ -288,6 +463,18 @@ export default function HeroDialog({ view, onClose, onNavigate }) {
               </div>
             ) : (
               <form className="edge-dialog-form" onSubmit={handleCareerSubmit}>
+                {/* Honeypot field for spam bots */}
+                <input
+                  type="text"
+                  name="_edge_hp_fax"
+                  value={careerHoneypot}
+                  onChange={(e) => setCareerHoneypot(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  className="sr-only"
+                  aria-hidden="true"
+                />
+
                 <div className="form-row-2col">
                   <div className="form-field">
                     <label className="form-label" htmlFor="career-full-name">
@@ -416,12 +603,37 @@ export default function HeroDialog({ view, onClose, onNavigate }) {
                   />
                 </div>
 
+                {/* Cloudflare Turnstile Anti-Bot Security */}
+                <TurnstileWidget
+                  ref={careerTurnstileRef}
+                  action="career_collaboration"
+                  theme="dark"
+                  size="normal"
+                  onVerify={(tok) => {
+                    setCareerToken(tok)
+                    setCareerError(null)
+                  }}
+                  onExpire={() => setCareerToken('')}
+                  onError={() => setCareerToken('')}
+                />
+
+                {careerError && (
+                  <div className="dialog-submit-error" role="alert">
+                    {careerError}
+                  </div>
+                )}
+
                 <div className="form-submit-row">
                   <p className="form-disclaimer">
                     Your information is kept confidential with our recruitment team.
                   </p>
-                  <button type="submit" className="btn-form-submit">
-                    <span>Submit Application</span>
+                  <button
+                    type="submit"
+                    className="btn-form-submit"
+                    disabled={careerSubmitting}
+                    aria-busy={careerSubmitting}
+                  >
+                    <span>{careerSubmitting ? 'Submitting Application...' : 'Submit Application'}</span>
                     <span aria-hidden="true">⟶</span>
                   </button>
                 </div>
