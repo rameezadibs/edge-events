@@ -18,14 +18,13 @@ export default function Footer() {
         <div className="footer-top-row">
           <div className="footer-brand-col">
             <h2 className="footer-statement">
-              Crafting Extraordinary <br />
-              <span className="statement-italic">Architectural Experiences.</span>
+              Beyond the Brief. <br />
+              <span className="statement-italic">Beyond the Ordinary.</span>
             </h2>
           </div>
 
           <div className="footer-cta-col">
             <p className="cta-description">
-              Beyond the Brief. Beyond the Ordinary.<br />
               At Edge Events, we bring fresh ideas, creative thinking, and over a decade of event expertise to deliver exceptional experiences across Dubai, Abu Dhabi, and the UAE.
             </p>
             <a

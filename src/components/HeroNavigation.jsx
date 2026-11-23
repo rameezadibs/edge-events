@@ -19,6 +19,7 @@ const navItemDetails = {
   'Portfolio': { sectionId: 'portfolio', href: '/portfolio', ariaLabel: 'Our Work Portfolio' },
   'Blogs': { sectionId: 'blogs', href: '/blogs' },
   'Contact': { sectionId: 'contact', href: '/contact' },
+  'Careers': { sectionId: 'careers', href: '/careers', ariaLabel: 'Careers at The Edge' },
 }
 
 export default function HeroNavigation({ onNavigate, onMenu, menuOpen, activeItem = 'Home' }) {
@@ -37,7 +38,7 @@ export default function HeroNavigation({ onNavigate, onMenu, menuOpen, activeIte
   const isInsidePage = typeof window !== 'undefined' && window.location.pathname !== '/' && window.location.pathname !== ''
 
   const handleLinkClick = (event, item) => {
-    if (item === 'About' || item === 'Services' || item === 'Portfolio' || item === 'Contact' || item === 'Blogs' || isInsidePage || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+    if (item === 'About' || item === 'Services' || item === 'Portfolio' || item === 'Contact' || item === 'Blogs' || item === 'Careers' || isInsidePage || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
     event.preventDefault()
     onNavigate(item)
   }

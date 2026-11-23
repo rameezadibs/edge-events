@@ -87,7 +87,6 @@ export default function ContactDetails() {
           <p className="detail-item-text">
             Dubai, United Arab Emirates
           </p>
-          <span className="detail-item-note">Private consultations by appointment across UAE</span>
         </div>
       </div>
 

@@ -54,7 +54,7 @@ export default function ServicesPage() {
         <div className="intention-copy relative">
           <motion.p className="intention-eyebrow flex items-center" {...reveal(0)}>Our services <span aria-hidden="true"/></motion.p>
           <h1 id="intention-heading">{['Experiences,', 'designed with', 'intention.'].map((line, i) => <motion.span key={line} {...reveal(.12 + i * .14)}>{i === 2 ? <em>{line}</em> : line}</motion.span>)}</h1>
-          <motion.p className="intention-description" {...reveal(.6)}>We create thoughtful environments and experiences shaped by creativity, clarity and detail — crafted to feel seamless, elevated and memorable.</motion.p>
+          <motion.p className="intention-description" {...reveal(.6)}>We create thoughtful environments and experiences shaped by creativity, clarity and detail, crafted to feel seamless, elevated and memorable.</motion.p>
           <motion.a className="intention-explore flex items-center" href="#three-services" {...reveal(.75)}><span className="intention-arrow" aria-hidden="true"><svg viewBox="0 0 32 24" fill="none"><path d="M3 12h25m-7-7 7 7-7 7"/></svg></span><span>Explore what we do</span><span className="intention-cta-rule" aria-hidden="true"/></motion.a>
         </div>
         <Architecture reduced={reduced}/>

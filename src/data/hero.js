@@ -11,4 +11,4 @@ export const categories = [
 export const siteConfig = {
   storyUrl: '',
 }
-export const navItems = ['Home', 'About', 'Services', 'Portfolio', 'Blogs', 'Contact']
+export const navItems = ['Home', 'About', 'Services', 'Portfolio', 'Blogs', 'Contact', 'Careers']

@@ -214,25 +214,6 @@ export default function MissionVision({ onNavigate }) {
           <div className="mv-brand-signature">
             PEOPLE / PURPOSE / POSSIBILITY
           </div>
-
-          <a
-            href="#our-approach"
-            className="mv-cta-link"
-            onClick={(e) => {
-              if (onNavigate) {
-                // Allows smooth transition or opening interactive panels if configured
-                const target = document.getElementById('our-approach')
-                if (target) {
-                  e.preventDefault()
-                  target.scrollIntoView({ behavior: 'smooth' })
-                }
-              }
-            }}
-          >
-            <span>OUR VALUES</span>
-            <span className="mv-cta-line" aria-hidden="true" />
-            <span className="mv-cta-arrow" aria-hidden="true">→</span>
-          </a>
         </motion.footer>
       </div>
     </section>

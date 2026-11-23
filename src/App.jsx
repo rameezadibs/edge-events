@@ -16,6 +16,7 @@ const SocialCelebrationsPage = lazy(() => import('./components/SocialCelebration
 const TravelExpeditionsPage = lazy(() => import('./components/TravelExpeditionsPage'))
 const PortfolioPage = lazy(() => import('./components/PortfolioPage'))
 const ContactPage = lazy(() => import('./components/ContactPage'))
+const CareersPage = lazy(() => import('./components/CareersPage'))
 const BlogsPage = lazy(() => import('./components/BlogsPage'))
 const BlogArticlePage = lazy(() => import('./components/BlogArticlePage'))
 
@@ -121,6 +122,8 @@ export default function App() {
     PageComponent = <AboutPage />
   } else if (currentPath === '/contact') {
     PageComponent = <ContactPage />
+  } else if (currentPath === '/careers') {
+    PageComponent = <CareersPage />
   } else if (currentPath === '/blogs') {
     PageComponent = <BlogsPage />
   } else if (currentPath.startsWith('/blogs/')) {

@@ -165,18 +165,9 @@ export default function TestimonialsSection() {
             onNext={handleNext}
           />
 
-          {/* 4. FOOTER CONTROLS: Bottom-Left CTA + Bottom-Right Navigation */}
+          {/* 4. FOOTER CONTROLS: Navigation */}
           <footer className="testimonials-footer-row">
-            <div className="footer-left-cta">
-              <button
-                type="button"
-                className="read-more-cta"
-                onClick={() => setActiveStoryModal(currentTestimonial)}
-              >
-                <span className="cta-label">READ MORE CLIENT STORIES</span>
-                <span className="cta-arrow" aria-hidden="true">→</span>
-              </button>
-            </div>
+            <div className="footer-left-cta" />
 
             <div className="footer-right-nav">
               <TestimonialNavigation
@@ -189,12 +180,6 @@ export default function TestimonialsSection() {
           </footer>
         </div>
       </section>
-
-      {/* Full Editorial Client Interview Dialog */}
-      <TestimonialModal
-        story={activeStoryModal}
-        onClose={() => setActiveStoryModal(null)}
-      />
     </>
   )
 }

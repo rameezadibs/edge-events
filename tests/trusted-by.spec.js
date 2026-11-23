@@ -6,8 +6,10 @@ test('trusted by responsive layout, continuous marquees, trust moment, and crede
   await page.emulateMedia({ reducedMotion: 'reduce' })
   await page.goto('/')
 
-  // Locate Clients section on home page
+  // Locate Clients section on home page and scroll into view
   const trustedBySection = page.locator('#clients')
+  await expect(trustedBySection).toBeAttached()
+  await trustedBySection.scrollIntoViewIfNeeded()
   await expect(trustedBySection).toBeVisible()
 
   // Verify intro area typography & labels

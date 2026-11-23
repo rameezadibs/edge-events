@@ -154,8 +154,12 @@ export async function handleFormSubmission(req) {
 
   for (const key of allowedKeys) {
     if (body[key] !== undefined && body[key] !== null) {
-      const maxLen = FIELD_LIMITS[key] || 1000
-      sanitized[key] = sanitizeText(body[key], maxLen)
+      if (key === 'resumeBase64') {
+        sanitized[key] = String(body[key]).slice(0, FIELD_LIMITS[key] || 15000000)
+      } else {
+        const maxLen = FIELD_LIMITS[key] || 1000
+        sanitized[key] = sanitizeText(body[key], maxLen)
+      }
     }
   }
 

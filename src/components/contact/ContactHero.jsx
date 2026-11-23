@@ -77,10 +77,6 @@ export default function ContactHero() {
                   />
                   <div className="contact-side-img-overlay" aria-hidden="true" />
                 </div>
-                <p className="contact-side-caption">
-                  <span>DUBAI · ABU DHABI</span>
-                  <span>PRIVATE PRODUCTION DETAIL</span>
-                </p>
               </div>
             </div>
           </motion.div>

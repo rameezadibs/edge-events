@@ -13,7 +13,7 @@ export default function ServicesIntro() {
     <div className="services-intro-copy relative">
       <motion.p className="services-eyebrow flex items-center" {...reveal(0)}>Our services <span aria-hidden="true" /></motion.p>
       <h2 id="services-heading">{['Experiences', 'designed', 'around you.'].map((line, i) => <span className="services-heading-line" key={line}><motion.span {...reveal(.08 + i * .12)}>{i === 2 ? <em>{line}</em> : line}</motion.span></span>)}</h2>
-      <motion.p className="services-summary" {...reveal(.4)}>From corporate milestones to private<br className="services-copy-break" /> celebrations and exclusive destinations —<br className="services-copy-break" /> we create experiences that reflect your vision,<br className="services-copy-break" /> your people and your purpose.</motion.p>
+      <motion.p className="services-summary" {...reveal(.4)}>From high-profile corporate events and VIP engagements to immersive brand activations and team experiences, we bring ideas to life with creativity, purpose, and precision.</motion.p>
     </div>
     <motion.aside className="services-brand" {...reveal(.5)}>
       <p>Strategy<br />Concept<br />Design<br />Execution</p>

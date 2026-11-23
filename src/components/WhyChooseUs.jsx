@@ -49,9 +49,7 @@ export default function WhyChooseUs() {
 
     <motion.div className="why-stats" {...reveal(.4)}>
       <dl>{[['100+', 'Events'], ['50+', 'Clients'], ['∞', 'Memories']].map(([value, label]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
-      <p className="why-stat-note">Illustrative figures · pending verification</p>
     </motion.div>
-    <motion.a href="#our-approach" className="why-cta" {...reveal(.5)}><span className="why-arrow" aria-hidden="true">→</span><span>Our approach</span><span className="why-cta-rule" aria-hidden="true" /></motion.a>
 
     <motion.p className="why-image-label" {...reveal(.8)}>People • Experiences • Lasting impact <span /></motion.p>
     <motion.p className="why-editorial" {...reveal(.9)}>Extra<br />ordinary<br />events<br />for<br />extra<br />ordinary<br />people</motion.p>

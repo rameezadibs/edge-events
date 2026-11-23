@@ -469,7 +469,7 @@ export default function ContactForm() {
                 <span className="btn-arrow" aria-hidden="true">→</span>
               </button>
               <p className="contact-privacy-note">
-                Confidentiality &amp; discretion guaranteed for all commissions.
+                Confidentiality &amp; discretion guaranteed for all projects.
               </p>
             </div>
           </form>
