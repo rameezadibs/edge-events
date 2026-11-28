@@ -81,7 +81,6 @@ export default function InsightsCTA() {
       <div className="insights-cta-container">
         <div className="insights-cta-card">
           <div className="insights-cta-content">
-            <span className="insights-cta-kicker">CURATED DISPATCHES</span>
             <h2 id="insights-cta-heading" className="insights-cta-title">
               Stay inspired.
             </h2>

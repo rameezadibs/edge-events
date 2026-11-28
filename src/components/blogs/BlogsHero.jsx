@@ -71,7 +71,6 @@ export default function BlogsHero() {
               <span className="editorial-stack-item">IDEAS</span>
             </div>
             <div className="blogs-side-meta">
-              <span className="blogs-side-edition">CURATED DISPATCHES</span>
               <span className="blogs-side-location">DUBAI · ABU DHABI · UAE</span>
             </div>
           </motion.div>

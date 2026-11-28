@@ -262,16 +262,16 @@ export const servicePagesData = {
           description: 'An executive gathering for DP World leadership, tailored with precision staging, broadcast AV integration, and white-glove event hospitality.'
         },
         {
-          id: 'merex-jump-1',
-          name: 'Merex Jump Brand Activation',
-          type: 'Brand Reveal & Showcase',
+          id: 'merex-team-building-1',
+          name: 'Merex Team Building',
+          type: 'Corporate Engagement & Activities',
           location: 'Dubai, UAE',
-          scope: 'Brand Activation · Immersive Environment',
+          scope: 'Team Building · Employee Engagement',
           image: '/home/selected5.jpg',
-          alt: 'Merex Jump high-energy brand launch environment with architectural lighting installations in Dubai',
+          alt: 'Merex high-energy team building and employee engagement in Dubai',
           width: 6000,
           height: 4000,
-          description: 'A dynamic showcase environment constructed for Merex Jump with interactive installations, bespoke stage architecture, and bold visual presence.'
+          description: 'A dynamic outdoor team building experience constructed for Merex with interactive challenges, team collaboration, and vibrant group engagement.'
         }
       ]
     },

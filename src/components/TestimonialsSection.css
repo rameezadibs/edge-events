@@ -177,12 +177,12 @@
   font-family: 'Bodoni Moda', Georgia, serif;
   font-style: italic;
   font-weight: 400;
-  font-size: clamp(28px, 3.4vw, 54px);
-  line-height: 1.2;
-  letter-spacing: -0.03em;
+  font-size: clamp(20px, 2.2vw, 32px);
+  line-height: 1.45;
+  letter-spacing: -0.015em;
   color: #0B0D10;
   margin: 0;
-  max-width: 1020px;
+  max-width: 960px;
 }
 
 .client-credentials-block {
@@ -782,8 +782,8 @@
   }
 
   .quote-statement {
-    font-size: 24px;
-    line-height: 1.25;
+    font-size: 18px;
+    line-height: 1.4;
   }
 
   .author-role-org {

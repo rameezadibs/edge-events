@@ -96,47 +96,47 @@ export const projects = [
     ]
   },
   {
-    id: 'merex-jump-1',
+    id: 'merex-team-building-1',
     number: '05',
     category: 'BRAND EXPERIENCE',
     filterId: 'brand',
-    title: 'Merex Jump',
+    title: 'Merex Team Building',
     location: 'Dubai, UAE',
-    detail: 'Brand Activation',
+    detail: 'Team Building',
     image: '/home/selected5.jpg',
-    alt: 'Merex Jump brand activation',
+    alt: 'Merex Team Building event',
     link: '#project-05',
     layoutType: 'landscape-hero',
-    caption: 'FIG. 05 — MEREX JUMP',
-    scope: 'Brand Activation · Immersive Environment',
+    caption: 'FIG. 05 — MEREX TEAM BUILDING',
+    scope: 'Team Building · Employee Engagement',
     year: '2024',
-    description: 'A high-energy brand experience for Merex Jump, delivering an engaging spatial environment and bold visual presence.',
+    description: 'A high-energy team building experience for Merex, delivering an engaging outdoor environment and vibrant team collaboration.',
     coordinates: '25.2048° N, 55.2708° E',
     stats: [
       { label: 'CLIENT', value: 'Merex' },
-      { label: 'FORMAT', value: 'Brand Activation' }
+      { label: 'FORMAT', value: 'Team Building' }
     ]
   },
   {
-    id: 'merex-jump-2',
+    id: 'merex-team-building-2',
     number: '06',
     category: 'BRAND EXPERIENCE',
     filterId: 'brand',
-    title: 'Merex Jump',
+    title: 'Merex Team Building',
     location: 'Dubai, UAE',
-    detail: 'Interactive Showcase',
+    detail: 'Group Activity',
     image: '/home/selected6.jpg',
-    alt: 'Merex Jump interactive showcase',
+    alt: 'Merex Team Building group celebration',
     link: '#project-06',
     layoutType: 'tall-portrait',
-    caption: 'FIG. 06 — MEREX JUMP SHOWCASE',
-    scope: 'Precision Spotlighting · Unveiling Sequence',
+    caption: 'FIG. 06 — MEREX TEAM BUILDING',
+    scope: 'Team Activities · Event Coordination',
     year: '2024',
-    description: 'A dynamic showcase environment constructed for Merex Jump with interactive installations and striking stage design.',
+    description: 'A dynamic outdoor team building gathering constructed for Merex with interactive challenges and strong team connection.',
     coordinates: '25.2048° N, 55.2708° E',
     stats: [
       { label: 'CLIENT', value: 'Merex' },
-      { label: 'FORMAT', value: 'Interactive Showcase' }
+      { label: 'FORMAT', value: 'Team Building' }
     ]
   }
 ]

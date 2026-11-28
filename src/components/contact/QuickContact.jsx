@@ -29,14 +29,14 @@ export default function QuickContact() {
       title: 'WORK WITH US',
       description: 'Artist, supplier or creative collaborator?',
       action: 'COLLABORATE',
-      href: 'mailto:collin@theedgeevents.co?subject=Creative%20Collaboration%20Inquiry%20%E2%80%94%20The%20Edge%20Events',
+      href: 'mailto:wow@theedgeevents.co?subject=Creative%20Collaboration%20Inquiry%20%E2%80%94%20The%20Edge%20Events',
     },
     {
       num: '03',
       title: 'GENERAL ENQUIRY',
       description: 'Something else? Send us a note.',
       action: 'EMAIL US',
-      href: 'mailto:collin@theedgeevents.co?subject=General%20Enquiry%20%E2%80%94%20The%20Edge%20Events',
+      href: 'mailto:wow@theedgeevents.co?subject=General%20Enquiry%20%E2%80%94%20The%20Edge%20Events',
     },
   ]
 

@@ -56,8 +56,8 @@ export default function ContactCTA() {
             </div>
             <div className="cta-meta-item">
               <span className="cta-meta-label">EMAIL</span>
-              <a href="mailto:collin@theedgeevents.co" className="cta-meta-link">
-                collin@theedgeevents.co
+              <a href="mailto:wow@theedgeevents.co" className="cta-meta-link">
+                wow@theedgeevents.co
               </a>
             </div>
             <div className="cta-meta-item">

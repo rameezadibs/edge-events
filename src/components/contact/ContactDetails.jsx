@@ -32,11 +32,11 @@ export default function ContactDetails() {
         <div className="contact-detail-item">
           <span className="detail-item-label">EMAIL</span>
           <a
-            href="mailto:collin@theedgeevents.co?subject=Event%20Inquiry%20%E2%80%94%20The%20Edge%20Events"
+            href="mailto:wow@theedgeevents.co?subject=Event%20Inquiry%20%E2%80%94%20The%20Edge%20Events"
             className="detail-item-link font-medium"
-            aria-label="Send email to collin@theedgeevents.co"
+            aria-label="Send email to wow@theedgeevents.co"
           >
-            collin@theedgeevents.co
+            wow@theedgeevents.co
           </a>
         </div>
 

@@ -88,7 +88,7 @@ export default function SEOHead() {
         'image': 'https://theedgeevents.com/logo.png',
         'description': 'Premier luxury event management and experience production agency in Dubai and Abu Dhabi.',
         'telephone': '+971-50-503-5848',
-        'email': 'collin@theedgeevents.co',
+        'email': 'wow@theedgeevents.co',
         'priceRange': '$$$$',
         'address': {
           '@type': 'PostalAddress',

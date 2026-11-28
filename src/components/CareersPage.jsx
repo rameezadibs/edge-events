@@ -170,7 +170,7 @@ export default function CareersPage() {
                   Build the future of <em>extraordinary experiences.</em>
                 </h1>
                 <p className="careers-hero-intro">
-                  We are looking for visionary event producers, scenographers, technical directors, and project leaders who operate with boundless imagination and relentless precision.
+                  We are looking for event producers, project managers, graphic designers, spatial designers, scenographers, technical directors, operations managers, and freelancers who combine visionary thinking with flawless execution.
                 </p>
               </motion.div>
 

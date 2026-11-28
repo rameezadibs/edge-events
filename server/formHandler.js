@@ -231,7 +231,7 @@ export async function handleFormSubmission(req) {
   // 7. Secure Processing & Email Notification
   // The internal recipient email is securely held on the server and NEVER exposed to the client
   const recipientEmail =
-    process.env.CONTACT_NOTIFICATION_EMAIL || 'collin@theedgeevents.co'
+    process.env.CONTACT_NOTIFICATION_EMAIL || 'wow@theedgeevents.co'
 
   // Here, email dispatch or CRM webhook is triggered securely:
   // e.g. await dispatchNotificationEmail({ to: recipientEmail, data: sanitized, formType })

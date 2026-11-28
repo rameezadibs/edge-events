@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
             <a
               id="footer-initiate-commission-btn"
-              href="mailto:collin@theedgeevents.co?subject=Event%20Inquiry%20%E2%80%94%20The%20Edge%20Events"
+              href="mailto:wow@theedgeevents.co?subject=Event%20Inquiry%20%E2%80%94%20The%20Edge%20Events"
               aria-label="Start an event inquiry with The Edge Events"
               title="Send an inquiry to start planning your event"
               className="footer-primary-btn"
@@ -61,7 +61,7 @@ export default function Footer() {
             <ul className="footer-info-list">
               <li>
                 <span className="info-label">General Enquiries</span>
-                <a href="mailto:collin@theedgeevents.co">collin@theedgeevents.co</a>
+                <a href="mailto:wow@theedgeevents.co">wow@theedgeevents.co</a>
               </li>
               <li>
                 <span className="info-label">Private Desk</span>
